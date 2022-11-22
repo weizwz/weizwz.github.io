@@ -1,0 +1,29 @@
+@charset 'utf-8';
+
+:root {
+  --main: #49b1f5;
+  --button_hover: #00c4b6;
+}
+
+/* -------------- 分类界面 -------------- */
+.article-sort-item-img {
+  width: 120px;
+  border-radius: 5px;
+}
+/* -------------- aside 侧边栏 -------------- */ 
+/* 文章封面 */
+#aside-content .aside-list > .aside-list-item .thumbnail {
+  width: 6.2em;
+  border-radius: 5px;
+}
+
+/* -------------- footer 页脚 -------------- */
+#footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+#footer-wrap > .copyright {
+  margin-right: 100px;
+}
