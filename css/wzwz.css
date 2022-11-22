@@ -4,6 +4,13 @@
   --main: #49b1f5;
   --button_hover: #00c4b6;
 }
+/*分页*/
+.layout > div:not(.recent-posts) .pagination .page-number {
+  min-width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 8px;
+}
 
 /* -------------- 分类界面 -------------- */
 .article-sort-item-img {
