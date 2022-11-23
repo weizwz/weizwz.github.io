@@ -3,6 +3,8 @@
 :root {
   --main: #49b1f5;
   --button_hover: #00c4b6;
+  --box-shadow-color: rgba(7,17,27,0.05);
+  --card-box-shadow: 0 3px 8px 6px var(--box-shadow-color);
 }
 /*分页*/
 .layout > div:not(.recent-posts) .pagination .page-number {
@@ -11,17 +13,31 @@
   line-height: 35px;
   border-radius: 8px;
 }
+#algolia-search .search-dialog .ais-Pagination .ais-Pagination-item .ais-Pagination-link {
+  border-radius: 5px;
+}
+
+/* -------------- 主页 -------------- */
+/* 文章封面 */
+#recent-posts > .recent-post-item .post_cover.left {
+  box-shadow: 1px 0px 8px 8px var(--box-shadow-color);
+}
+#recent-posts > .recent-post-item .post_cover.right {
+  box-shadow: -1px 0px 8px 8px var(--box-shadow-color);
+}
 
 /* -------------- 分类界面 -------------- */
 .article-sort-item-img {
   width: 120px;
   border-radius: 5px;
+  box-shadow: var(--card-box-shadow);
 }
 /* -------------- aside 侧边栏 -------------- */ 
 /* 文章封面 */
 #aside-content .aside-list > .aside-list-item .thumbnail {
   width: 6.2em;
   border-radius: 5px;
+  box-shadow: var(--card-box-shadow);
 }
 
 /* -------------- footer 页脚 -------------- */
@@ -32,5 +48,24 @@
   padding: 10px;
 }
 #footer-wrap > .copyright {
-  margin-right: 100px;
+  margin-right: 5em;
+}
+
+
+/* -------------- 正文 -------------- */
+/* 上一篇下一篇封面 */
+#pagination.pagination-post {
+  border-radius: 8px;
+}
+/* 相关推荐封面 */
+.relatedPosts > .relatedPosts-list > div {
+  border-radius: 8px;
+}
+
+/*-------------- mobile 手机端 --------------*/
+.iconfont {
+  display: inline-block;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
 }
