@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://weizwz.com/about/index.html</loc>
+    
+    <lastmod>2022-11-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/posts/453785dc.html</loc>
     
     <lastmod>2022-11-24</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://weizwz.com/posts/18a50dc4.html</loc>
-    
-    <lastmod>2022-11-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/about/index.html</loc>
     
     <lastmod>2022-11-24</lastmod>
     
