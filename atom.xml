@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>唯之为之</title>
+  <icon>https://weizwz.com/img/favicon.png</icon>
+  <subtitle>知之为知之，不知为不知</subtitle>
+  <link href="https://weizwz.com/atom.xml" rel="self"/>
+  
+  <link href="https://weizwz.com/"/>
+  <updated>2022-11-25T05:56:01.772Z</updated>
+  <id>https://weizwz.com/</id>
+  
+  <author>
+    <name>唯之为之</name>
+    <email>1124725517@qq.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS比较数值大小</title>
+    <link href="https://weizwz.com/posts/b6386794.html"/>
+    <id>https://weizwz.com/posts/b6386794.html</id>
+    <published>2022-11-25T05:34:17.000Z</published>
+    <updated>2022-11-25T05:56:01.772Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、-简单循环算法&quot;&gt;&lt;a href=&quot;#一、-简单循环算法&quot; class=&quot;headerlink&quot; title=&quot;一、 简单循环算法&quot;&gt;&lt;/a&gt;一、 简单循环算法&lt;/h2&gt;&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://weizwz.com/categories/js/"/>
+    
+    
+    <category term="js" scheme="https://weizwz.com/tags/js/"/>
+    
+    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git使用记录 - 持续更新</title>
+    <link href="https://weizwz.com/posts/64094821.html"/>
+    <id>https://weizwz.com/posts/64094821.html</id>
+    <published>2022-11-25T03:25:44.000Z</published>
+    <updated>2022-11-25T03:31:38.926Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;本地生成-sshkey&quot;&gt;&lt;a href=&quot;#本地生成-sshkey&quot; class=&quot;headerlink&quot; title=&quot;本地生成 sshkey&quot;&gt;&lt;/a&gt;本地生成 &lt;code&gt;sshkey&lt;/code&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开git命令工具</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="git" scheme="https://weizwz.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue多界面开发</title>
+    <link href="https://weizwz.com/posts/453785dc.html"/>
+    <id>https://weizwz.com/posts/453785dc.html</id>
+    <published>2022-11-24T13:00:37.000Z</published>
+    <updated>2022-11-24T14:28:54.275Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-安装-vue-cli，已有的请跳过这一步&quot;&gt;&lt;a href=&quot;#1-安装-vue-cli，已有的请跳过这一步&quot; class=&quot;headerlink&quot; title=&quot;1. 安装 vue-cli，已有的请跳过这一步&quot;&gt;&lt;/a&gt;1. 安装</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="https://weizwz.com/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+    <category term="vue-cli" scheme="https://weizwz.com/tags/vue-cli/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue双向绑定原理梳理</title>
+    <link href="https://weizwz.com/posts/dd73ee89.html"/>
+    <id>https://weizwz.com/posts/dd73ee89.html</id>
+    <published>2022-11-23T07:13:24.000Z</published>
+    <updated>2022-11-24T14:28:54.270Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;vue数据双向绑定是通过数据劫持结合发布者-订阅者模式的方式来实现的。&lt;br&gt;数据劫持通过</summary>
+        
+      
+    
+    
+    
+    <category term="vue" scheme="https://weizwz.com/categories/vue/"/>
+    
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Clash Verge 使用记录</title>
+    <link href="https://weizwz.com/posts/18a50dc4.html"/>
+    <id>https://weizwz.com/posts/18a50dc4.html</id>
+    <published>2022-11-22T15:11:47.000Z</published>
+    <updated>2022-11-24T14:28:54.266Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Clash Verge&lt;/code&gt; 是一个上网工具，详情可查看 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="clash" scheme="https://weizwz.com/tags/clash/"/>
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="git" scheme="https://weizwz.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nodejs报错记录</title>
+    <link href="https://weizwz.com/posts/d80c51ca.html"/>
+    <id>https://weizwz.com/posts/d80c51ca.html</id>
+    <published>2022-10-21T06:20:16.000Z</published>
+    <updated>2022-10-21T06:20:16.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;◉-digital-envelope-routines-unsupported&quot;&gt;&lt;a href=&quot;#◉-digital-envelope-routines-unsupported&quot; class=&quot;headerlink&quot; title=&quot;◉ digital</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+    <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，我的博客</title>
+    <link href="https://weizwz.com/posts/3277e220.html"/>
+    <id>https://weizwz.com/posts/3277e220.html</id>
+    <published>2022-09-15T03:55:23.000Z</published>
+    <updated>2022-09-15T03:55:23.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是我搭建的首个个人博客，使用的是 &lt;code&gt;Hexo&lt;/code&gt; + &lt;code&gt;Butterfly&lt;/code&gt;。初次见面，请多多指教💕&lt;/p&gt;
+&lt;h2 id=&quot;快速开始&quot;&gt;&lt;a href=&quot;#快速开始&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
