@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2022-11-25T05:56:01.772Z</updated>
+  <updated>2022-11-25T03:31:38.926Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>JS比较数值大小</title>
-    <link href="https://weizwz.com/posts/b6386794.html"/>
-    <id>https://weizwz.com/posts/b6386794.html</id>
-    <published>2022-11-25T05:34:17.000Z</published>
-    <updated>2022-11-25T05:56:01.772Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、-简单循环算法&quot;&gt;&lt;a href=&quot;#一、-简单循环算法&quot; class=&quot;headerlink&quot; title=&quot;一、 简单循环算法&quot;&gt;&lt;/a&gt;一、 简单循环算法&lt;/h2&gt;&lt;p&gt;代码如下：&lt;/p&gt;
-&lt;figure class=&quot;highlight</summary>
-        
-      
-    
-    
-    
-    <category term="js" scheme="https://weizwz.com/categories/js/"/>
-    
-    
-    <category term="js" scheme="https://weizwz.com/tags/js/"/>
-    
-    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
   
   <entry>
     <title>Git使用记录 - 持续更新</title>
@@ -102,14 +74,14 @@
     <link href="https://weizwz.com/posts/dd73ee89.html"/>
     <id>https://weizwz.com/posts/dd73ee89.html</id>
     <published>2022-11-23T07:13:24.000Z</published>
-    <updated>2022-11-24T14:28:54.270Z</updated>
+    <updated>2022-11-28T17:17:49.664Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;vue数据双向绑定是通过数据劫持结合发布者-订阅者模式的方式来实现的。&lt;br&gt;数据劫持通过</summary>
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;vue数据双向绑定主要是指：数据变化更新视图，视图变化更新数据。&lt;br&gt;实现方式：&lt;code&gt;数据劫持&lt;/code&gt; 结合</summary>
         
       
     
@@ -148,6 +120,34 @@
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
     <category term="git" scheme="https://weizwz.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS比较数值大小</title>
+    <link href="https://weizwz.com/posts/b6386794.html"/>
+    <id>https://weizwz.com/posts/b6386794.html</id>
+    <published>2022-10-24T05:34:17.000Z</published>
+    <updated>2022-11-27T09:57:31.230Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、-简单循环算法&quot;&gt;&lt;a href=&quot;#一、-简单循环算法&quot; class=&quot;headerlink&quot; title=&quot;一、 简单循环算法&quot;&gt;&lt;/a&gt;一、 简单循环算法&lt;/h2&gt;&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="js" scheme="https://weizwz.com/categories/js/"/>
+    
+    
+    <category term="js" scheme="https://weizwz.com/tags/js/"/>
+    
+    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
@@ -200,6 +200,8 @@
       
     
     
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
