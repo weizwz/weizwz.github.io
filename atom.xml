@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2022-11-29T07:15:46.654Z</updated>
+  <updated>2022-12-03T13:28:34.932Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>pnpm配置</title>
+    <link href="https://weizwz.com/posts/5c85881c.html"/>
+    <id>https://weizwz.com/posts/5c85881c.html</id>
+    <published>2022-12-03T12:32:09.000Z</published>
+    <updated>2022-12-03T13:28:34.932Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;之前通过 &lt;code&gt;nvm&lt;/code&gt; 来管理了 &lt;code&gt;nodejs&lt;/code&gt; 版本，结果安装 &lt;code&gt;pnpm&lt;/code&gt; 之后，安装全局依赖报错，如下：&lt;br&gt; &lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="pnpm" scheme="https://weizwz.com/tags/pnpm/"/>
+    
+    <category term="nvm" scheme="https://weizwz.com/tags/nvm/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub + Hexo 搭建个人博客网站</title>
