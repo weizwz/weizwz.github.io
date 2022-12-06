@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weizwz.com/posts/64094821.html</loc>
+    
+    <lastmod>2022-12-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/posts/5c85881c.html</loc>
     
     <lastmod>2022-12-03</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://weizwz.com/posts/18a50dc4.html</loc>
     
     <lastmod>2022-12-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/posts/64094821.html</loc>
-    
-    <lastmod>2022-11-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,7 +121,7 @@
 
   <url>
     <loc>https://weizwz.com/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,91 +129,91 @@
   
   <url>
     <loc>https://weizwz.com/tags/clash/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/npm/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/git/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/js/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/nodejs/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/vue/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/node-sass/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/vue-cli/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/hexo/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/github/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/pnpm/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/tags/nvm/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -222,28 +222,28 @@
   
   <url>
     <loc>https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/categories/js/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/categories/vue/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-12-03</lastmod>
+    <lastmod>2022-12-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
