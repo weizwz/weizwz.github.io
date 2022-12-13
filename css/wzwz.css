@@ -6,6 +6,10 @@
   --box-shadow-color: rgba(7,17,27,0.05);
   --card-box-shadow: 0 3px 8px 6px var(--box-shadow-color);
 }
+*::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
 /*分页*/
 .layout > div:not(.recent-posts) .pagination .page-number {
   min-width: 35px;
@@ -63,10 +67,3 @@
 }
 
 /*-------------- mobile 手机端 --------------*/
-.iconfont {
-  display: inline-block;
-  font-variant: normal;
-  line-height: 1;
-  text-rendering: auto;
-  font-size: 1em;
-}

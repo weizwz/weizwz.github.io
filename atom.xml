@@ -106,7 +106,7 @@
     <link href="https://weizwz.com/posts/18a50dc4.html"/>
     <id>https://weizwz.com/posts/18a50dc4.html</id>
     <published>2022-11-22T15:11:47.000Z</published>
-    <updated>2022-12-02T11:05:40.891Z</updated>
+    <updated>2022-12-13T10:29:09.066Z</updated>
     
     
       
@@ -233,9 +233,9 @@
     
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
-    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
-    
     <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
     
     <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
     
@@ -264,6 +264,10 @@
     
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
+    
+    <category term="algolia" scheme="https://weizwz.com/tags/algolia/"/>
     
   </entry>
   
