@@ -17,6 +17,7 @@ function drawImage(text, fontSize) {
     height: height
   });
   context.rect(0, 0, width, height);
+  context.fillStyle = '#ffffff';
   context.fill();
   var myImage = new Image();
   // 背景图片
@@ -96,15 +97,18 @@ $(function(){
     const form = layui.form;
     const colorpicker = layui.colorpicker;
     // 颜色选择
-    colorpicker.render({
-      elem: '#fontColorSelect',
-      color: '#000000',
-      predefine: true,
-      colors: ['#000000', '#393d49', '#ffffff', '#1890ff', '#31bdec', '#009688', '#ffb800', '#ff5722'],
-      done: function(color){
-        $('#fontColor').val(color);
-      }
-    });
+    const colorSelect = function() {
+      colorpicker.render({
+        elem: '#fontColorSelect',
+        color: '#000000',
+        predefine: true,
+        colors: ['#000000', '#393d49', '#ffffff', '#1890ff', '#31bdec', '#009688', '#ffb800', '#ff5722'],
+        done: function(color){
+          $('#fontColor').val(color);
+        }
+      });
+    }
+    colorSelect();
     // 自定义验证规则
     form.verify({
       fileName: function(value){
@@ -136,6 +140,12 @@ $(function(){
         '请输入1-3位数字'
       ]
     });
+    // 重置
+    $("#coverReset").click(function(){
+      $("#coverPreviewImg, #coverResultImg").attr('src', '');
+      $(".cover-preview-tip").show();
+      colorSelect();
+    })
     form.on('submit(coverCreate)', function(data){
       // console.log(data.form, data.field, data.elem)
       const text = $("#coverWord").val();
