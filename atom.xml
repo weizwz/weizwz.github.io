@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2022-12-03T13:28:34.932Z</updated>
+  <updated>2022-12-14T15:01:57.927Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开源字体整理</title>
+    <link href="https://weizwz.com/posts/ef1b7a14.html"/>
+    <id>https://weizwz.com/posts/ef1b7a14.html</id>
+    <published>2022-12-14T09:53:20.000Z</published>
+    <updated>2022-12-14T15:01:57.927Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;开源字体&quot;&gt;&lt;a href=&quot;#开源字体&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+    <category term="开源" scheme="https://weizwz.com/tags/%E5%BC%80%E6%BA%90/"/>
+    
+    <category term="字体" scheme="https://weizwz.com/tags/%E5%AD%97%E4%BD%93/"/>
+    
+    <category term="设计" scheme="https://weizwz.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>pnpm配置</title>
