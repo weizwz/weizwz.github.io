@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
 :root {
-  --main: #49b1f5;
-  --button_hover: #00c4b6;
+  --main: var(--btn-bg);
+  --button_hover: var(--text-bg-hover);
   --box-shadow-color: rgba(7,17,27,0.05);
   --card-box-shadow: 0 3px 8px 6px var(--box-shadow-color);
 }

@@ -233,9 +233,9 @@
     
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
     
     <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
     

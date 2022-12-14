@@ -145,6 +145,7 @@ $(function(){
       $("#coverPreviewImg, #coverResultImg").attr('src', '');
       $(".cover-preview-tip").show();
       colorSelect();
+      $(".cover-result").hide();
     })
     form.on('submit(coverCreate)', function(data){
       // console.log(data.form, data.field, data.elem)
