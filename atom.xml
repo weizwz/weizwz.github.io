@@ -220,11 +220,11 @@
     <category term="工具" scheme="https://weizwz.com/categories/%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="git" scheme="https://weizwz.com/tags/git/"/>
-    
     <category term="clash" scheme="https://weizwz.com/tags/clash/"/>
     
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="git" scheme="https://weizwz.com/tags/git/"/>
     
   </entry>
   
@@ -331,9 +331,9 @@
     
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
     
     <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
     
