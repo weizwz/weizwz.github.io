@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-01-03T08:00:07.645Z</updated>
+  <updated>2023-01-10T14:27:10.878Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>让你的博客一起过年</title>
+    <link href="https://weizwz.com/posts/3ab0bc77.html"/>
+    <id>https://weizwz.com/posts/3ab0bc77.html</id>
+    <published>2023-01-10T12:37:59.000Z</published>
+    <updated>2023-01-10T14:27:10.878Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;马上就要过年了，看着我这毫无生气的博客，感觉有点亏待它。博客过年，马上安排！&lt;br&gt;本博客基于 &lt;code&gt;hexo&lt;/code&gt; 和主题 &lt;code&gt;Butterfly&lt;/code&gt; 修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="css" scheme="https://weizwz.com/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>浏览器好用插件分享</title>
