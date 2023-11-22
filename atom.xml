@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>唯之为之</title>
+  <icon>https://weizwz.com/img/favicon.png</icon>
+  <subtitle>知之为知之，不知为不知</subtitle>
+  <link href="https://weizwz.com/atom.xml" rel="self"/>
+  
+  <link href="https://weizwz.com/"/>
+  <updated>2023-11-18T09:19:22.386Z</updated>
+  <id>https://weizwz.com/</id>
+  
+  <author>
+    <name>唯之为之</name>
+    <email>weizwz@foxmail.com</email>
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AI作画本地搭建</title>
+    <link href="https://weizwz.com/posts/779fda2d.html"/>
+    <id>https://weizwz.com/posts/779fda2d.html</id>
+    <published>2023-04-28T13:07:26.000Z</published>
+    <updated>2023-11-18T09:19:22.386Z</updated>
+    
+    
+    <summary type="html">本地搭建AI作画应用，再也不用花钱了</summary>
+    
+    
+    
+    <category term="AI" scheme="https://weizwz.com/categories/AI/"/>
+    
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+    <category term="AI" scheme="https://weizwz.com/tags/AI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vscode插件</title>
+    <link href="https://weizwz.com/posts/8c7d05c9.html"/>
+    <id>https://weizwz.com/posts/8c7d05c9.html</id>
+    <published>2023-04-25T06:06:46.000Z</published>
+    <updated>2023-06-20T03:23:12.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;自用 &lt;code&gt;vscode&lt;/code&gt; 插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-EditorConfig-for-VS-Code&quot;&gt;&lt;a href=&quot;#1-EditorConfig-for-VS-Code&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
+    
+    <category term="编码" scheme="https://weizwz.com/tags/%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让你的博客一起过年</title>
+    <link href="https://weizwz.com/posts/3ab0bc77.html"/>
+    <id>https://weizwz.com/posts/3ab0bc77.html</id>
+    <published>2023-01-10T12:37:59.000Z</published>
+    <updated>2023-11-17T10:39:17.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;马上就要过年了，看着我这毫无生气的博客，感觉有点亏待它。博客过年，马上安排！&lt;br&gt;本博客基于 &lt;code&gt;hexo&lt;/code&gt; 和主题 &lt;code&gt;Butterfly&lt;/code&gt; 修改。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="css" scheme="https://weizwz.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器好用插件分享</title>
+    <link href="https://weizwz.com/posts/9b694c86.html"/>
+    <id>https://weizwz.com/posts/9b694c86.html</id>
+    <published>2022-12-17T11:10:59.000Z</published>
+    <updated>2023-11-18T09:15:02.274Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;个人一直在用的浏览器插件。&lt;code&gt;好用的浏览器插件，总会提升你的工作效率&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-Tab-Session-Manager&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="浏览器" scheme="https://weizwz.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+    <category term="插件" scheme="https://weizwz.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="chrome" scheme="https://weizwz.com/tags/chrome/"/>
+    
+    <category term="edge" scheme="https://weizwz.com/tags/edge/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源字体整理</title>
+    <link href="https://weizwz.com/posts/ef1b7a14.html"/>
+    <id>https://weizwz.com/posts/ef1b7a14.html</id>
+    <published>2022-12-14T09:53:20.000Z</published>
+    <updated>2023-11-18T09:14:48.724Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;开源字体&quot;&gt;&lt;a href=&quot;#开源字体&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+    <category term="开源" scheme="https://weizwz.com/tags/%E5%BC%80%E6%BA%90/"/>
+    
+    <category term="字体" scheme="https://weizwz.com/tags/%E5%AD%97%E4%BD%93/"/>
+    
+    <category term="设计" scheme="https://weizwz.com/tags/%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pnpm配置</title>
+    <link href="https://weizwz.com/posts/5c85881c.html"/>
+    <id>https://weizwz.com/posts/5c85881c.html</id>
+    <published>2022-12-03T12:32:09.000Z</published>
+    <updated>2023-11-18T09:19:28.482Z</updated>
+    
+    
+    <summary type="html">pnpm安装和配置</summary>
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="pnpm" scheme="https://weizwz.com/tags/pnpm/"/>
+    
+    <category term="nvm" scheme="https://weizwz.com/tags/nvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub + Hexo 搭建个人博客网站</title>
+    <link href="https://weizwz.com/posts/9462cbd1.html"/>
+    <id>https://weizwz.com/posts/9462cbd1.html</id>
+    <published>2022-11-29T06:55:01.000Z</published>
+    <updated>2023-11-17T10:39:17.366Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、准备工作&quot;&gt;&lt;a href=&quot;#一、准备工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备工作&quot;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;h3 id=&quot;1-GitHub-Hexo-的优势&quot;&gt;&lt;a href=&quot;#1-GitHub-Hexo-的优势&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git使用记录 - 持续更新</title>
+    <link href="https://weizwz.com/posts/64094821.html"/>
+    <id>https://weizwz.com/posts/64094821.html</id>
+    <published>2022-11-25T03:25:44.000Z</published>
+    <updated>2023-11-18T09:18:45.581Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;本地生成-sshkey&quot;&gt;&lt;a href=&quot;#本地生成-sshkey&quot; class=&quot;headerlink&quot; title=&quot;本地生成 sshkey&quot;&gt;&lt;/a&gt;本地生成 &lt;code&gt;sshkey&lt;/code&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;打开git命令工具</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="git" scheme="https://weizwz.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Clash Verge 使用记录</title>
+    <link href="https://weizwz.com/posts/18a50dc4.html"/>
+    <id>https://weizwz.com/posts/18a50dc4.html</id>
+    <published>2022-11-22T15:11:47.000Z</published>
+    <updated>2023-11-22T04:10:51.839Z</updated>
+    
+    
+    <summary type="html">Clash Verge 使用记录，包括下载、协议以及常见问题</summary>
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="clash" scheme="https://weizwz.com/tags/clash/"/>
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="git" scheme="https://weizwz.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue多界面开发</title>
+    <link href="https://weizwz.com/posts/453785dc.html"/>
+    <id>https://weizwz.com/posts/453785dc.html</id>
+    <published>2022-11-19T13:00:37.000Z</published>
+    <updated>2023-11-18T09:19:42.236Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;1-安装-vue-cli，已有的请跳过这一步&quot;&gt;&lt;a href=&quot;#1-安装-vue-cli，已有的请跳过这一步&quot; class=&quot;headerlink&quot; title=&quot;1. 安装 vue-cli，已有的请跳过这一步&quot;&gt;&lt;/a&gt;1. 安装</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+    <category term="vue-cli" scheme="https://weizwz.com/tags/vue-cli/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue双向绑定原理梳理</title>
+    <link href="https://weizwz.com/posts/dd73ee89.html"/>
+    <id>https://weizwz.com/posts/dd73ee89.html</id>
+    <published>2022-11-17T07:13:24.000Z</published>
+    <updated>2023-11-18T09:19:47.774Z</updated>
+    
+    
+    <summary type="html">Vue双向绑定原理梳理</summary>
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS比较数值大小</title>
+    <link href="https://weizwz.com/posts/b6386794.html"/>
+    <id>https://weizwz.com/posts/b6386794.html</id>
+    <published>2022-10-24T05:34:17.000Z</published>
+    <updated>2023-11-18T09:18:57.143Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、-简单循环算法&quot;&gt;&lt;a href=&quot;#一、-简单循环算法&quot; class=&quot;headerlink&quot; title=&quot;一、 简单循环算法&quot;&gt;&lt;/a&gt;一、 简单循环算法&lt;/h2&gt;&lt;p&gt;代码如下：&lt;br&gt;&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://weizwz.com/tags/js/"/>
+    
+    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nodejs报错记录</title>
+    <link href="https://weizwz.com/posts/d80c51ca.html"/>
+    <id>https://weizwz.com/posts/d80c51ca.html</id>
+    <published>2022-10-21T06:20:16.000Z</published>
+    <updated>2022-10-21T06:20:16.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;◉-digital-envelope-routines-unsupported&quot;&gt;&lt;a href=&quot;#◉-digital-envelope-routines-unsupported&quot; class=&quot;headerlink&quot; title=&quot;◉ digital</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
+    
+    <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好，我的博客</title>
+    <link href="https://weizwz.com/posts/3277e220.html"/>
+    <id>https://weizwz.com/posts/3277e220.html</id>
+    <published>2022-09-15T03:55:23.000Z</published>
+    <updated>2022-09-15T03:55:23.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;这是我搭建的首个个人博客，使用的是 &lt;code&gt;Hexo&lt;/code&gt; + &lt;code&gt;Butterfly&lt;/code&gt;。初次见面，请多多指教💕&lt;/p&gt;
+&lt;h2 id=&quot;快速开始&quot;&gt;&lt;a href=&quot;#快速开始&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
+    
+    <category term="algolia" scheme="https://weizwz.com/tags/algolia/"/>
+    
+  </entry>
+  
+</feed>
