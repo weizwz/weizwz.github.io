@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>唯之为之</title>
-  <icon>https://weizwz.com/img/favicon.png</icon>
+  <icon>https://weizwz.com/img/favicon.ico</icon>
   <subtitle>知之为知之，不知为不知</subtitle>
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-22T10:13:15.432Z</updated>
+  <updated>2023-11-22T12:12:55.336Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-11-22T10:13:15.432Z</updated>
+    <updated>2023-11-22T12:12:55.336Z</updated>
     
     
       
