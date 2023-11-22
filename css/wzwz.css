@@ -85,6 +85,11 @@ svg.icon {
 div#post {
   background: rgba(255, 255, 255, 0.9);
 }
+#article-container img {
+  display: inline-block;
+  border-radius: var(--weizwz-border-radius);
+  max-height: 420px;
+}
 
 /* 分页页面 */
 div#page {
