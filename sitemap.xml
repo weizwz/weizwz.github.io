@@ -247,20 +247,6 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/hexo-theme-butterfly/</loc>
-    <lastmod>2023-11-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/hexo-butterfly-recommend/</loc>
-    <lastmod>2023-11-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://weizwz.com/tags/plugin/</loc>
     <lastmod>2023-11-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -381,6 +367,13 @@
   
   <url>
     <loc>https://weizwz.com/tags/edge/</loc>
+    <lastmod>2023-11-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/hexo-theme/</loc>
     <lastmod>2023-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

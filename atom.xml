@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-22T10:09:30.941Z</updated>
+  <updated>2023-11-22T10:13:15.432Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-11-22T10:09:30.941Z</updated>
+    <updated>2023-11-22T10:13:15.432Z</updated>
     
     
       
@@ -40,13 +40,13 @@
     <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
-    <category term="hexo-theme-butterfly" scheme="https://weizwz.com/tags/hexo-theme-butterfly/"/>
-    
-    <category term="hexo-butterfly-recommend" scheme="https://weizwz.com/tags/hexo-butterfly-recommend/"/>
-    
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    
+    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
     
   </entry>
   
