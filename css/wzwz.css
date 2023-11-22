@@ -344,9 +344,20 @@ div#category {
 }
 blockquote {
   border-radius: var(--weizwz-code-border-radius);
+  border-left-width: 4px;
+}
+#article-container blockquote > p > code,
+#article-container h1 code,
+#article-container h2 code,
+#article-container h3 code,
+#article-container h4 code {
+  background: none;
 }
 #article-container .code-expand-btn i {
   color: var(--weizwz-theme);
+}
+#article-container .highlight-tools {
+  min-height: 32px;
 }
 
 /* nav */
@@ -419,6 +430,13 @@ blockquote {
 }
 #aside-content .card-tag-cloud a:hover {
   transform: scale(1.2);
+}
+
+/* 最新文章 */
+#aside-content .aside-list > .aside-list-item .thumbnail {
+  width: 5.2em;
+  height: 3.2em;
+  border-radius: var(--weizwz-btn-border-radius);
 }
 
 /* 归档样式 */
@@ -527,6 +545,9 @@ li.card-archive-list-item:hover > a {
 }
 
 /* 统一分页 */
+#pagination {
+  width: 100%;
+}
 #algolia-search .search-dialog .ais-Pagination .ais-Pagination-item .ais-Pagination-link,
 .layout > div:not(.recent-posts) .pagination .page-number,
 .layout > .recent-posts .pagination > *:not(.space) {
@@ -535,7 +556,12 @@ li.card-archive-list-item:hover > a {
   height: 2.5rem;
   line-height: 2.5rem;
 }
-
+#pagination .page-number.current {
+  background: var(--weizwz-theme);
+}
+.layout > .recent-posts .pagination > *:not(.space):hover {
+  background: var(--weizwz-theme);
+}
 /* 打赏 */
 .post-reward .reward-button {
   border-radius: var(--weizwz-btn-border-radius);

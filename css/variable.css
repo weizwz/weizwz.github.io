@@ -25,7 +25,7 @@
   --white: #fff;
   --text-highlight-color: #1f2d3d;
   --blockquote-color: #6a737d;
-  --blockquote-bg: rgba(59,112,252,0.1);
+  --blockquote-bg: #e8f5ff;
   --reward-pop: #f5f5f5;
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
@@ -51,7 +51,7 @@
   --weizwz-orange: #e38100;
   --weizwz-blue-hover: #5390e6;
   --weizwz-border-radius: 12px;
-  --weizwz-code-border-radius: 10px;
+  --weizwz-code-border-radius: 8px;
   --weizwz-btn-border-radius: 6px;
   --weizwz-margin: 20px;
   --weizwz-main: var(--weizwz-theme);
@@ -119,6 +119,10 @@
 }
 
 [data-theme=dark] {
+  --card-bg: #121212;
+  --font-color: #eee;
+  --text-highlight-color: #fff;
+  --blockquote-bg: #1a1a1a;
   --weizwz-meta-theme-post-color: #1d1e22;
   --weizwz-meta-theme-color: #000;
   --weizwz-blue: #5ca1ff;
