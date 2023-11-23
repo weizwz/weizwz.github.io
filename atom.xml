@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-22T15:39:30.995Z</updated>
+  <updated>2023-11-23T09:05:19.912Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-11-22T15:39:30.995Z</updated>
+    <updated>2023-11-23T09:05:19.912Z</updated>
     
     
       
@@ -29,9 +29,7 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;hexo-butterfly-recommend&lt;/code&gt; 是基于 &lt;code&gt;hexo-theme-butterfly&lt;/code&gt; 主题的扩展插件，主要给博客首页添加导航和推荐功能&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</summary>
+&lt;p&gt;&lt;a href=&quot;https://github.com/weizwz/hexo-butterfly-recommend&quot;&gt;hexo-butterfly-recommend&lt;/a&gt; 是基于 &lt;a</summary>
         
       
     
@@ -40,13 +38,47 @@
     <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
     
     
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
-    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
     
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
-    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
+  </entry>
+  
+  <entry>
+    <title>Cygwin，在windows中使用linux命令</title>
+    <link href="https://weizwz.com/posts/8748c6b7.html"/>
+    <id>https://weizwz.com/posts/8748c6b7.html</id>
+    <published>2023-09-22T12:13:00.000Z</published>
+    <updated>2023-11-23T03:49:18.557Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;习惯了 &lt;code&gt;linux&lt;/code&gt; 命令的快捷操作，使用 &lt;code&gt;winodws&lt;/code&gt; 的 &lt;code&gt;shell&lt;/code&gt; 感觉效率非常低下，于是开始搜寻工具支持。&lt;br&gt;刚开始搜到的是</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="windows" scheme="https://weizwz.com/tags/windows/"/>
+    
+    <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
+    
+    <category term="cygwin" scheme="https://weizwz.com/tags/cygwin/"/>
+    
+    <category term="linux" scheme="https://weizwz.com/tags/linux/"/>
+    
+    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
     
   </entry>
   
@@ -396,9 +428,9 @@
     
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
     
     <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
     

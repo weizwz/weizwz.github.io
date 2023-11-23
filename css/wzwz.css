@@ -87,10 +87,16 @@ div#post {
 }
 #article-container img {
   display: inline-block;
-  border-radius: var(--weizwz-border-radius);
-  max-height: 420px;
+  border-radius: var(--weizwz-btn-border-radius);
+  max-height: 400px;
 }
-
+.relatedPosts > .relatedPosts-list .content .title,
+#pagination .prev_info,
+#pagination .next_info {
+  font-size: 1rem;
+  font-weight: 700;
+  text-shadow: 0px 0px 3px var(--white);
+}
 /* 分页页面 */
 div#page {
   background: rgba(255, 255, 255, 0.9);
