@@ -49,11 +49,273 @@
   </entry>
   
   <entry>
+    <title>JS判断点是否在线段上</title>
+    <link href="https://weizwz.com/posts/6c03382b.html"/>
+    <id>https://weizwz.com/posts/6c03382b.html</id>
+    <published>2023-11-15T13:57:37.000Z</published>
+    <updated>2023-11-23T14:44:30.338Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本文利用向量的点积和叉积来判断点是否在线段上。&lt;br&gt;基础知识补充 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/350622845&quot;&gt;从零开始的高中数学——向量&lt;/a&gt;、&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="js" scheme="https://weizwz.com/tags/js/"/>
+    
+    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置</title>
+    <link href="https://weizwz.com/posts/3c6c8900.html"/>
+    <id>https://weizwz.com/posts/3c6c8900.html</id>
+    <published>2023-11-13T16:18:12.000Z</published>
+    <updated>2023-11-23T14:21:27.546Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步至码云 &lt;a href=&quot;https://gitee.com/weizwz/weiz-vue3-template&quot;&gt;weiz-vue3-template&lt;/a&gt;&lt;br&gt;关于vite的详细配置可查看 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置</title>
+    <link href="https://weizwz.com/posts/422566e3.html"/>
+    <id>https://weizwz.com/posts/422566e3.html</id>
+    <published>2023-11-09T11:08:02.000Z</published>
+    <updated>2023-11-23T14:21:23.471Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步至码云 &lt;a href=&quot;https://gitee.com/weizwz/weiz-vue3-template&quot;&gt;weiz-vue3-template&lt;/a&gt;&lt;br&gt;关于tsconfig的配置字段可查看其他文档，如 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</title>
+    <link href="https://weizwz.com/posts/5bc77c26.html"/>
+    <id>https://weizwz.com/posts/5bc77c26.html</id>
+    <published>2023-11-09T09:03:24.000Z</published>
+    <updated>2023-11-23T14:12:16.162Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步至码云 &lt;a href=&quot;https://gitee.com/weizwz/weiz-vue3-template&quot;&gt;weiz-vue3-template&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;前提准备&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>windows开发环境备份，再也不怕重装系统了</title>
+    <link href="https://weizwz.com/posts/7657b7c7.html"/>
+    <id>https://weizwz.com/posts/7657b7c7.html</id>
+    <published>2023-10-25T14:19:32.000Z</published>
+    <updated>2023-11-23T13:53:35.461Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;每次重装系统后，都要重新安装软件，配置环境变量，极为繁琐。故作环境环境变量备份，常用软件恢复记录，前提是你的软件要安装在非系统盘，D/E盘等&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;软件安装在非系统盘&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="windows" scheme="https://weizwz.com/tags/windows/"/>
+    
+    <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
+    
+    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="system" scheme="https://weizwz.com/tags/system/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx配置解决跨域访问</title>
+    <link href="https://weizwz.com/posts/e9a127c6.html"/>
+    <id>https://weizwz.com/posts/e9a127c6.html</id>
+    <published>2023-10-21T07:35:35.000Z</published>
+    <updated>2023-11-23T13:54:45.004Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;场景：前后的分离项目，前端vue框架，打包后放在Tomcat里访问，端口是8080，后端服务端口8058。访问前端项目时，调用后端接口报跨域。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;后端环境&quot;&gt;&lt;a href=&quot;#后端环境&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
+    <category term="nginx" scheme="https://weizwz.com/tags/nginx/"/>
+    
+    <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="跨域" scheme="https://weizwz.com/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OPPO主题组件开发 - 组件内容自适应</title>
+    <link href="https://weizwz.com/posts/e37151d.html"/>
+    <id>https://weizwz.com/posts/e37151d.html</id>
+    <published>2023-10-08T06:03:00.000Z</published>
+    <updated>2023-11-23T13:55:48.241Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;OPPO桌面有 &lt;code&gt;3*5、3*6、4*5、4*6、5*5、5*6&lt;/code&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    
+    <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="android" scheme="https://weizwz.com/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OPPO主题组件开发 - 调试与预览</title>
+    <link href="https://weizwz.com/posts/ad78f250.html"/>
+    <id>https://weizwz.com/posts/ad78f250.html</id>
+    <published>2023-09-25T06:14:00.000Z</published>
+    <updated>2023-11-23T13:55:34.327Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;本篇作为 &lt;a href=&quot;https://open.oppomobile.com/new/developmentDoc/info?id=12221&quot;&gt;OPPO主题组件调试与预览&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    
+    <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="android" scheme="https://weizwz.com/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Cygwin，在windows中使用linux命令</title>
     <link href="https://weizwz.com/posts/8748c6b7.html"/>
     <id>https://weizwz.com/posts/8748c6b7.html</id>
     <published>2023-09-22T12:13:00.000Z</published>
-    <updated>2023-11-23T03:49:18.557Z</updated>
+    <updated>2023-11-23T13:56:16.237Z</updated>
     
     
       
@@ -261,7 +523,7 @@
     <link href="https://weizwz.com/posts/9462cbd1.html"/>
     <id>https://weizwz.com/posts/9462cbd1.html</id>
     <published>2022-11-29T06:55:01.000Z</published>
-    <updated>2023-11-22T13:37:47.957Z</updated>
+    <updated>2023-11-23T14:59:34.074Z</updated>
     
     
       
@@ -314,7 +576,7 @@
     <link href="https://weizwz.com/posts/18a50dc4.html"/>
     <id>https://weizwz.com/posts/18a50dc4.html</id>
     <published>2022-11-22T15:11:47.000Z</published>
-    <updated>2023-11-22T04:10:51.839Z</updated>
+    <updated>2023-11-23T15:08:48.014Z</updated>
     
     
     <summary type="html">Clash Verge 使用记录，包括下载、协议以及常见问题</summary>
@@ -356,113 +618,6 @@
     <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
     
     <category term="vue-cli" scheme="https://weizwz.com/tags/vue-cli/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue双向绑定原理梳理</title>
-    <link href="https://weizwz.com/posts/dd73ee89.html"/>
-    <id>https://weizwz.com/posts/dd73ee89.html</id>
-    <published>2022-11-17T07:13:24.000Z</published>
-    <updated>2023-11-18T09:19:47.774Z</updated>
-    
-    
-    <summary type="html">Vue双向绑定原理梳理</summary>
-    
-    
-    
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS比较数值大小</title>
-    <link href="https://weizwz.com/posts/b6386794.html"/>
-    <id>https://weizwz.com/posts/b6386794.html</id>
-    <published>2022-10-24T05:34:17.000Z</published>
-    <updated>2023-11-18T09:18:57.143Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、-简单循环算法&quot;&gt;&lt;a href=&quot;#一、-简单循环算法&quot; class=&quot;headerlink&quot; title=&quot;一、 简单循环算法&quot;&gt;&lt;/a&gt;一、 简单循环算法&lt;/h2&gt;&lt;p&gt;代码如下：&lt;br&gt;&lt;figure class=&quot;highlight</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="js" scheme="https://weizwz.com/tags/js/"/>
-    
-    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nodejs报错记录</title>
-    <link href="https://weizwz.com/posts/d80c51ca.html"/>
-    <id>https://weizwz.com/posts/d80c51ca.html</id>
-    <published>2022-10-21T06:20:16.000Z</published>
-    <updated>2022-10-21T06:20:16.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;◉-digital-envelope-routines-unsupported&quot;&gt;&lt;a href=&quot;#◉-digital-envelope-routines-unsupported&quot; class=&quot;headerlink&quot; title=&quot;◉ digital</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
-    
-    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
-    
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
-    <category term="node-sass" scheme="https://weizwz.com/tags/node-sass/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>你好，我的博客</title>
-    <link href="https://weizwz.com/posts/3277e220.html"/>
-    <id>https://weizwz.com/posts/3277e220.html</id>
-    <published>2022-09-15T03:55:23.000Z</published>
-    <updated>2022-09-15T03:55:23.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;这是我搭建的首个个人博客，使用的是 &lt;code&gt;Hexo&lt;/code&gt; + &lt;code&gt;Butterfly&lt;/code&gt;。初次见面，请多多指教💕&lt;/p&gt;
-&lt;h2 id=&quot;快速开始&quot;&gt;&lt;a href=&quot;#快速开始&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
-    
-    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
-    
-    <category term="algolia" scheme="https://weizwz.com/tags/algolia/"/>
     
   </entry>
   
