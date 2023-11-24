@@ -1,23 +1,11 @@
-/* @font-face {
-  font-family: Candyhome;
-  src: url(https://npm.elemecdn.com/weizwz-blog@1.1.6/fonts/Candyhome.ttf);
-  font-display: swap;
-  font-weight: lighter;
-} */
+@charset "uef-8";
+
+body {
+  font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,sans-serif;
+}
 
 .layout {
-  padding: 10px 15px !important;
-}
-
-@media screen and (max-width: 1999px) {
-  .layout {
-    max-width: 1400px;
-  }
-}
-@media screen and (min-width: 900px) {
-  #aside-content {
-      padding-left: 20px;
-  }
+  padding: calc(var(--weizwz-margin) / 2) var(--weizwz-margin);
 }
 
 h1#site-title {
@@ -33,41 +21,75 @@ h1#site-title {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 时间轴生肖icon */
-svg.icon {
-  /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */
-  width: 1em;
-  height: 1em;
-  /* width和height定义图标的默认宽度和高度*/
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
+/* nav 导航 */
+#page-header.not-top-img {
+  margin-bottom: calc(var(--weizwz-margin) / 2);
+}
+#page-header.not-top-img #nav {
+  padding: 0 calc(var(--weizwz-margin) * 2);
+}
+#page-header.nav-fixed #nav {
+  background: rgba(255, 255, 255, 0.95);
+}
+#nav .menus_items .menus_item .menus_item_child li:hover {
+  background: var(--weizwz-theme);
+}
+#nav .menus_items .menus_item .menus_item_child li:hover a {
+  color: var(--white) !important;
+}
+#nav .menus_items .menus_item {
+  padding-left: var(--weizwz-margin);
+}
+#nav .site-page {
+  font-size: 1rem;
 }
 
-.icon-zhongbiao::before {
-  color: #f7c768;
+/* 首页推荐 */
+#recommend {
+  margin-bottom: var(--weizwz-margin) !important;
+}
+.recommend-tags-wrapper {
+  margin-top: 5rem !important;
 }
 
-/* 解决artitalk的图标问题 */
-#uploadSource > svg {
-  width: 1.19em;
-  height: 1.5em;
+.recommend-wrapper { 
+  width: calc(50% - var(--weizwz-margin) / 2) !important;
+  margin-right: var(--weizwz-margin) !important;
 }
-
-/*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */
-#page-header:not(.not-top-img):before {
-  background-color: transparent !important;
+.recommend-wrapper:last-child {
+  margin-right: 0 !important;
+}
+@media screen and (max-width: 1200px) {
+  #recommend-banner {
+    width: inherit !important;
+  }
 }
 
 /* 首页文章卡片 */
+#recent-posts {
+  margin-top: 0 !important;
+}
 #recent-posts > .recent-post-item {
-  background: rgba(255, 255, 255, 0.9);
-  width: calc(50% - 10px);
+  width: calc(50% - var(--weizwz-margin-inner) / 2) !important;
+  margin-top: 0 !important;
+  margin-right: var(--weizwz-margin-inner);
+  margin-bottom: var(--weizwz-margin-inner);
+}
+#recent-posts > .recent-post-item:nth-child(2n) {
+  margin-right: 0;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .article-meta.tags > .article-meta-separator {
+  display: none;
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .article-meta.tags:before {
+  content: "\A";
+  white-space: pre;
 }
 
 /* 首页侧栏卡片 */
 #aside-content .card-widget {
   background: rgba(255, 255, 255, 0.9);
+  margin-top: var(--weizwz-margin-inner);
 }
 
 /* 首页页脚 */
@@ -371,16 +393,6 @@ blockquote {
   min-height: 32px;
 }
 
-/* nav */
-#page-header.not-top-img #nav {
-  background: rgba(255, 255, 255, 1);
-}
-#nav .menus_items .menus_item .menus_item_child li:hover {
-  background: var(--weizwz-theme);
-}
-
-/* 首页顶部 */
-
 /* 侧边栏个人卡片 */
 #aside-content > .card-widget.card-info {
   background: var(--weizwz-main);
@@ -506,37 +518,6 @@ li.card-archive-list-item:hover > a {
   flex-wrap: wrap;
 }
 
-/* 顶部导航栏 */
-/* #page-header.not-top-img {
-  box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
-  background: #fff !important;
-}
-#page-header.not-top-img.nav-fixed {
-  position: fixed;
-  z-index: 111;
-}
-#page-header.fixed #nav {
-  position: fixed;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1700px;
-  box-shadow: none;
-  margin-left: 50%;
-  transform: translateX(-50%);
-} */
-
-/* 首页文章 */
-#recent-posts > .recent-post-item {
-  margin-top: 1.2rem !important;
-}
-#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .article-meta.tags > .article-meta-separator {
-  display: none;
-}
-#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .article-meta.tags:before {
-  content: "\A";
-  white-space: pre;
-}
-
 /* 文章页面底部导航 */
 #pagination.pagination-post {
   border-radius: var(--weizwz-border-radius);
@@ -604,4 +585,42 @@ li.card-archive-list-item:hover > a {
 /* 外挂标签 */
 .note.flat {
   border-radius: var(--weizwz-code-border-radius);
+}
+
+
+/* 媒体查询 */
+@media screen and (min-width: 2000px) {
+  .layout {
+    max-width: 70%;
+  }
+  #page-header.not-top-img #nav {
+    padding: 0 calc(15% + var(--weizwz-margin) * 2);
+  }
+}
+@media screen and (max-width: 1999px) {
+  .layout {
+    max-width: 1400px;
+  }
+  #page-header.not-top-img #nav {
+    padding: 0 calc(50% - 700px + var(--weizwz-margin) * 2);
+  }
+}
+@media screen and (max-width: 1400px) {
+  #page-header.not-top-img #nav {
+    padding: 0 calc(var(--weizwz-margin) * 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  #page-header.not-top-img #nav {
+    padding: 0 var(--weizwz-margin);
+  }
+  #recent-posts>.recent-post-item {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  #aside-content {
+    padding-left: var(--weizwz-margin);
+  }
 }
