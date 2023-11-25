@@ -365,6 +365,76 @@
   </url>
   
   <url>
+    <loc>https://weizwz.com/tags/AI/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/oppo/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/android/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/theme/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/plugin/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/vite/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/vue3/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/typescript/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/pina/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/vscode/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/tags/nodejs/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -386,14 +456,7 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/AI/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/vscode/</loc>
+    <loc>https://weizwz.com/tags/hexo-theme/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -407,14 +470,21 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/hexo-theme/</loc>
+    <loc>https://weizwz.com/tags/nginx/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/plugin/</loc>
+    <loc>https://weizwz.com/tags/proxy/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/%E8%B7%A8%E5%9F%9F/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -443,6 +513,27 @@
   
   <url>
     <loc>https://weizwz.com/tags/vue-cli/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/system/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/blog/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/hexo-cli/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -504,97 +595,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://weizwz.com/tags/oppo/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/theme/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/android/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/nginx/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/proxy/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/vite/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/vue3/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/%E8%B7%A8%E5%9F%9F/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/system/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/typescript/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/pina/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/blog/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/hexo-cli/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -620,27 +620,6 @@
   
   <url>
     <loc>https://weizwz.com/categories/AI/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/categories/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/categories/%E6%89%8B%E6%9C%BA%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -76,9 +76,9 @@
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
-    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
-    
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    
+    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
     
   </entry>
   
@@ -194,8 +194,6 @@
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
-    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
@@ -203,6 +201,8 @@
     <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
+    
+    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
   </entry>
   
@@ -266,15 +266,15 @@
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
     
     <category term="nginx" scheme="https://weizwz.com/tags/nginx/"/>
     
     <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
-    
-    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
-    
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
     
     <category term="跨域" scheme="https://weizwz.com/tags/%E8%B7%A8%E5%9F%9F/"/>
     
@@ -302,13 +302,13 @@
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
-    
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
+    
+    <category term="android" scheme="https://weizwz.com/tags/android/"/>
     
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
-    <category term="android" scheme="https://weizwz.com/tags/android/"/>
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
   </entry>
   
@@ -334,13 +334,13 @@
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
-    
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
+    
+    <category term="android" scheme="https://weizwz.com/tags/android/"/>
     
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
-    <category term="android" scheme="https://weizwz.com/tags/android/"/>
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
   </entry>
   
