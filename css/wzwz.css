@@ -428,12 +428,11 @@ blockquote {
 #aside-content .card-categories ul.card-category-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: -10px;
 }
 #aside-content .card-categories ul.card-category-list > .card-category-list-item {
   margin-top: 10px;
+  margin-right: 10px;
   border: var(--style-border);
   border-radius: 8px;
 }
@@ -442,6 +441,7 @@ blockquote {
   background-color: var(--weizwz-theme);
   box-shadow: var(--weizwz-shadow-theme);
   border-radius: 8px;
+  padding: 3px 20px;
 }
 #aside-content .card-categories ul.card-category-list > .card-category-list-item a span:first-child {
   margin-right: 5px;

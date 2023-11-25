@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weizwz.com/posts/779fda2d.html</loc>
+    
+    <lastmod>2023-11-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/posts/da790ccb.html</loc>
     
     <lastmod>2023-11-25</lastmod>
@@ -147,15 +156,6 @@
   
   <url>
     <loc>https://weizwz.com/posts/5c85881c.html</loc>
-    
-    <lastmod>2023-11-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/posts/779fda2d.html</loc>
     
     <lastmod>2023-11-18</lastmod>
     
@@ -365,6 +365,27 @@
   </url>
   
   <url>
+    <loc>https://weizwz.com/tags/nodejs/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/vue/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/node-sass/</loc>
+    <lastmod>2023-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/tags/AI/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -429,27 +450,6 @@
   
   <url>
     <loc>https://weizwz.com/tags/vscode/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/nodejs/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/vue/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/tags/node-sass/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -613,13 +613,6 @@
   
   <url>
     <loc>https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-11-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/categories/AI/</loc>
     <lastmod>2023-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

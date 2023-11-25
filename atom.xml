@@ -266,11 +266,11 @@
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
+    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
     
     <category term="nginx" scheme="https://weizwz.com/tags/nginx/"/>
     
@@ -383,14 +383,14 @@
     <link href="https://weizwz.com/posts/779fda2d.html"/>
     <id>https://weizwz.com/posts/779fda2d.html</id>
     <published>2023-04-28T13:07:26.000Z</published>
-    <updated>2023-11-18T09:19:22.386Z</updated>
+    <updated>2023-11-25T13:27:08.299Z</updated>
     
     
     <summary type="html">本地搭建AI作画应用，再也不用花钱了</summary>
     
     
     
-    <category term="AI" scheme="https://weizwz.com/categories/AI/"/>
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
     <category term="github" scheme="https://weizwz.com/tags/github/"/>
