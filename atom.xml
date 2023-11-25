@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-23T09:05:19.912Z</updated>
+  <updated>2023-11-25T02:40:43.492Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客升级 - hexo记录</title>
+    <link href="https://weizwz.com/posts/da790ccb.html"/>
+    <id>https://weizwz.com/posts/da790ccb.html</id>
+    <published>2023-11-25T02:05:41.000Z</published>
+    <updated>2023-11-25T02:40:43.492Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;近日刚看到 &lt;code&gt;hexo-theme-butterfly&lt;/code&gt; 升级到 &lt;code&gt;4.11.0&lt;/code&gt; 版本了，更新文档里说明已支持</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
+    
+    <category term="blog" scheme="https://weizwz.com/tags/blog/"/>
+    
+    <category term="hexo-cli" scheme="https://weizwz.com/tags/hexo-cli/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-butterfly-recommend使用说明</title>
@@ -591,33 +625,6 @@
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
     <category term="git" scheme="https://weizwz.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue多界面开发</title>
-    <link href="https://weizwz.com/posts/453785dc.html"/>
-    <id>https://weizwz.com/posts/453785dc.html</id>
-    <published>2022-11-19T13:00:37.000Z</published>
-    <updated>2023-11-18T09:19:42.236Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h3 id=&quot;1-安装-vue-cli，已有的请跳过这一步&quot;&gt;&lt;a href=&quot;#1-安装-vue-cli，已有的请跳过这一步&quot; class=&quot;headerlink&quot; title=&quot;1. 安装 vue-cli，已有的请跳过这一步&quot;&gt;&lt;/a&gt;1. 安装</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="vue" scheme="https://weizwz.com/tags/vue/"/>
-    
-    <category term="vue-cli" scheme="https://weizwz.com/tags/vue-cli/"/>
     
   </entry>
   
