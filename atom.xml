@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-25T02:40:43.492Z</updated>
+  <updated>2023-11-28T09:19:52.510Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范</title>
+    <link href="https://weizwz.com/posts/f72e0ad.html"/>
+    <id>https://weizwz.com/posts/f72e0ad.html</id>
+    <published>2023-11-28T09:14:03.000Z</published>
+    <updated>2023-11-28T09:19:52.510Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步至码云 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="editorconfig" scheme="https://weizwz.com/tags/editorconfig/"/>
+    
+    <category term="eslint" scheme="https://weizwz.com/tags/eslint/"/>
+    
+    <category term="prettier" scheme="https://weizwz.com/tags/prettier/"/>
+    
+  </entry>
   
   <entry>
     <title>博客升级 - hexo记录</title>
@@ -115,7 +149,7 @@
     <link href="https://weizwz.com/posts/3c6c8900.html"/>
     <id>https://weizwz.com/posts/3c6c8900.html</id>
     <published>2023-11-13T16:18:12.000Z</published>
-    <updated>2023-11-23T14:21:27.546Z</updated>
+    <updated>2023-11-28T09:19:55.541Z</updated>
     
     
       
@@ -145,7 +179,7 @@
     <link href="https://weizwz.com/posts/422566e3.html"/>
     <id>https://weizwz.com/posts/422566e3.html</id>
     <published>2023-11-09T11:08:02.000Z</published>
-    <updated>2023-11-23T14:21:23.471Z</updated>
+    <updated>2023-11-28T09:19:58.513Z</updated>
     
     
       
@@ -175,7 +209,7 @@
     <link href="https://weizwz.com/posts/5bc77c26.html"/>
     <id>https://weizwz.com/posts/5bc77c26.html</id>
     <published>2023-11-09T09:03:24.000Z</published>
-    <updated>2023-11-23T14:12:16.162Z</updated>
+    <updated>2023-11-28T09:20:01.072Z</updated>
     
     
       
@@ -600,29 +634,6 @@
     
     <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    
-    <category term="git" scheme="https://weizwz.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Clash Verge 使用记录</title>
-    <link href="https://weizwz.com/posts/18a50dc4.html"/>
-    <id>https://weizwz.com/posts/18a50dc4.html</id>
-    <published>2022-11-22T15:11:47.000Z</published>
-    <updated>2023-11-23T15:08:48.014Z</updated>
-    
-    
-    <summary type="html">Clash Verge 使用记录，包括下载、协议以及常见问题</summary>
-    
-    
-    
-    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="clash" scheme="https://weizwz.com/tags/clash/"/>
-    
-    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
     <category term="git" scheme="https://weizwz.com/tags/git/"/>
     

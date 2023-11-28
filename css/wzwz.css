@@ -535,7 +535,9 @@ li.card-archive-list-item:hover > a {
   border-radius: var(--weizwz-border-radius);
   border: var(--style-border);
 }
-
+.article-sort-item-info {
+  width: calc(100% - 120px);
+}
 /* 统一分页 */
 #pagination {
   width: 100%;
