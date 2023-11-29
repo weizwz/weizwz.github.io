@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-28T09:19:52.510Z</updated>
+  <updated>2023-11-29T09:00:54.214Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>PixPin - 新截图工具</title>
+    <link href="https://weizwz.com/posts/c57fdcba.html"/>
+    <id>https://weizwz.com/posts/c57fdcba.html</id>
+    <published>2023-11-29T08:13:08.000Z</published>
+    <updated>2023-11-29T09:00:54.214Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;之前的截图工具是 &lt;a href=&quot;https://zh.snipaste.com/&quot;&gt;snipaste&lt;/a&gt;，最新发现 PixPin，截图功能更加强大。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;下载和安装&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="pixpin" scheme="https://weizwz.com/tags/pixpin/"/>
+    
+    <category term="tools" scheme="https://weizwz.com/tags/tools/"/>
+    
+  </entry>
   
   <entry>
     <title>Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范</title>
@@ -610,32 +640,6 @@
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
     <category term="github" scheme="https://weizwz.com/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git使用记录 - 持续更新</title>
-    <link href="https://weizwz.com/posts/64094821.html"/>
-    <id>https://weizwz.com/posts/64094821.html</id>
-    <published>2022-11-25T03:25:44.000Z</published>
-    <updated>2023-11-18T09:18:45.581Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;本地生成-sshkey&quot;&gt;&lt;a href=&quot;#本地生成-sshkey&quot; class=&quot;headerlink&quot; title=&quot;本地生成 sshkey&quot;&gt;&lt;/a&gt;本地生成 &lt;code&gt;sshkey&lt;/code&gt;&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;打开git命令工具</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="git" scheme="https://weizwz.com/tags/git/"/>
     
   </entry>
   
