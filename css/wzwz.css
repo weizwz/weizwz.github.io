@@ -40,6 +40,17 @@ h1#site-title {
 #nav .menus_items .menus_item {
   padding-left: var(--weizwz-margin);
 }
+#nav .menus_items .menus_item .menus_item_child {
+  background: var(--global-bg);
+}
+
+/* 搜索 */
+.search-dialog {
+  background: var(--global-bg);
+}
+#algolia-search .search-dialog .ais-SearchBox input::placeholder {
+  color: var(--search-input-color);
+}
 
 /* 首页推荐 */
 #recommend {
@@ -594,6 +605,10 @@ li.card-archive-list-item:hover > a {
   padding: 0 .6rem !important;
   margin-top: .5rem;
   margin-bottom: .5rem !important;
+}
+.vwrap,
+.vcard {
+  background: var(--weizwz-card-bg);
 }
 
 /* 圆角 */

@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-29T09:00:54.214Z</updated>
+  <updated>2023-11-29T14:28:03.119Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -17,11 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router</title>
+    <link href="https://weizwz.com/posts/de51c0b5.html"/>
+    <id>https://weizwz.com/posts/de51c0b5.html</id>
+    <published>2023-11-29T13:33:04.000Z</published>
+    <updated>2023-11-29T14:28:03.119Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步至码云 &lt;a href=&quot;https://gitee.com/weizwz/weiz-vue3-template&quot;&gt;weiz-vue3-template&lt;/a&gt;&lt;br&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="router" scheme="https://weizwz.com/tags/router/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PixPin - 新截图工具</title>
     <link href="https://weizwz.com/posts/c57fdcba.html"/>
     <id>https://weizwz.com/posts/c57fdcba.html</id>
     <published>2023-11-29T08:13:08.000Z</published>
-    <updated>2023-11-29T09:00:54.214Z</updated>
+    <updated>2023-11-29T13:42:23.813Z</updated>
     
     
       
@@ -40,8 +72,6 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-    <category term="pixpin" scheme="https://weizwz.com/tags/pixpin/"/>
-    
     <category term="tools" scheme="https://weizwz.com/tags/tools/"/>
     
   </entry>
@@ -51,7 +81,7 @@
     <link href="https://weizwz.com/posts/f72e0ad.html"/>
     <id>https://weizwz.com/posts/f72e0ad.html</id>
     <published>2023-11-28T09:14:03.000Z</published>
-    <updated>2023-11-28T09:19:52.510Z</updated>
+    <updated>2023-11-29T13:34:33.566Z</updated>
     
     
       
@@ -72,6 +102,8 @@
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="editorconfig" scheme="https://weizwz.com/tags/editorconfig/"/>
     
     <category term="eslint" scheme="https://weizwz.com/tags/eslint/"/>
@@ -85,7 +117,7 @@
     <link href="https://weizwz.com/posts/da790ccb.html"/>
     <id>https://weizwz.com/posts/da790ccb.html</id>
     <published>2023-11-25T02:05:41.000Z</published>
-    <updated>2023-11-25T02:40:43.492Z</updated>
+    <updated>2023-11-29T13:36:14.075Z</updated>
     
     
       
@@ -106,9 +138,7 @@
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
-    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
-    
-    <category term="blog" scheme="https://weizwz.com/tags/blog/"/>
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
     <category term="hexo-cli" scheme="https://weizwz.com/tags/hexo-cli/"/>
     
@@ -119,7 +149,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-11-23T09:05:19.912Z</updated>
+    <updated>2023-11-29T13:42:55.565Z</updated>
     
     
       
@@ -140,9 +170,9 @@
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
-    <category term="hexo-theme" scheme="https://weizwz.com/tags/hexo-theme/"/>
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
   </entry>
   
@@ -239,7 +269,7 @@
     <link href="https://weizwz.com/posts/5bc77c26.html"/>
     <id>https://weizwz.com/posts/5bc77c26.html</id>
     <published>2023-11-09T09:03:24.000Z</published>
-    <updated>2023-11-28T09:20:01.072Z</updated>
+    <updated>2023-11-29T13:35:15.959Z</updated>
     
     
       
@@ -264,8 +294,6 @@
     
     <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
-    <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
-    
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
   </entry>
@@ -275,7 +303,7 @@
     <link href="https://weizwz.com/posts/7657b7c7.html"/>
     <id>https://weizwz.com/posts/7657b7c7.html</id>
     <published>2023-10-25T14:19:32.000Z</published>
-    <updated>2023-11-23T13:53:35.461Z</updated>
+    <updated>2023-11-29T13:38:21.496Z</updated>
     
     
       
@@ -294,15 +322,11 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-    <category term="windows" scheme="https://weizwz.com/tags/windows/"/>
-    
     <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
     
     <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
     
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
-    
-    <category term="system" scheme="https://weizwz.com/tags/system/"/>
     
   </entry>
   
@@ -413,7 +437,7 @@
     <link href="https://weizwz.com/posts/8748c6b7.html"/>
     <id>https://weizwz.com/posts/8748c6b7.html</id>
     <published>2023-09-22T12:13:00.000Z</published>
-    <updated>2023-11-23T13:56:16.237Z</updated>
+    <updated>2023-11-29T13:38:37.989Z</updated>
     
     
       
@@ -430,13 +454,9 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-    <category term="windows" scheme="https://weizwz.com/tags/windows/"/>
-    
     <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
     
     <category term="cygwin" scheme="https://weizwz.com/tags/cygwin/"/>
-    
-    <category term="linux" scheme="https://weizwz.com/tags/linux/"/>
     
     <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
     
@@ -489,7 +509,7 @@
     
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
-    <category term="code" scheme="https://weizwz.com/tags/code/"/>
+    <category term="editorconfig" scheme="https://weizwz.com/tags/editorconfig/"/>
     
     <category term="icon" scheme="https://weizwz.com/tags/icon/"/>
     
@@ -500,7 +520,7 @@
     <link href="https://weizwz.com/posts/3ab0bc77.html"/>
     <id>https://weizwz.com/posts/3ab0bc77.html</id>
     <published>2023-01-10T12:37:59.000Z</published>
-    <updated>2023-11-17T10:39:17.366Z</updated>
+    <updated>2023-11-29T13:36:57.695Z</updated>
     
     
       
@@ -520,6 +540,8 @@
     
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
     <category term="css" scheme="https://weizwz.com/tags/css/"/>
     
@@ -613,33 +635,6 @@
     <category term="pnpm" scheme="https://weizwz.com/tags/pnpm/"/>
     
     <category term="nvm" scheme="https://weizwz.com/tags/nvm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub + Hexo 搭建个人博客网站</title>
-    <link href="https://weizwz.com/posts/9462cbd1.html"/>
-    <id>https://weizwz.com/posts/9462cbd1.html</id>
-    <published>2022-11-29T06:55:01.000Z</published>
-    <updated>2023-11-23T14:59:34.074Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、准备工作&quot;&gt;&lt;a href=&quot;#一、准备工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备工作&quot;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;h3 id=&quot;1-GitHub-Hexo-的优势&quot;&gt;&lt;a href=&quot;#1-GitHub-Hexo-的优势&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
-    
-    <category term="github" scheme="https://weizwz.com/tags/github/"/>
     
   </entry>
   
