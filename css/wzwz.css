@@ -40,9 +40,6 @@ h1#site-title {
 #nav .menus_items .menus_item {
   padding-left: var(--weizwz-margin);
 }
-#nav .site-page {
-  font-size: 1rem;
-}
 
 /* 首页推荐 */
 #recommend {
@@ -230,7 +227,6 @@ div#category {
 
 /* 评论框  */
 .vwrap {
-  box-shadow: 2px 2px 5px #bbb;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 30px;
@@ -238,9 +234,7 @@ div#category {
 }
 
 /* 设置评论框 */
-
 .vcard {
-  box-shadow: 2px 2px 5px #bbb;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   padding: 30px;
@@ -374,9 +368,16 @@ div#category {
 /* 代码框主题 */
 #article-container figure.highlight {
   border-radius: var(--weizwz-code-border-radius);
+  -webkit-box-shadow: 0px 1px 0px 0 rgba(144,164,174,0.4);
+  box-shadow: 0px 1px 0px 0 rgba(144,164,174,0.4);
+  margin-bottom: 1rem;
+}
+#post .post-outdate-notice {
+  border-radius: 0;
+  border-left-width: 4px;
 }
 blockquote {
-  border-radius: var(--weizwz-code-border-radius);
+  border-radius: var(--weizwz-code-tips-border-radius) var(--weizwz-code-border-radius) var(--weizwz-code-border-radius) var(--weizwz-code-tips-border-radius);
   border-left-width: 4px;
 }
 #article-container blockquote > p > code,
@@ -567,8 +568,32 @@ li.card-archive-list-item:hover > a {
 }
 
 /* Valine评论 */
+.v[data-class=v] .vedit+.vrow {
+  border-top: var(--style-border-dashed);
+}
 .v[data-class=v] .vwrap {
   border-radius: var(--weizwz-code-border-radius) !important;
+  border-color: var(--weizwz-theme-op) !important;
+}
+.v[data-class=v] .vcards .vcard {
+  border-top: var(--style-border-dashed);
+}
+.v[data-class=v] .vcards .vcard .vhead .vnick:hover {
+  color: var(--weizwz-theme) !important;
+}
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat {
+  color: var(--weizwz-theme) !important;
+}
+.v[data-class=v] a:hover {
+  color: var(--weizwz-theme) !important;
+}
+.v[data-class=v] .vcards .vcard .vcontent {
+  border: var(--style-border-dashed);
+  background: var(--hl-bg);
+  border-radius: var(--weizwz-code-border-radius);
+  padding: 0 .6rem !important;
+  margin-top: .5rem;
+  margin-bottom: .5rem !important;
 }
 
 /* 圆角 */
