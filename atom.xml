@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-11-29T14:28:03.119Z</updated>
+  <updated>2023-11-30T07:35:17.888Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://weizwz.com/posts/de51c0b5.html"/>
     <id>https://weizwz.com/posts/de51c0b5.html</id>
     <published>2023-11-29T13:33:04.000Z</published>
-    <updated>2023-11-29T14:28:03.119Z</updated>
+    <updated>2023-11-30T07:35:17.888Z</updated>
     
     
       
@@ -117,7 +117,7 @@
     <link href="https://weizwz.com/posts/da790ccb.html"/>
     <id>https://weizwz.com/posts/da790ccb.html</id>
     <published>2023-11-25T02:05:41.000Z</published>
-    <updated>2023-11-29T13:36:14.075Z</updated>
+    <updated>2023-11-30T07:39:08.382Z</updated>
     
     
       
@@ -139,8 +139,6 @@
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
-    
-    <category term="hexo-cli" scheme="https://weizwz.com/tags/hexo-cli/"/>
     
   </entry>
   
@@ -335,7 +333,7 @@
     <link href="https://weizwz.com/posts/e9a127c6.html"/>
     <id>https://weizwz.com/posts/e9a127c6.html</id>
     <published>2023-10-21T07:35:35.000Z</published>
-    <updated>2023-11-29T09:24:24.612Z</updated>
+    <updated>2023-11-30T07:41:02.358Z</updated>
     
     
       
@@ -364,8 +362,6 @@
     
     <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
     
-    <category term="cross domain" scheme="https://weizwz.com/tags/cross-domain/"/>
-    
   </entry>
   
   <entry>
@@ -373,7 +369,7 @@
     <link href="https://weizwz.com/posts/e37151d.html"/>
     <id>https://weizwz.com/posts/e37151d.html</id>
     <published>2023-10-08T06:03:00.000Z</published>
-    <updated>2023-11-23T13:55:48.241Z</updated>
+    <updated>2023-11-30T07:45:10.471Z</updated>
     
     
       
@@ -392,8 +388,6 @@
     
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
     
-    <category term="android" scheme="https://weizwz.com/tags/android/"/>
-    
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
@@ -405,7 +399,7 @@
     <link href="https://weizwz.com/posts/ad78f250.html"/>
     <id>https://weizwz.com/posts/ad78f250.html</id>
     <published>2023-09-25T06:14:00.000Z</published>
-    <updated>2023-11-23T13:55:34.327Z</updated>
+    <updated>2023-11-30T07:45:07.460Z</updated>
     
     
       
@@ -423,8 +417,6 @@
     
     
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
-    
-    <category term="android" scheme="https://weizwz.com/tags/android/"/>
     
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
@@ -506,6 +498,8 @@
     
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
+    
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
