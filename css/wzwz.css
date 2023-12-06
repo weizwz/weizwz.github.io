@@ -107,8 +107,16 @@ h1#site-title {
 [data-theme=light] #footer-wrap {
   color: var(--font-color)
 }
-#ghbdages {
-  margin: 5px 10px;
+.footer_custom_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+}
+.footer_custom_text > a {
+  display: flex;
+  align-items: center;
+  margin-right: .5rem;
 }
 
 /* 文章页面正文背景 */
