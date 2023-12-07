@@ -156,6 +156,30 @@ div#tag {
 div#category {
   background: rgba(255, 255, 255, 0.9);
 }
+.category-lists ul.category-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.category-lists ul li:before {
+  width: 0;
+  border: none;
+  height: 2px;
+  top: inherit;
+  bottom: 3px;
+  background: var(--weizwz-theme);
+}
+.category-lists ul li:hover:before {
+  width: 100%;
+}
+.category-lists ul li {
+  width: max-content;
+  padding: 3px 0;
+  margin-right: 2rem;
+}
+.category-lists .category-list a {
+  font-size: 1rem;
+}
 
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"] #recent-posts > .recent-post-item {
@@ -560,6 +584,33 @@ li.card-archive-list-item:hover > a {
 .article-sort-item-info {
   width: calc(100% - 120px);
 }
+
+/* 友链 */
+#article-container .flink .flink-list > .flink-list-item {
+  background: var(--global-bg);
+}
+#article-container .flink .flink-list > .flink-list-item:hover:before {
+  background: var(--weizwz-theme);
+}
+#article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
+  margin: 15px;
+  transition: .3s;
+}
+#article-container .flink .flink-list > .flink-list-item:hover a .flink-item-icon {
+  transform: scale(1.1);
+  margin-left: 15px;
+  width: 60px;
+}
+#article-container .flink .flink-list > .flink-list-item:hover a {
+  color: var(--weizwz-white);
+}
+#article-container .flink .flink-item-name {
+  text-align: left;
+}
+#article-container .flink .flink-item-desc {
+  text-align: left;
+}
+
 /* 统一分页 */
 #pagination {
   width: 100%;
