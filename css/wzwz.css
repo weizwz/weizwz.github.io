@@ -639,17 +639,24 @@ li.card-archive-list-item:hover > a {
   border-radius: var(--weizwz-code-border-radius);
 }
 /* tabs */
-#article-container .tabs > .nav-tabs {
+#article-container .tabs {
   border-radius: var(--weizwz-code-border-radius) var(--weizwz-code-border-radius) 0 0;
 }
+#article-container .tabs > .nav-tabs {
+  background: var(--weizwz-background);
+}
 #article-container .tabs > .nav-tabs > .tab {
-  border-radius: var(--weizwz-code-border-radius);
+  color: var(--font-color);
+  background: var(--weizwz-background);
   border-top-width: 3px !important;
+  border-top-color: var(--weizwz-background);
   padding: 5px 1rem 8px;
 }
 #article-container .tabs > .nav-tabs > .tab.active {
   border-top-color: var(--weizwz-theme);
-  border-radius: var(--weizwz-code-border-radius) var(--weizwz-code-border-radius) 0 0;
+}
+[data-theme="dark"] #article-container .tabs > .nav-tabs > .tab.active {
+  background: var(--weizwz-post-tabs-bg);
 }
 
 /* 媒体查询 */
