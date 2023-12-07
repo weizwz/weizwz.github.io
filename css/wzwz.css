@@ -125,15 +125,17 @@ div#post {
 }
 #article-container img {
   display: inline-block;
-  border-radius: var(--weizwz-btn-border-radius);
   max-height: 400px;
+  vertical-align: top;
+}
+#article-container img:not([src\=https\:\/\/shields\.io/\*]) {
+  border-radius: var(--weizwz-btn-border-radius);
 }
 .relatedPosts > .relatedPosts-list .content .title,
 #pagination .prev_info,
 #pagination .next_info {
   font-size: 1rem;
   font-weight: 700;
-  text-shadow: 0px 0px 3px var(--white);
 }
 /* 分页页面 */
 div#page {
@@ -636,7 +638,19 @@ li.card-archive-list-item:hover > a {
 .note.flat {
   border-radius: var(--weizwz-code-border-radius);
 }
-
+/* tabs */
+#article-container .tabs > .nav-tabs {
+  border-radius: var(--weizwz-code-border-radius) var(--weizwz-code-border-radius) 0 0;
+}
+#article-container .tabs > .nav-tabs > .tab {
+  border-radius: var(--weizwz-code-border-radius);
+  border-top-width: 3px !important;
+  padding: 5px 1rem 8px;
+}
+#article-container .tabs > .nav-tabs > .tab.active {
+  border-top-color: var(--weizwz-theme);
+  border-radius: var(--weizwz-code-border-radius) var(--weizwz-code-border-radius) 0 0;
+}
 
 /* 媒体查询 */
 @media screen and (min-width: 2000px) {

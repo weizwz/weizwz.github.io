@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-12-05T03:04:27.529Z</updated>
+  <updated>2023-12-07T03:19:20.256Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -17,11 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Github项目徽标</title>
+    <link href="https://weizwz.com/posts/72bf1e92.html"/>
+    <id>https://weizwz.com/posts/72bf1e92.html</id>
+    <published>2023-12-06T11:49:11.000Z</published>
+    <updated>2023-12-07T03:19:20.256Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://shields.io/&quot;&gt;shields.io&lt;/a&gt;上提供了各种漂亮的徽标，支持文字、颜色、图标以及各种动静态数据&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;效果展示&quot;&gt;&lt;a href=&quot;#效果展示&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://weizwz.com/tags/markdown/"/>
+    
+    <category term="icon" scheme="https://weizwz.com/tags/icon/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina</title>
     <link href="https://weizwz.com/posts/6e87ac02.html"/>
     <id>https://weizwz.com/posts/6e87ac02.html</id>
     <published>2023-12-05T03:00:56.000Z</published>
-    <updated>2023-12-05T03:04:27.529Z</updated>
+    <updated>2023-12-07T03:22:23.497Z</updated>
     
     
       
@@ -35,7 +69,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -46,7 +80,7 @@
     
     <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
     
-    <category term="js-cookie" scheme="https://weizwz.com/tags/js-cookie/"/>
+    <category term="cookie" scheme="https://weizwz.com/tags/cookie/"/>
     
   </entry>
   
@@ -55,7 +89,7 @@
     <link href="https://weizwz.com/posts/de51c0b5.html"/>
     <id>https://weizwz.com/posts/de51c0b5.html</id>
     <published>2023-11-29T13:33:04.000Z</published>
-    <updated>2023-12-02T09:31:43.825Z</updated>
+    <updated>2023-12-07T03:13:43.293Z</updated>
     
     
       
@@ -69,7 +103,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -87,7 +121,7 @@
     <link href="https://weizwz.com/posts/c57fdcba.html"/>
     <id>https://weizwz.com/posts/c57fdcba.html</id>
     <published>2023-11-29T08:13:08.000Z</published>
-    <updated>2023-11-29T13:42:23.813Z</updated>
+    <updated>2023-12-07T03:14:11.705Z</updated>
     
     
       
@@ -115,7 +149,7 @@
     <link href="https://weizwz.com/posts/f72e0ad.html"/>
     <id>https://weizwz.com/posts/f72e0ad.html</id>
     <published>2023-11-28T09:14:03.000Z</published>
-    <updated>2023-11-29T13:34:33.566Z</updated>
+    <updated>2023-12-07T03:13:46.191Z</updated>
     
     
       
@@ -129,7 +163,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -181,7 +215,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-11-29T13:42:55.565Z</updated>
+    <updated>2023-12-07T03:20:23.847Z</updated>
     
     
       
@@ -213,7 +247,7 @@
     <link href="https://weizwz.com/posts/6c03382b.html"/>
     <id>https://weizwz.com/posts/6c03382b.html</id>
     <published>2023-11-15T13:57:37.000Z</published>
-    <updated>2023-11-29T09:21:53.734Z</updated>
+    <updated>2023-12-07T03:14:39.087Z</updated>
     
     
       
@@ -227,7 +261,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="js" scheme="https://weizwz.com/tags/js/"/>
@@ -241,7 +275,7 @@
     <link href="https://weizwz.com/posts/3c6c8900.html"/>
     <id>https://weizwz.com/posts/3c6c8900.html</id>
     <published>2023-11-13T16:18:12.000Z</published>
-    <updated>2023-12-05T02:59:19.090Z</updated>
+    <updated>2023-12-07T03:13:54.342Z</updated>
     
     
       
@@ -255,7 +289,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -271,7 +305,7 @@
     <link href="https://weizwz.com/posts/422566e3.html"/>
     <id>https://weizwz.com/posts/422566e3.html</id>
     <published>2023-11-09T11:08:02.000Z</published>
-    <updated>2023-11-28T09:19:58.513Z</updated>
+    <updated>2023-12-07T03:13:58.767Z</updated>
     
     
       
@@ -285,7 +319,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -301,7 +335,7 @@
     <link href="https://weizwz.com/posts/5bc77c26.html"/>
     <id>https://weizwz.com/posts/5bc77c26.html</id>
     <published>2023-11-09T09:03:24.000Z</published>
-    <updated>2023-11-29T13:35:15.959Z</updated>
+    <updated>2023-12-07T03:14:02.890Z</updated>
     
     
       
@@ -317,7 +351,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
@@ -335,7 +369,7 @@
     <link href="https://weizwz.com/posts/7657b7c7.html"/>
     <id>https://weizwz.com/posts/7657b7c7.html</id>
     <published>2023-10-25T14:19:32.000Z</published>
-    <updated>2023-11-29T13:38:21.496Z</updated>
+    <updated>2023-12-07T03:13:09.531Z</updated>
     
     
       
@@ -367,7 +401,7 @@
     <link href="https://weizwz.com/posts/e9a127c6.html"/>
     <id>https://weizwz.com/posts/e9a127c6.html</id>
     <published>2023-10-21T07:35:35.000Z</published>
-    <updated>2023-11-30T07:41:02.358Z</updated>
+    <updated>2023-12-07T03:14:35.621Z</updated>
     
     
       
@@ -383,8 +417,10 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
+    
+    <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
     
     <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
     
@@ -394,8 +430,6 @@
     
     <category term="nginx" scheme="https://weizwz.com/tags/nginx/"/>
     
-    <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
-    
   </entry>
   
   <entry>
@@ -403,7 +437,7 @@
     <link href="https://weizwz.com/posts/e37151d.html"/>
     <id>https://weizwz.com/posts/e37151d.html</id>
     <published>2023-10-08T06:03:00.000Z</published>
-    <updated>2023-11-30T07:45:10.471Z</updated>
+    <updated>2023-12-07T03:14:19.531Z</updated>
     
     
       
@@ -417,7 +451,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
@@ -433,7 +467,7 @@
     <link href="https://weizwz.com/posts/ad78f250.html"/>
     <id>https://weizwz.com/posts/ad78f250.html</id>
     <published>2023-09-25T06:14:00.000Z</published>
-    <updated>2023-11-30T07:45:07.460Z</updated>
+    <updated>2023-12-07T03:14:23.658Z</updated>
     
     
       
@@ -447,7 +481,7 @@
     
     
     
-    <category term="前端" scheme="https://weizwz.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
     <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
@@ -463,7 +497,7 @@
     <link href="https://weizwz.com/posts/8748c6b7.html"/>
     <id>https://weizwz.com/posts/8748c6b7.html</id>
     <published>2023-09-22T12:13:00.000Z</published>
-    <updated>2023-11-29T13:38:37.989Z</updated>
+    <updated>2023-12-07T03:21:49.434Z</updated>
     
     
       
@@ -482,7 +516,7 @@
     
     <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
     
-    <category term="cygwin" scheme="https://weizwz.com/tags/cygwin/"/>
+    <category term="tools" scheme="https://weizwz.com/tags/tools/"/>
     
     <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
     
@@ -533,13 +567,13 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
+    <category term="icon" scheme="https://weizwz.com/tags/icon/"/>
+    
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
     <category term="editorconfig" scheme="https://weizwz.com/tags/editorconfig/"/>
-    
-    <category term="icon" scheme="https://weizwz.com/tags/icon/"/>
     
   </entry>
   
@@ -606,38 +640,6 @@
     <category term="chrome" scheme="https://weizwz.com/tags/chrome/"/>
     
     <category term="edge" scheme="https://weizwz.com/tags/edge/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开源字体整理</title>
-    <link href="https://weizwz.com/posts/ef1b7a14.html"/>
-    <id>https://weizwz.com/posts/ef1b7a14.html</id>
-    <published>2022-12-14T09:53:20.000Z</published>
-    <updated>2023-11-29T09:23:39.865Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;开源字体&quot;&gt;&lt;a href=&quot;#开源字体&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="github" scheme="https://weizwz.com/tags/github/"/>
-    
-    <category term="font" scheme="https://weizwz.com/tags/font/"/>
-    
-    <category term="design" scheme="https://weizwz.com/tags/design/"/>
     
   </entry>
   
