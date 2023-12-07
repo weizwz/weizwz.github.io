@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://weizwz.com/link/index.html</loc>
+    
+    <lastmod>2023-12-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://weizwz.com/posts/f72e0ad.html</loc>
     
     <lastmod>2023-12-07</lastmod>
@@ -255,15 +264,6 @@
   
   <url>
     <loc>https://weizwz.com/tags/index.html</loc>
-    
-    <lastmod>2023-11-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://weizwz.com/link/index.html</loc>
     
     <lastmod>2023-11-17</lastmod>
     
