@@ -52,27 +52,6 @@ h1#site-title {
   color: var(--search-input-color);
 }
 
-/* 首页推荐 */
-#recommend {
-  margin-bottom: var(--weizwz-margin) !important;
-}
-.recommend-tags-wrapper {
-  margin-top: 5rem !important;
-}
-
-.recommend-wrapper { 
-  width: calc(50% - var(--weizwz-margin) / 2) !important;
-  margin-right: var(--weizwz-margin) !important;
-}
-.recommend-wrapper:last-child {
-  margin-right: 0 !important;
-}
-@media screen and (max-width: 1200px) {
-  #recommend-banner {
-    width: inherit !important;
-  }
-}
-
 /* 首页文章卡片 */
 #recent-posts {
   margin-top: 0 !important;
