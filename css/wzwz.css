@@ -565,27 +565,53 @@ li.card-archive-list-item:hover > a {
 }
 
 /* 友链 */
+#article-container .flink .flink-list {
+  padding: 0;
+}
 #article-container .flink .flink-list > .flink-list-item {
   background: var(--global-bg);
+  width: calc(100% / 3 - 30px);
+  margin: 15px 45px 15px 0;
+  border-radius: var(--weizwz-border-radius);
+}
+#article-container .flink .flink-list > .flink-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+#article-container .flink .flink-list > .flink-list-item:before {
+  width: 0;
+  right: inherit;
+  background: var(--weizwz-theme);
+  transform: scale(1);
+  transition: .3s;
+  border-radius: var(--weizwz-border-radius);
 }
 #article-container .flink .flink-list > .flink-list-item:hover:before {
-  background: var(--weizwz-theme);
+  width: 100%;
 }
 #article-container .flink .flink-list > .flink-list-item a .flink-item-icon {
-  margin: 15px;
+  width: 120px;
+  height: 100px;
+  margin: -5px 20px -5px -30px;
   transition: .3s;
-}
-#article-container .flink .flink-list > .flink-list-item:hover a .flink-item-icon {
-  transform: scale(1.1);
-  margin-left: 15px;
-  width: 60px;
+  border-radius: 0 50px 50px 0;
+  box-shadow: var(--card-box-shadow);
+  background-color: var(--card-bg);
 }
 #article-container .flink .flink-list > .flink-list-item:hover a {
   color: var(--weizwz-white);
 }
-#article-container .flink .flink-item-name {
-  text-align: left;
+#article-container .flink .flink-list > .flink-list-item:hover a .flink-item-icon {
+  transform: scale(1.1);
+  margin-left: -10px;
+  width: 120px;
 }
+#article-container .flink .flink-list > .flink-list-item a .flink-item-icon img {
+  border-radius: 0 50px 50px 0;
+}
+#article-container .flink .flink-item-name {
+  padding-top: 20px;
+}
+#article-container .flink .flink-item-name,
 #article-container .flink .flink-item-desc {
   text-align: left;
 }
@@ -723,5 +749,25 @@ li.card-archive-list-item:hover > a {
 @media screen and (min-width: 900px) {
   #aside-content {
     padding-left: var(--weizwz-margin);
+  }
+}
+/* 友链 */
+@media screen and (max-width: 1024px) {
+  #article-container .flink .flink-list > .flink-list-item {
+    width: calc(50% - 22.5px) !important;
+  }
+  #article-container .flink .flink-list > .flink-list-item:nth-child(3n) {
+    margin-right: 45px;
+  }
+  #article-container .flink .flink-list > .flink-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #article-container .flink .flink-list > .flink-list-item {
+    width: 100% !important;
+  }
+  #article-container .flink .flink-list > .flink-list-item {
+    margin-right: 0 !important;
   }
 }
