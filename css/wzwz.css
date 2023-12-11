@@ -90,11 +90,12 @@ h1#site-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: .5rem;
+  flex-wrap: wrap;
 }
 .footer_custom_text > a {
   display: flex;
   align-items: center;
+  margin-top: .5rem;
   margin-right: .5rem;
 }
 
