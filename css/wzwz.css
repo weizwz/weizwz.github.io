@@ -7,6 +7,14 @@ body {
 .layout {
   padding: calc(var(--weizwz-margin) / 2) var(--weizwz-margin);
 }
+.layout > div:first-child:not(#recommend),
+#recent-posts {
+  flex: 1;
+  width: calc(74% - var(--weizwz-margin));
+}
+#aside-content {
+  min-width: 280px;
+}
 
 h1#site-title {
   font-size: 3em !important;
@@ -440,7 +448,7 @@ blockquote {
 }
 .site-data > a .headline,
 .site-data > a .length-num {
-  color: var(--weizwz-white);
+  color: var(--weizwz-white) !important;
 }
 #aside-content .card-info .card-info-social-icons .social-icon {
   font-size: .4rem;
@@ -448,6 +456,13 @@ blockquote {
 }
 [data-theme=light] #aside-content .card-info .site-data > a:hover div {
   color: var(--white) !important;
+}
+#sidebar #sidebar-menus .menus_items .site-page:hover {
+  background: var(--weizwz-theme);
+  color: var(--weizwz-white);
+}
+[data-theme=dark] #sidebar #sidebar-menus {
+  background: var(--global-bg);
 }
 
 /* 分类样式 */
@@ -618,6 +633,9 @@ li.card-archive-list-item:hover > a {
 }
 
 /* 统一分页 */
+#pagination .pagination {
+  margin: var(--weizwz-margin) 0;
+}
 #pagination {
   width: 100%;
 }
@@ -738,6 +756,11 @@ li.card-archive-list-item:hover > a {
     padding: 0 calc(var(--weizwz-margin) * 2);
   }
 }
+@media screen and (min-width: 900px) {
+  #aside-content {
+    padding-left: var(--weizwz-margin);
+  }
+}
 @media screen and (max-width: 768px) {
   #page-header.not-top-img #nav {
     padding: 0 var(--weizwz-margin);
@@ -746,14 +769,28 @@ li.card-archive-list-item:hover > a {
     width: 100% !important;
     margin-right: 0 !important;
   }
-}
-@media screen and (min-width: 900px) {
-  #aside-content {
-    padding-left: var(--weizwz-margin);
+  /* 博文内的推荐文章分栏 */
+  .relatedPosts > .relatedPosts-list > div {
+    width: calc(50% - 12px)
   }
 }
 /* 友链 */
+@media screen and (max-width: 480px) {
+  #article-container .flink .flink-list > .flink-list-item {
+    width: 100% !important;
+  }
+  #article-container .flink .flink-list > .flink-list-item {
+    margin-right: 0 !important;
+  }
+  /* 博文内的推荐文章分栏 */
+  .relatedPosts > .relatedPosts-list > div {
+    width: calc(100% - 12px)
+  }
+}
 @media screen and (max-width: 1024px) {
+  #aside-content {
+    width: 100%;
+  }
   #article-container .flink .flink-list > .flink-list-item {
     width: calc(50% - 22.5px) !important;
   }
@@ -762,13 +799,5 @@ li.card-archive-list-item:hover > a {
   }
   #article-container .flink .flink-list > .flink-list-item:nth-child(2n) {
     margin-right: 0;
-  }
-}
-@media screen and (max-width: 480px) {
-  #article-container .flink .flink-list > .flink-list-item {
-    width: 100% !important;
-  }
-  #article-container .flink .flink-list > .flink-list-item {
-    margin-right: 0 !important;
   }
 }
