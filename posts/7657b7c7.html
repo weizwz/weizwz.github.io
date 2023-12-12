@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://weizwz.com/img/cover/20231025_215235.png">
 <meta property="article:published_time" content="2023-10-25T14:19:32.000Z">
-<meta property="article:modified_time" content="2023-12-07T03:13:09.531Z">
+<meta property="article:modified_time" content="2023-12-12T04:40:20.429Z">
 <meta property="article:author" content="唯之为之">
 <meta property="article:tag" content="win11">
 <meta property="article:tag" content="cmd">
@@ -58,7 +58,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2023-12-07 11:13:09'
+  postUpdate: '2023-12-12 12:40:20'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -157,10 +157,10 @@
       detectApple()
     })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_ow1em8rv1y.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
 <link rel="stylesheet" href="/css/recommend.mini.css?v=1.0.2.css">
-<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
 </head><body><script>window.paceOptions = {
   restartOnPushState: false
 }
@@ -173,7 +173,40 @@ document.addEventListener('pjax:send', () => {
 </blockquote>
 <h2 id="软件安装在非系统盘"><a href="#软件安装在非系统盘" class="headerlink" title="软件安装在非系统盘"></a>软件安装在非系统盘</h2><p>开发软件安装在非系统盘，建好目录。重装系统后，只是重置系统盘，所以这些软件不需要重新安装。<br>譬如 <code>java</code> 相关目录：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">PS D:\java&gt; ls</span><br><span class="line">    Directory: D:\java</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">d----           2023/9/27    15:28                jdk</span><br><span class="line">d----          2023/10/11    23:45                maven</span><br><span class="line">d----           2023/9/27    17:29                mysql</span><br><span class="line">d----           2023/4/11    23:31                nginx</span><br><span class="line">d----           2023/9/27    17:11                Tomcat</span><br><span class="line">d----          2023/10/11    22:55                UJCMS</span><br></pre></td></tr></table></figure><br>譬如 <code>node</code> 相关目录：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS D:\node&gt; ls</span><br><span class="line">    Directory: D:\node</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">l----           2023/5/29    19:52                nodejs -&gt; D:\node\nvm\v14.21.1</span><br><span class="line">d----           2023/5/29    19:51                nvm</span><br><span class="line">d----           2022/12/3    21:01                pnpm</span><br></pre></td></tr></table></figure><br>其他 <code>git</code>、<code>python</code> 等：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">PS D:\develop&gt; ls</span><br><span class="line">    Directory: D:\develop</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">d----           2022/12/6    21:03                Anaconda3</span><br><span class="line">da---          2023/10/18    22:38                DBeaver</span><br><span class="line">d----            2023/5/4    20:34                ffmpeg-master-latest-win64-gpl</span><br><span class="line">d----            2023/6/1    17:21                Git</span><br><span class="line">d----           2023/6/19    13:03                HeyTapThemeEditor</span><br><span class="line">d----          2023/10/15    11:20                HskDDNS</span><br><span class="line">d----           2019/4/13    17:24                MongoDB</span><br><span class="line">d----           2023/6/10    14:50                python</span><br><span class="line">d----          2023/10/11    18:20                WPS Office</span><br></pre></td></tr></table></figure></p>
 <h2 id="环境变量恢复"><a href="#环境变量恢复" class="headerlink" title="环境变量恢复"></a>环境变量恢复</h2><p>主要是恢复环境变量里的 <code>Path</code> 值，将相关CMD指令导向具体软件位置</p>
-<h3 id="1-先新建系统变量，将以下需要的公共变量填入"><a href="#1-先新建系统变量，将以下需要的公共变量填入" class="headerlink" title="1. 先新建系统变量，将以下需要的公共变量填入"></a>1. 先新建系统变量，将以下需要的公共变量填入</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blog/20231025_1.png" alt="image"><br>|变量名(N)|变量值(V)|备注|<br>|————|—|—|<br>|CATALINA_HOME |D:\java\Tomcat\apache-tomcat-8.5.93 |Tomcat|<br>|JAVA_HOME    |D:\java\jdk\ |JDK<br>|NVM_HOME    |D:\node\nvm |nvm |<br>|NVM_SYMLINK      |D:\node\nodejs |nvm |</p>
+<h3 id="1-先新建系统变量，将以下需要的公共变量填入"><a href="#1-先新建系统变量，将以下需要的公共变量填入" class="headerlink" title="1. 先新建系统变量，将以下需要的公共变量填入"></a>1. 先新建系统变量，将以下需要的公共变量填入</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blog/20231025_1.png" alt="image"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>变量名(N)</th>
+<th>变量值(V)</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CATALINA_HOME</td>
+<td>D:\java\Tomcat\apache-tomcat-8.5.93</td>
+<td>Tomcat</td>
+</tr>
+<tr>
+<td>JAVA_HOME</td>
+<td>D:\java\jdk\</td>
+<td>JDK</td>
+</tr>
+<tr>
+<td>NVM_HOME</td>
+<td>D:\node\nvm</td>
+<td>nvm</td>
+</tr>
+<tr>
+<td>NVM_SYMLINK</td>
+<td>D:\node\nodejs</td>
+<td>nvm</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="2-修改-Path-变量"><a href="#2-修改-Path-变量" class="headerlink" title="2. 修改 Path 变量"></a>2. 修改 <code>Path</code> 变量</h3><p>点击如下图所示的 <code>编辑文本</code> 按钮，可以整行输入所有 <code>path</code> 变量值<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blog/20231025_2.png" alt="image"><br>粘贴后，请将无用的变量值删除<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\java\jdk\bin\;D:\develop\python\Scripts\;D:\develop\python\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;%NVM_HOME%;%NVM_SYMLINK%;C:\dev;Microsoft VS Code\bin;D:\develop\Git\cmd;C:\dev\Microsoft VS Code\bin;D:\Tools\微信web开发者工具\dll;D:\Tools\OpenSSH\bin;D:\Tools\cygwin64\bin;D:\Tools\cygwin64\sbin;D:\Tools\windows\platform-tools;%CATALINA_HOME%\lib;%CATALINA_HOME%\bin;C:\Program Files\PowerShell\7\;C:\Program Files\MySQL\MySQL Server 8.0\bin;</span><br></pre></td></tr></table></figure><br>恢复后，就可以验证相关CMD命令是否正常了，如<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\Administrator&gt; java -version</span><br><span class="line">openjdk version &quot;1.8.0_382&quot;</span><br><span class="line">OpenJDK Runtime Environment (Zulu 8.72.0.17-CA-win64) (build 1.8.0_382-b05)</span><br><span class="line">OpenJDK 64-Bit Server VM (Zulu 8.72.0.17-CA-win64) (build 25.382-b05, mixed mode)</span><br></pre></td></tr></table></figure></p>
 <h2 id="win11环境优化"><a href="#win11环境优化" class="headerlink" title="win11环境优化"></a>win11环境优化</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/blog/20231025_3.png" alt="image"></p>
 <h3 id="1-右键菜单恢复成win10样式"><a href="#1-右键菜单恢复成win10样式" class="headerlink" title="1. 右键菜单恢复成win10样式"></a>1. 右键菜单恢复成win10样式</h3><p>新建 <code>txt</code> 文件，复制以下内容，存入后保存，修改文件后缀为 <code>.cmd</code>，然后双击执行或右键打开<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&quot; /f /ve</span><br><span class="line">taskkill /f /im explorer.exe &amp; start explorer.exe</span><br></pre></td></tr></table></figure><br>恢复win11菜单，同理<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;&quot; /f</span><br><span class="line">taskkill /f /im explorer.exe &amp; start explorer.exe</span><br></pre></td></tr></table></figure></p>
