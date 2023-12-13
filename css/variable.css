@@ -1,5 +1,7 @@
 :root {
   --global-font-size: 14px;
+  --right-tools-width: 35px;
+  --layout-width: 1400px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #409eff;
@@ -53,7 +55,7 @@
   --weizwz-border-radius: 12px;
   --weizwz-code-border-radius: 6px;
   --weizwz-code-tips-border-radius: 8px;
-  --weizwz-btn-border-radius: 6px;
+  --weizwz-btn-border-radius: 8px;
   --weizwz-margin: 1.2rem;
   --weizwz-margin-inner: 1rem;
   --weizwz-main: var(--weizwz-theme);
@@ -79,7 +81,13 @@
   --style-border-none: 1px solid transparent;
   --style-border-deep-ash: 1px solid #d0d7de;
   --style-border-hover-always: 1px solid var(--weizwz-main);
-  --weizwz-main-none: rgba(184,184,184,0)!important;
+  --weizwz-main-none: rgba(184,184,184,0) !important;
+  --weizwz-technology-color-start: #358bff;
+  --weizwz-technology-color-end: #15c6ff;
+  --weizwz-source-color-start: #18e7ae;
+  --weizwz-source-color-end: #1eebeb;
+  --weizwz-blog-color-start: #f65;
+  --weizwz-blog-color-end: #ffbf37;
 }
 
 [data-theme=light] {
@@ -117,7 +125,7 @@
   --weizwz-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
   --weizwz-card-border: #e3e8f7;
   --weizwz-shadow-lightblack: 0 5px 12px -5px rgba(102,68,68,0);
-  --weizwz-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0)
+  --weizwz-shadow-light2black: 0 5px 12px -5px rgba(102,68,68,0);
 }
 
 [data-theme=dark] {
