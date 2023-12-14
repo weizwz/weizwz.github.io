@@ -29,6 +29,12 @@ h1#site-title {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* P间距 */
+#article-container p {
+  margin-bottom: 1rem;
+}
+
 /* nav 导航 */
 #page-header.not-top-img {
   margin-bottom: calc(var(--weizwz-margin) / 2);
@@ -110,7 +116,7 @@ h1#site-title {
   height: 20px;
 }
 
-/* 文章页面 */
+/* ---------------------- 文章页面 ---------------------- */
 div#post {
   background: rgba(255, 255, 255, 0.9);
 }
@@ -221,31 +227,31 @@ div#category {
 
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"] #recent-posts > .recent-post-item {
-  background: #121212;
+  background: var(--card-bg);
 }
 
 [data-theme="dark"] .card-widget {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#post {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#tag {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#archive {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#page {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#category {
-  background: #121212 !important;
+  background: var(--card-bg) !important;
 }
 
 [data-theme="dark"] div#category {
@@ -276,7 +282,7 @@ div#category {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #409eff;
+  background-color: var(--weizwz-main);
   border-radius: 2em;
 }
 
@@ -285,30 +291,8 @@ div#category {
 }
 
 ::-moz-selection {
-  color: #fff;
-  background-color: #409eff;
-}
-
-/* 音乐播放器 */
-
-/* .aplayer .aplayer-lrc {
-  display: none !important;
-} */
-
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-  left: -66px !important;
-  transition: all 0.3s;
-  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
-}
-
-.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-  left: 0 !important;
-  transition: all 0.3s;
-  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
-}
-
-.aplayer.aplayer-fixed {
-  z-index: 999999 !important;
+  color: var(--weizwz-white);
+  background-color: var(--weizwz-main);
 }
 
 /* 评论框  */
@@ -367,7 +351,7 @@ div#category {
   height: 100%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: #3b70fc;
+  background-color: var(--weizwzi-main);
   background-position: center;
   background-size: cover;
 }
@@ -444,7 +428,7 @@ div#category {
   align-items: flex-end;
   align-content: center;
   padding-top: 0.5rem;
-  color: white;
+  color: var(--weizwz-white);
 }
 
 #body-wrap.error .aside-list .aside-list-item .content time {
