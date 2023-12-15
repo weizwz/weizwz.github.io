@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-12-14T05:07:17.292Z</updated>
+  <updated>2023-12-15T09:39:09.483Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-butterfly-navctrl 使用说明</title>
+    <link href="https://weizwz.com/posts/c4be1e8f.html"/>
+    <id>https://weizwz.com/posts/c4be1e8f.html</id>
+    <published>2023-12-15T08:42:25.000Z</published>
+    <updated>2023-12-15T09:39:09.483Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;没错，这次又整活了，起因是看到了一个漂亮的换肤效果，然后应用到自己的博客上，结果发现单纯的js不太好控制原有的换肤控制效果，所以又开始做插件，结果做着做着就…不如整个控制中心，功能更多，于是 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
+    
+  </entry>
   
   <entry>
     <title>Github项目徽标</title>
@@ -594,40 +626,6 @@
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
     <category term="css" scheme="https://weizwz.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>浏览器好用插件分享</title>
-    <link href="https://weizwz.com/posts/9b694c86.html"/>
-    <id>https://weizwz.com/posts/9b694c86.html</id>
-    <published>2022-12-17T11:10:59.000Z</published>
-    <updated>2023-11-29T09:20:32.368Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;个人一直在用的浏览器插件。&lt;code&gt;好用的浏览器插件，总会提升你的工作效率&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;1-Tab-Session-Manager&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
-    
-    <category term="browser" scheme="https://weizwz.com/tags/browser/"/>
-    
-    <category term="chrome" scheme="https://weizwz.com/tags/chrome/"/>
-    
-    <category term="edge" scheme="https://weizwz.com/tags/edge/"/>
     
   </entry>
   
