@@ -826,6 +826,10 @@ li.card-archive-list-item:hover > a {
   }
 }
 @media screen and (max-width: 768px) {
+  .site-data > a .headline,
+  .site-data > a .length-num {
+    color: var(--weizwz-fontcolor) !important;
+  }
   #page-header.not-top-img #nav {
     padding: 0 var(--weizwz-margin);
   }
