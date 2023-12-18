@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-12-16T09:57:13.940Z</updated>
+  <updated>2023-12-18T08:32:12.049Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windows cmd 终极美化</title>
+    <link href="https://weizwz.com/posts/d50f45ae.html"/>
+    <id>https://weizwz.com/posts/d50f45ae.html</id>
+    <published>2023-12-18T06:21:31.000Z</published>
+    <updated>2023-12-18T08:32:12.049Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;效果&quot;&gt;&lt;a href=&quot;#效果&quot; class=&quot;headerlink&quot; title=&quot;效果&quot;&gt;&lt;/a&gt;效果&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/img/blog/20231218_143809.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
+    
+    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="font" scheme="https://weizwz.com/tags/font/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo-butterfly-navctrl 使用说明</title>
@@ -240,7 +272,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-12-16T06:24:17.140Z</updated>
+    <updated>2023-12-18T08:12:01.627Z</updated>
     
     
       
@@ -594,38 +626,6 @@
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
     <category term="editorconfig" scheme="https://weizwz.com/tags/editorconfig/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>让你的博客一起过年</title>
-    <link href="https://weizwz.com/posts/3ab0bc77.html"/>
-    <id>https://weizwz.com/posts/3ab0bc77.html</id>
-    <published>2023-01-10T12:37:59.000Z</published>
-    <updated>2023-12-14T05:05:12.057Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;马上就要过年了，看着我这毫无生气的博客，感觉有点亏待它。博客过年，马上安排！&lt;br&gt;本博客基于 &lt;code&gt;hexo&lt;/code&gt; 和主题 &lt;code&gt;Butterfly&lt;/code&gt; 修改。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
-    
-    
-    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
-    
-    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
-    
-    <category term="css" scheme="https://weizwz.com/tags/css/"/>
     
   </entry>
   

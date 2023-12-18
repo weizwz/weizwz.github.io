@@ -3,6 +3,9 @@
 body {
   font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,sans-serif;
 }
+#article-container pre, #article-container code {
+  font-family: 'FiraCodeNerdFont', consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+}
 
 .layout {
   padding: calc(var(--weizwz-margin) / 2) var(--weizwz-margin);
@@ -129,11 +132,13 @@ div#post {
 }
 #article-container img {
   display: inline-block;
-  max-height: 400px;
   vertical-align: top;
 }
-#article-container img:not([src\=https\:\/\/shields\.io/\*]) {
-  border-radius: var(--weizwz-btn-border-radius);
+#article-container img {
+  border-radius: var(--weizwz-img-border-radius);
+}
+#article-container img[src*=https\:\/\/img\.shields\.io] {
+  border-radius: inherit;
 }
 .relatedPosts > .relatedPosts-list .content .title,
 #pagination .prev_info,
