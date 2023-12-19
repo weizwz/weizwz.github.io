@@ -846,6 +846,19 @@ li.card-archive-list-item:hover > a {
   .relatedPosts > .relatedPosts-list > div {
     width: calc(50% - 12px)
   }
+  /* 导航栏 */
+  #nav.hide-menu #menus {
+    display: flex;
+    align-items: center;
+  }
+  #nav.hide-menu .site-page {
+    font-size: inherit;
+    padding-bottom: 0;
+  }
+  #nav.hide-menu #toggle-menu {
+    padding: 0;
+    margin-left: .5rem;
+  }
 }
 /* 友链 */
 @media screen and (max-width: 480px) {
