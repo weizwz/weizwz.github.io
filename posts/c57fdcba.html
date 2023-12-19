@@ -159,7 +159,7 @@
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
 
-<link rel="stylesheet" href="/css/navctrl.css?v=1.0.2.css">
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.3.css">
 <link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
 </head><body><script>window.paceOptions = {
   restartOnPushState: false
@@ -407,6 +407,10 @@ document.addEventListener('pjax:error', e => {
                   expiry: Date.now() + 2*24*60*60*1000
                 })
               }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
             },
             toRandomPost: function() {
               var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/72bf1e92.html,posts/64094821.html,posts/6c03382b.html,posts/b6386794.html,posts/d80c51ca.html,posts/e37151d.html,posts/779fda2d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/6e87ac02.html,posts/de51c0b5.html,posts/3277e220.html,posts/dd73ee89.html,posts/7db60965.html,posts/e9a127c6.html,posts/5c85881c.html,posts/8c7d05c9.html,posts/453785dc.html,posts/7657b7c7.html,posts/ef1b7a14.html,posts/da790ccb.html,posts/9b694c86.html,posts/3ab0bc77.html,posts/c4be1e8f.html,posts/d50f45ae.html".split(',');
