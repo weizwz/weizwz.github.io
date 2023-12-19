@@ -156,12 +156,12 @@
       }
       detectApple()
     })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_ow1em8rv1y.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
-<link rel="stylesheet" href="/css/navctrl.css?v=1.0.1.css">
-
 <link rel="stylesheet" href="/css/recommend.css?v=1.0.3.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
 <style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
   white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.2.css">
 <link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
 </head><body><script>window.paceOptions = {
   restartOnPushState: false
@@ -313,59 +313,6 @@ document.addEventListener('pjax:error', e => {
   }
 })</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
       <script data-pjax>
-        if (typeof window.navctrl === 'undefined') {
-          window.navctrl = {
-            hexo_butterfly_navctrl_init: function() {
-              const $navctrl = document.querySelector('#navctrl');
-              if($navctrl) return;
-              var parent_div_git = document.getElementById('nav');
-              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
-              parent_div_git.insertAdjacentHTML("beforeend",item_html);
-            },
-            changeDark: function() {
-              const event = window.event || arguments.callee.caller.arguments[0];
-              document.documentElement.style.setProperty('--x', event.clientX + 'px');
-              document.documentElement.style.setProperty('--y', event.clientY + 'px');
-              if(document.startViewTransition) {
-                document.startViewTransition(() => {
-                  window.navctrl.setTheme();
-                })
-              } else {
-                window.navctrl.setTheme();
-              }
-            },
-            setTheme: function() {
-              const theme = document.documentElement.getAttribute('data-theme');
-              if (theme === 'light' || !theme) {
-                document.documentElement.setAttribute('data-theme', 'dark')
-                document.documentElement.classList.add('navctrl-dark')
-                window.localStorage.theme = JSON.stringify({
-                  value: 'dark',
-                  expiry: Date.now() + 2*24*60*60*1000
-                })
-              } else {
-                document.documentElement.setAttribute('data-theme', 'light')
-                document.documentElement.classList.remove('navctrl-dark')
-                window.localStorage.theme = JSON.stringify({
-                  value: 'light',
-                  expiry: Date.now() + 2*24*60*60*1000
-                })
-              }
-            },
-            toRandomPost: function() {
-              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/72bf1e92.html,posts/64094821.html,posts/6c03382b.html,posts/b6386794.html,posts/d80c51ca.html,posts/e37151d.html,posts/779fda2d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/6e87ac02.html,posts/de51c0b5.html,posts/3277e220.html,posts/dd73ee89.html,posts/7db60965.html,posts/e9a127c6.html,posts/5c85881c.html,posts/8c7d05c9.html,posts/453785dc.html,posts/7657b7c7.html,posts/ef1b7a14.html,posts/da790ccb.html,posts/9b694c86.html,posts/3ab0bc77.html,posts/c4be1e8f.html,posts/d50f45ae.html".split(',');
-              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
-              window.recommend.toPost(randomPost);
-            }
-          }
-          console.log(
-            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
-            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
-          )
-        }
-        window.navctrl.hexo_butterfly_navctrl_init();
-      </script>
-      <script data-pjax>
         if (typeof window.recommend === 'undefined') {
           window.recommend = {
             hexo_butterfly_recommend_init: function() {
@@ -422,4 +369,57 @@ document.addEventListener('pjax:error', e => {
           }
         }
         window.recommend.hexo_butterfly_recommend_init();
+      </script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/72bf1e92.html,posts/64094821.html,posts/6c03382b.html,posts/b6386794.html,posts/d80c51ca.html,posts/e37151d.html,posts/779fda2d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/6e87ac02.html,posts/de51c0b5.html,posts/3277e220.html,posts/dd73ee89.html,posts/7db60965.html,posts/e9a127c6.html,posts/5c85881c.html,posts/8c7d05c9.html,posts/453785dc.html,posts/7657b7c7.html,posts/ef1b7a14.html,posts/da790ccb.html,posts/9b694c86.html,posts/3ab0bc77.html,posts/c4be1e8f.html,posts/d50f45ae.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
       </script><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --></body></html>
