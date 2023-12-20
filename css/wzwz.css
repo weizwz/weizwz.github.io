@@ -753,9 +753,20 @@ li.card-archive-list-item:hover > a {
   background: var(--weizwz-main);
 }
 
-/* 外挂标签 */
+/* ---------------------------------- 外挂标签 ---------------------------------- */
 .note.flat {
   border-radius: var(--weizwz-code-border-radius);
+}
+/* toggle-button */
+.toggle > .toggle-button {
+  font-weight: bold;
+}
+.toggle > .toggle-content {
+  margin: 1rem;
+}
+.toggle-content > ol:first-child {
+  margin-top: 0;
+  margin-left: -1rem;
 }
 /* tabs */
 #article-container .tabs {
@@ -776,6 +787,12 @@ li.card-archive-list-item:hover > a {
 }
 [data-theme="dark"] #article-container .tabs > .nav-tabs > .tab.active {
   background: var(--weizwz-post-tabs-bg);
+}
+
+/* 弹窗 */
+.snackbar-container,
+.snackbar-container > p {
+  font-weight: 600 !important;
 }
 
 /* 媒体查询 */
