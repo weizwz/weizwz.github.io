@@ -1,0 +1,495 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>博客常用标签/语法 | 唯之为之</title><meta name="author" content="唯之为之,weizwz@foxmail.com"><meta name="copyright" content="唯之为之"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="markdown 语法引用可嵌套，内容可多段1&gt;内容 效果：  内容  图片1![image](图片url，可本地可在线) 链接1[链接文字](链接url) 表格123|表头1|表头1||----|----||内容1|内容2| 效果：     表头1 表头1     内容1 内容2     分割线单独一行上使用三个或多个星号 (*)、破折号 (—-) 或下划线 (_) ，并且不能包含其他内容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客常用标签&#x2F;语法">
+<meta property="og:url" content="https://weizwz.com/posts/48f788c6.html">
+<meta property="og:site_name" content="唯之为之">
+<meta property="og:description" content="markdown 语法引用可嵌套，内容可多段1&gt;内容 效果：  内容  图片1![image](图片url，可本地可在线) 链接1[链接文字](链接url) 表格123|表头1|表头1||----|----||内容1|内容2| 效果：     表头1 表头1     内容1 内容2     分割线单独一行上使用三个或多个星号 (*)、破折号 (—-) 或下划线 (_) ，并且不能包含其他内容">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://weizwz.com/img/cover/20240102_105713.png">
+<meta property="article:published_time" content="2024-01-02T02:50:15.000Z">
+<meta property="article:modified_time" content="2024-01-02T06:02:10.741Z">
+<meta property="article:author" content="唯之为之">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizwz.com/img/cover/20240102_105713.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://weizwz.com/posts/48f788c6.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="h5ZDnqWDDdodHi5p5KY3IzNtALfigZTMXUZv1TRcSf0"/><meta name="baidu-site-verification" content="code-V9zqqeAUQI"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"4N68NE97S5","apiKey":"ee8fc79dc8f5c5c84d3569b38bf23472","indexName":"blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"距离上次更新已有","messageNext":"天，文章内容或许已经过时"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#409eff","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '博客常用标签/语法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-01-02 14:02:10'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_ow1em8rv1y.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/css/recommend.css?v=1.0.3.css">
+
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.3.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/pace-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tools/cover"><i class="fa-fw fas fa-image"></i><span> 制作博客封面</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="唯之为之"><img class="site-icon" src= "/img/loading.gif" data-lazy-src="/img/logo.png"/></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-toolbox"></i><span> 工具</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/tools/cover"><i class="fa-fw fas fa-image"></i><span> 制作博客封面</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">博客常用标签/语法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="fa-fw post-meta-icon far fa-calendar-alt"></i><span class="post-meta-label">发表于</span><time datetime="2024-01-02T02:50:15.000Z" title="发表于 2024-01-02 10:50:15">2024-01-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">547</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="博客常用标签/语法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="markdown-语法"><a href="#markdown-语法" class="headerlink" title="markdown 语法"></a>markdown 语法</h2><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>可嵌套，内容可多段<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;内容</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<blockquote>
+<p>内容</p>
+</blockquote>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">image</span>](<span class="link">图片url，可本地可在线</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接文字</span>](<span class="link">链接url</span>)</span><br></pre></td></tr></table></figure>
+<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">|表头1|表头1|</span><br><span class="line">|----|----|</span><br><span class="line">|内容1|内容2|</span><br></pre></td></tr></table></figure>
+<p>效果：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>表头1</th>
+<th>表头1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>内容1</td>
+<td>内容2</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>单独一行上使用三个或多个星号 (<em>*</em>)、破折号 (—-) 或下划线 (<em>_</em>) ，并且不能包含其他内容<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">内容1</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">内容2</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<p>内容1</p>
+<hr>
+<p>内容2</p>
+<h2 id="外挂标签"><a href="#外挂标签" class="headerlink" title="外挂标签"></a>外挂标签</h2><p>参见 <a target="_blank" rel="noopener" href="https://butterfly.js.org/posts/4aa8abbe/#%E6%A8%99%E7%B1%A4%E5%A4%96%E6%8E%9B%EF%BC%88Tag-Plugins%EF%BC%89">hexo-theme-butterfly外挂标签</a></p>
+<h3 id="文字标签"><a href="#文字标签" class="headerlink" title="文字标签"></a>文字标签</h3><p>color 可选：default/blue/pink/red/purple/orange/green<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% label text color %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">臣亮言：&#123;% label 先帝 %&#125;创业未半，而&#123;% label 中道崩殂 blue %&#125;。今天下三分，&#123;% label 益州疲敝 pink %&#125;，此诚&#123;% label 危急存亡之秋 red %&#125;也！然侍衞之臣，不懈于内；&#123;% label 忠志之士 purple %&#125;，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜&#123;% label 开张圣听 orange %&#125;，以光先帝遗德，恢弘志士之气；不宜&#123;% label 妄自菲薄 green %&#125;，引喻失义，以塞忠谏之路也。</span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<p>臣亮言：<mark class="hl-label default">先帝</mark> 创业未半，而<mark class="hl-label blue">中道崩殂</mark> 。今天下三分，<mark class="hl-label pink">益州疲敝</mark> ，此诚<mark class="hl-label red">危急存亡之秋</mark> 也！然侍衞之臣，不懈于内；<mark class="hl-label purple">忠志之士</mark> ，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜<mark class="hl-label orange">开张圣听</mark> ，以光先帝遗德，恢弘志士之气；不宜<mark class="hl-label green">妄自菲薄</mark> ，引喻失义，以塞忠谏之路也。</p>
+<h3 id="行内图片"><a href="#行内图片" class="headerlink" title="行内图片"></a>行内图片</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% inlineImg [src] [height] %&#125;</span><br><span class="line"></span><br><span class="line">[src]      :    图片链接</span><br><span class="line">[height]   ：   图片高度限制【可选】</span><br></pre></td></tr></table></figure>
+<h3 id="tab页签"><a href="#tab页签" class="headerlink" title="tab页签"></a>tab页签</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs Unique name, [index] %&#125;</span><br><span class="line">&lt;!-- tab [Tab caption] [@icon] --&gt;</span><br><span class="line">Any content (support inline tags too).</span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure>
+<p>示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;% tabs test1 %&#125;</span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line"><span class="strong">**This is Tab 1.**</span></span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- tab --&gt;</span><br><span class="line"><span class="strong">**This is Tab 2.**</span></span><br><span class="line">&lt;!-- endtab --&gt;</span><br><span class="line">&#123;% endtabs %&#125;</span><br></pre></td></tr></table></figure><br>效果：</p>
+<div class="tabs" id="test1"><ul class="nav-tabs"><button type="button" class="tab  active" data-href="test1-1">test1 1</button><button type="button" class="tab " data-href="test1-2">test1 2</button></ul><div class="tab-contents"><div class="tab-item-content active" id="test1-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-item-content" id="test1-2"><p><strong>This is Tab 2.</strong></p></div></div><div class="tab-to-top"><button type="button" aria-label="scroll to top"><i class="fas fa-arrow-up"></i></button></div></div>
+<h3 id="系列文章"><a href="#系列文章" class="headerlink" title="系列文章"></a>系列文章</h3><p>和隐藏模块结合，示例：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</span><br><span class="line">cover: /img/cover/20231128<span class="emphasis">_171922.png</span></span><br><span class="line"><span class="emphasis">tags:</span></span><br><span class="line"><span class="emphasis">  - vite</span></span><br><span class="line"><span class="emphasis">  - vue3</span></span><br><span class="line"><span class="emphasis">  - typescript</span></span><br><span class="line"><span class="emphasis">  - vscode</span></span><br><span class="line"><span class="emphasis">categories: 技术</span></span><br><span class="line"><span class="emphasis">abbrlink: 5bc77c26</span></span><br><span class="line"><span class="emphasis">date: 2023-11-09 17:03:24</span></span><br><span class="line"><span class="emphasis">series: vue3ViteTs</span></span><br><span class="line"><span class="emphasis">---</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% hideToggle 合集 - Vite4+Typescript+Vue3+Pinia 从零搭建 %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% series %&#125;</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">&#123;% endhideToggle %&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20240102_133734.png" alt="images"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://weizwz.com">唯之为之</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://weizwz.com/posts/48f788c6.html">https://weizwz.com/posts/48f788c6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://weizwz.com" target="_blank">唯之为之</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/markdown/">markdown</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/20240102_105713.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward/wechart-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/wechart-play.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward/ali-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/ali-play.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/a31b36c6.html" title="vue3+ts打开echarts的正确方式"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231228_211836.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">vue3+ts打开echarts的正确方式</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/72bf1e92.html" title="Github项目徽标"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231207_105659.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-06</div><div class="title">Github项目徽标</div></div></a></div><div><a href="/posts/3277e220.html" title="你好，我的博客"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/default.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-15</div><div class="title">你好，我的博客</div></div></a></div><div><a href="/posts/9462cbd1.html" title="GitHub + Hexo 搭建个人博客网站"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20221129_225842.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-29</div><div class="title">GitHub + Hexo 搭建个人博客网站</div></div></a></div><div><a href="/posts/c4be1e8f.html" title="hexo-butterfly-navctrl 使用说明"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231215_173755.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-15</div><div class="title">hexo-butterfly-navctrl 使用说明</div></div></a></div><div><a href="/posts/7db60965.html" title="hexo-butterfly-recommend使用说明"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/hexoButterflyCommend.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-22</div><div class="title">hexo-butterfly-recommend使用说明</div></div></a></div><div><a href="/posts/da790ccb.html" title="博客升级 - hexo记录"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231125_103851.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-25</div><div class="title">博客升级 - hexo记录</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><span id="switch-btn"></span><span class="second-comment">Gitalk</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唯之为之</div><div class="author-info__description">个人博客 丨 时光笔墨</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">38</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/weizwz"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/weizwz" target="_blank" title="Gitee"><i class="fa-fw iconfont icon-gitee"></i></a><a class="social-icon" href="https://www.cnblogs.com/weizwz" target="_blank" title="博客园"><i class="fa-fw iconfont icon-blog"></i></a><a class="social-icon" href="https://weizwz.com/atom.xml" target="_blank" title="RSS订阅"><i class="fa-fw iconfont icon-rss"></i></a><a class="social-icon" href="mailto:weizwz@foxmail.com" target="_blank" title="邮箱"><i class="fa-fw iconfont icon-email-fill"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown-%E8%AF%AD%E6%B3%95"><span class="toc-text">markdown 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%95%E7%94%A8"><span class="toc-text">引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-text">链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-text">表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-text">分割线</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE"><span class="toc-text">外挂标签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E6%A0%87%E7%AD%BE"><span class="toc-text">文字标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A1%8C%E5%86%85%E5%9B%BE%E7%89%87"><span class="toc-text">行内图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tab%E9%A1%B5%E7%AD%BE"><span class="toc-text">tab页签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E5%88%97%E6%96%87%E7%AB%A0"><span class="toc-text">系列文章</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/48f788c6.html" title="博客常用标签/语法"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240102_105713.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客常用标签/语法"/></a><div class="content"><a class="title" href="/posts/48f788c6.html" title="博客常用标签/语法">博客常用标签/语法</a><time datetime="2024-01-02T02:50:15.000Z" title="发表于 2024-01-02 10:50:15">2024-01-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/a31b36c6.html" title="vue3+ts打开echarts的正确方式"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231228_211836.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue3+ts打开echarts的正确方式"/></a><div class="content"><a class="title" href="/posts/a31b36c6.html" title="vue3+ts打开echarts的正确方式">vue3+ts打开echarts的正确方式</a><time datetime="2023-12-28T12:35:25.000Z" title="发表于 2023-12-28 20:35:25">2023-12-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装"/></a><div class="content"><a class="title" href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装">Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装</a><time datetime="2023-12-19T09:37:23.000Z" title="发表于 2023-12-19 17:37:23">2023-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/d50f45ae.html" title="windows cmd 终极美化"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231218_141148.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="windows cmd 终极美化"/></a><div class="content"><a class="title" href="/posts/d50f45ae.html" title="windows cmd 终极美化">windows cmd 终极美化</a><time datetime="2023-12-18T06:21:31.000Z" title="发表于 2023-12-18 14:21:31">2023-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/c4be1e8f.html" title="hexo-butterfly-navctrl 使用说明"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231215_173755.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="hexo-butterfly-navctrl 使用说明"/></a><div class="content"><a class="title" href="/posts/c4be1e8f.html" title="hexo-butterfly-navctrl 使用说明">hexo-butterfly-navctrl 使用说明</a><time datetime="2023-12-15T08:42:25.000Z" title="发表于 2023-12-15 16:42:25">2023-12-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 唯之为之</div><div class="footer_custom_text"><a target="_blank" href="https://hexo.io/" title="博客框架为Hexo_v7.0.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0E83CD?logo=hexo&logoColor=fff"></a><a target="_blank" href="https://butterfly.js.org/" title="博客主题为Butterfly_v4.11.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-00c4b6?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAADtlJREFUeF7tXYmR3TYMlSpJXInjShxXEqeSOJXEW0nsSpTBX+qH0qdIEOIBEk8zHq+9IkU+4BEHr3XBAwSAwCUCK7ABAkDgGgEQBNoBBCIIgCBQDyAAgkAHgIAMAVgQGW4oZQQBEMSIoNFNGQIgiAw3lDKCAAhiRNDopgwBEESGG0oZQQAEMSJodFOGAAgiww2ljCAAghgRNLopQwAEkeGGUkYQAEGMCBrdlCEAgshwQykjCIAgRgSNbsoQAEFkuKGUEQRAECOCRjdlCIAgMtxQyggCIIgRQaObMgRAEBluKGUEARDEiKDRTRkCIIgMN5QyggAIYkTQ6KYMARBEhhtKGUEABDEiaHRThkCSINu2/e6q/uj+/nVZFvoTen54/0k/05+f7u8f67r6v5e1GKWAwLIs27b95unhL55u0o+7ftLfZ53b9ZLee6Pfx/QySBD38c/LsuzkKCmU767R1Dj6eQFxSsI7X11ukCYSkML7xCjVWdLDP9d1feij/7wQxDXmr1JfZtZDDaM/b6FGMuvAaxMg4PRv91ZqkCGG0td1Xf+8JIizHP90xnm3MH+nzF/nduLzhRDwSNGaEKEefPA9moMF2baNyEGN1PQ8zB/Iokkk99uijBR+h76v6/pp/48zQbb7Xa9awzfnKyLYrwpzncq3baMY4o9KsW3JRj+tyJMgrvH/lvxKxbpgVSqCW7pq57oTMbR5J1ddHZ4ge8eIKBSrkFmEVSmt2Tfrc24UZUNHIcbe42kI4ovwC4hyU6MLFXfEIItxNV9W6Et1qlnX9elZnWMQcrGG7JSD6mFR1nWlWAVPYwRGJ8YzMJ+YIL7r9QVuVxuGDBhjxIChmfUPV1ksmiCsMXveRlKvX0HWqzLy27bNpjPRNC+Ro/UsemURPqonawK3qyDSSiaVC/boWdVhNj201GT0OOQKtK8uPkG266ZaKZ1QvtmrR/GDe0X/ESLIbCbTB47I8QmxiUyXJos1QiDE12JRiYlNpw8IrEkmR7Zto7Qt4Tbzc1iHFbQgjiQWwKCUMDJdDHWf2KU6DJrnlbyXBHEkmTUWgcvFIIXTAZoTI5d7tJlwZg+fr73EHvtvLncUurVZtLp35IlDDlCISwIoGZI/9Z7i0pfNUlEL4sUjNILMThLqLlLBjihG4tB9WLgkR5IgIAnHAM31DshxlGfy0AbPF7XgblF3X1J9c1Hgujedtlv3gJfcavIYgm6V3yAWQUCSHjJs+01j5GDPhbEJ4rlbvfest9IcM5bEEDmiAXlIsbII4kgy80z7GaPpSWKMHNnylBCEcuJWrMjUMYkxcpAsX2bKU+5INkGcFdF+uEOq37m/ny4FbCxbRfK+nAyMKYOUIBZm2c+4TUMSg+RoThBrFmQnS7aJ9lnmNhfR6ZGivSluweCt0ycHO70m19LH3m9qQawSRLws5aSY2UQ7rabNLm8wVR8iSzZu2S6W4RFoB/wOSXbXNNtd8why2BKaM8QaWZUbg6QJQaxlsUKAZ6cLTyM4axb35J49TiT0DxQAOXIQeLybPTBJLIiFvSIc5KUkIfzoyofDKeKpD7rRP3hEP6MsZPYOEgiSUpbCv4+uBL36llN29matfem5xHoYzVhdQf9tXVc6YJD9SCyIxhPg2R2u8GK2X+viiZ/cbJY0e4V48UXa2fGbhCAW50Ci6UPJQRCU8uWOZtu2/Su0HhjMjpLLTvWCIGVMSnY8wrUi7j1JzGJpzRxXik0IYnUOJCUECUmSVoTiFf9Cl1QjXLZs1gMAOd2PvuMfTM2pDBaEgxL/nax4xM2sU2YqeJidiyE+52S8EHfEhQWC8JW5xptZRwk5Zf7tKljPiVP2zlC8YuQMAYn8mrhYEEBcNFmu1pUVEVoPzHfEZdOEIAj+0mMX29Vy8xQfz26UC87prhPWWcKY70gLRXLegCQGQQCYlkXWei3nFj33SedaD8QdaYG4N7IndrMJ4rIkMOVpmbBdLe9K5L1WWu/GXq+FRYhpYUisB9UqIohHErImFg6VY0kg8BJrxLpQcJYVgmvFEk32Gqy9VjFBHElopLNy8iJLEqeXkkrOGP0v4xm4ViyRsAapq5puEQTuFktAl64WU8Fj5bGUpGBGMVTVbYI4kiD1GxdUcBTj3rkRmtyCa5UenHInBUGQNKa13gi6Wgz3am/Pi5u1bRuW/CSkBYLUUuc69b64Shk3xB4IwrU8dboxTq0gyDiyCloCpqIfZn+Zcct4yFRosSaCwNzzBHxwtZiX1BwsT4ZbxmvRxG+BIGMK96zwsUnXww44psUZE5UKrQZBKoDaqEpOTAHX6qYwQJCbAHYsHgrYz3Mah9RwRkDfsVvqPs1eNHrV8tvzIAgaxUrxFN4Fhk8SYc7jPsbSGkAQKXL3yz0D9ovY4uliYROUGGxYEDF0Ogo+rEQkM/VhWZbPtBJVR3OHa0V/ghBkmNW9pTifIhcS0SnwtGIajwABTUE61mIJBOiKkKuFLQNy/K5KZm+vDVV0OwZxFgSrSssLGDXeQ0AVQWgEtHKP+j2xoXQrBG7tA9kbWcSCOCuCzVOtRI/vxBCgo5dEp+BXc7H8il3OHrsMocStEaBYjr2Pn9u4YhbkRBIc6sCVAN4rhQD7kIycD9YiCI4GypEC3i2BgPhghtjHQZASokEdGhAoEpSfO1KFIC5ox9yIBrWx0YYiKd0mQfr+EQTrNjRTQS+rBOfF07xXQO1nz7rZYpov8WeNuTPI/vm09PP+byzDUKChjCbQkpld1meZc3TAlz+lcel5W5aFNpSxzi5mtDH4SjUXS9ogTjks/+agpO6dKkF07V4ORxBsO62tElXrp1XJ7BPrq7aEWfkwBHGbimgCkmbs8YyLQNYlQ727OQRB4FL1VpPi30+eWVz8i8IK1RMELpVQsmMUqzL7XbLrqgmCM6BKilptXarjEpUEQbyhVplrNUxtXKKOIIg3aungEPVWWS5yp+eqCAJy3BHlNGVVzZeoIYi7p4/SuHiAgJrgXQVBkKkCIwIIqCBJd4LgSE2QI4JAd5J0JQgsB8jBQKArSboRBDEHQzXwyo5AN5J0IQjIAc0XINCFJM0JgtPgn6qx72Pg7IcQ6NOURW6ftZuLSg+C4BTGdynREgsiR2rTFxGJZppT7+XKfsT3m8+4NyUIgvKDTtLJ7fthezFlfWwpjRxwPaKi32lzU1erNUFgPd5V43HIADMWe9xTiDtCnpw63Nt4h2mcss0IgtjjII79XhCyIDRoxJ5v67p+YZKJI/MZ3mkWi4AgHdRlv7eCOWj4V7HhKKV3eTVb1NiSIDht8V2456udU3fM+wShtWoI1t/P4KWTUqo/IEh1iF8+cBAuI7Z4vo/Vzk8smwXqLQmCA61dcO5ThrFr8nwdNNysZQFB2g/sTb4Yuh896jad79lDqvwhp0fiooXEYEFaoPz/N16yL4ns1MuZsy6wt36b15QWxHqQHjxgORFXBHP+DLesLe3bf21KgnBy/u2hbvfFS6FGrtEOlsGcyJwxiGWCRI/nj2SyLvP9jOxXO+o3/lKJ+8+5TW4Wg1CDDLsGUZfgaldlTBEMB+vV7gIJkaY1QazGIdGlERdxSMrq0EpgSvlae5rNohOwTQli1IqwRryAy5QMRA26WU0XKvYiCI18ltKUSUV3A4c/kcollSmL3DL22M1ycwsSUIaZXQSWou8AOItA/2Tf923IirAGmtLK1IUgjiQWlkxUF6qRYD1roClJkp4EseBqVd+3wFwyX1JnetTVNDD3O9iNIM6KzLx8u9moN3n6vBmO3dO85wZMvny72Z6FyWfWm+GojiATxyLNR71Zg/UemSs1LtbEBKkenAes8Yz7bZoPNGdcu8YgExOkenAeIMiMSQ8QZELXoJtQJzwpvxuWXScK/dEvstS7RzqxxDe7BZUzJj0Qg2xb6lSPEkrbqo7uI95kFrk7nohBylKneXA+ebAOgrgcPmVghj/lvLc7cFrTNTyeLQ+Iuxonu1uQiRYvdrceHkFmWKGgAk8VBJkk3ds8tXs16k0QrHd3rdRksbxRb+Q8vhqBTuJmdVucqG6i8JTyHXU2WIU7cMJy1M1UzXcNxvI0alws52aNuM9anfUY3IqosR6EoyqCDBqLqLMeHkFGs8jqBhuNBBktA6MmOJ9gfRYIkpqXG2w9kTqBBkgy0oDT7FDqlB6qy2INmsPvtu6KK+DBUr7q3FWNLtYo2Rf11mPAYB0E4Yx8gyy4UyfMyMThKMG6unhOnQUZZemJlnVXnAFnkOygygFHJUEGEKhKYcbIojz5oWpy0MdRLUGUk0SdK5CyJIqDddWxnHaCaFyfpVqgCSui8TRLVTPnqtdihYSr8E4+9andSLCuLUOomhwql5pckERLFmZY66Ew5as27hgmBvEbqiT1O1xwHphZ1zLYDBHHqY5BTgTpvWRieOuhyIoMM9CMRJDeAfswQmVktHpakaEGmmEI0nsCcbSJwUQ2q+dgM1SSYyiCOJJQJqb1KSjTWI/Oi0LVZ62GS/NGUpYUk9Dd67WPtxnKJUi5Vx5BWlqRYQeY4SzIKXAnIZM1qUmUYYWbIkuD69vU7e9IYTKNBQkQZbcouRjE3h8iV3+nw5XS5z9yLiK90/7aZYe2IJVz/MOPflzlKXyF21SDylQEKZTp+rYsy9/run7nKtgM77nFjHvyQxrXTUWOYZaa5CqgYGk3keJtXVf62/wjJMt05JiWIM6SxGbeyUcmC2HOUuSy35Hl47IslF6/sixTkmNqgjiSUHaL3AZ6iBRvRIx1XelnPAIEPMIQtg9MZ7a808UgApmjCBC4RAAEgXIAgQgCIAjUAwiAINABICBDABZEhhtKGUEABDEiaHRThgAIIsMNpYwgAIIYETS6KUMABJHhhlJGEABBjAga3ZQhAILIcEMpIwiAIEYEjW7KEABBZLihlBEEQBAjgkY3ZQiAIDLcUMoIAiCIEUGjmzIEQBAZbihlBAEQxIig0U0ZAiCIDDeUMoIACGJE0OimDAEQRIYbShlBAAQxImh0U4YACCLDDaWMIACCGBE0uilDAASR4YZSRhAAQYwIGt2UIQCCyHBDKSMI/Acwpngj5fJpJQAAAABJRU5ErkJggg=="></a><a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Website-Github-d021d6?logo=GitHub"></a><a target="_blank" href="https://www.algolia.com/" title="本站搜索使用Algolia搜索服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Search-Algolia-003DFF?logo=Algolia"></a><a target="_blank" href="https://cloud.tencent.com/" title="本站域名管理使用腾讯云域名服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Domain-Tencent-00a3ff?logo=data:image/png;base64,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"></a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用CC BY-NC-SA 4.0国际许可协议进行许可"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?logo=coursera&logoColor=fff"></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2QzGRyH6AfaTut0wREwvn7fY-gzGzoHsz',
+      appKey: 'qYfCPzb8aECRoFXHi9IbMAxD',
+      avatar: 'monsterid',
+      serverURLs: 'https://2qzgryh6.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"留下你的足迹吧","enableQQ":false}))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script><script>(() => {
+  const initGitalk = () => {
+    const gitalk = new Gitalk(Object.assign({
+      clientID: 'a577dc44caf7fdfd7144',
+      clientSecret: '049721b8ef41e1f184c36f8c912460da703150c7',
+      repo: 'blog-comments',
+      owner: 'weizwz',
+      admin: ['weizwz'],
+      id: 'ae855b675d176f764d5884e1d1b4fb99',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async() => {
+    if (typeof Gitalk === 'function') initGitalk()
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk()
+    }
+  }
+  
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  if ('Valine' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
+      <script data-pjax>
+        if (typeof window.recommend === 'undefined') {
+          window.recommend = {
+            hexo_butterfly_recommend_init: function() {
+              const $recommend = document.querySelector('#recommend');
+              if($recommend) return;
+              document.documentElement.style.setProperty('--recommend-main', '#409eff');
+              document.documentElement.style.setProperty('--recommend-deep', '#0075ffdd');
+              const hexo_butterfly_recommend_elist = 'null'.split(',');
+              var hexo_butterfly_recommend_cpage = location.pathname;
+              const hexo_butterfly_recommend_epage = '/';
+              var hexo_butterfly_recommend_flag = 0;
+        
+              for (var i = 0; i < hexo_butterfly_recommend_elist.length; i++) {
+                if (hexo_butterfly_recommend_cpage.includes(hexo_butterfly_recommend_elist[i])) {
+                  hexo_butterfly_recommend_flag++;
+                }
+              }
+              if ((hexo_butterfly_recommend_epage === 'all') && (hexo_butterfly_recommend_flag === 0)) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              } else if (hexo_butterfly_recommend_epage === hexo_butterfly_recommend_cpage) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              }
+            },
+            hexo_butterfly_recommend_injector_config: function() {
+              var parent_div_git = document.getElementById('content-inner');
+              var item_html = '<div class="recommend-right" id="recommend"><div id="recommend-content" onmousewheel="recommend.postScroll(this)"><div class="recommend-wrapper" id="recommend-banner"><div id="recommend-banner-wrapper"><div class="recommend-banner-title-wrapper"><div class="recommend-banner-title">无限热爱</div><div class="recommend-banner-title">生活与技术</div><div class="recommend-banner-title">WEIZWZ.COM</div></div><div class="recommend-tags-all"><div class="recommend-tags-wrapper"><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #42b883"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #fff"><i class="iconfont icon-vscode" style="color: #2196f3"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #42b883"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #fff"><i class="iconfont icon-vscode" style="color: #2196f3"></i></div></div></div><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #fff"><i class="iconfont icon-xiaochengxu" style="color: #1aad19"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #fff"><i class="iconfont icon-xiaochengxu" style="color: #1aad19"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div></div></div></div><a id="recommend-banner-hover" onclick="recommend.toRandomPost()"><span class="recommend-banner-text">随便逛逛</span><i class="fas fa-arrow-right recommend-banner-righticon"></i></a></div><div id="recommend-category"><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/技术&quot;)" style="background: linear-gradient(to right, #358bff, #15c6ff)"><span class="recommend-categoryItem-text">技术浅谈</span><i class="fa-solid fa-laptop-code"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/资源&quot;)" style="background: linear-gradient(to right, #18e7ae, #1eebeb)"><span class="recommend-categoryItem-text">资源分享</span><i class="fa-solid fa-gem"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/博客&quot;)" style="background: linear-gradient(to right, #f65, #ffbf37)"><span class="recommend-categoryItem-text">博客教程</span><i class="fa-solid fa-blog"></i></a></div></div></div><div class="recommend-wrapper" id="recommend-post"><div class="recommend-post-main" id="recommend-post-main"><div class="recommend-post-cover" onclick="recommend.toPost(&quot;posts/3277e220.html&quot;)" style="background: #409eff url(/img/cover/default.png) no-repeat center/cover"></div><div class="recommend-post-cover-wrapper"><div class="recommend-post-cover-info" onclick="recommend.toPost(&quot;posts/3277e220.html&quot;)"><div class="recommend-post-cover-subTitle">博客优化之路</div><div class="recommend-post-cover-title">—— 你好，我的博客</div></div><div class="recommend-post-cover-more" onclick="window.event.cancelBubble=true;recommend.hideCover();"><i class="fa-solid fa-circle-plus"></i><span>更多推荐</span></div></div></div><div class="recommend-post-list" onmouseleave="window.event.cancelBubble=true;recommend.showCover();"><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/hexoButterflyCommend.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="hexo-butterfly-recommend使用说明"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)" title="hexo-butterfly-recommend使用说明">hexo-butterfly-recommend使用说明</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/72bf1e92.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231207_105659.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Github项目徽标"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/72bf1e92.html&quot;)" title="Github项目徽标">Github项目徽标</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231025_215235.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="windows开发环境备份，再也不怕重装系统了"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)" title="windows开发环境备份，再也不怕重装系统了">windows开发环境备份，再也不怕重装系统了</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/ef1b7a14.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/openSourceFonts.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="开源字体整理"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/ef1b7a14.html&quot;)" title="开源字体整理">开源字体整理</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Git使用记录 - 持续更新"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)" title="Git使用记录 - 持续更新">Git使用记录 - 持续更新</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/clash_verge.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Clash Verge 使用记录"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)" title="Clash Verge 使用记录">Clash Verge 使用记录</div></div></div></div></div></div>';
+              parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/72bf1e92.html,posts/64094821.html,posts/6c03382b.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/e37151d.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/e9a127c6.html,posts/5c85881c.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/da790ccb.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/3ab0bc77.html,posts/48f788c6.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.recommend.toPost(randomPost);
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            hideCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              $main.className = 'recommend-post-main recommend-hide';
+            },
+            showCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              if ($main) $main.className = 'recommend-post-main';
+            },
+            postScroll: function(dom) {
+              const e = window.event || arguments.callee.caller.arguments[0];
+              if (document.body.clientWidth <= 1200) {
+                let o = -e.wheelDelta / 2;
+                dom.scrollLeft += o;
+                e.preventDefault();
+              }
+            }
+          }
+        }
+        window.recommend.hexo_butterfly_recommend_init();
+      </script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/72bf1e92.html,posts/64094821.html,posts/6c03382b.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/e37151d.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/e9a127c6.html,posts/5c85881c.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/da790ccb.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/3ab0bc77.html,posts/48f788c6.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
+      </script><script async src="/js/ali_font.js"></script><!-- hexo injector body_end end --></body></html>

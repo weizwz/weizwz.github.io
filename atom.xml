@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2023-12-28T13:19:59.530Z</updated>
+  <updated>2024-01-02T06:02:10.741Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客常用标签/语法</title>
+    <link href="https://weizwz.com/posts/48f788c6.html"/>
+    <id>https://weizwz.com/posts/48f788c6.html</id>
+    <published>2024-01-02T02:50:15.000Z</published>
+    <updated>2024-01-02T06:02:10.741Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;markdown-语法&quot;&gt;&lt;a href=&quot;#markdown-语法&quot; class=&quot;headerlink&quot; title=&quot;markdown 语法&quot;&gt;&lt;/a&gt;markdown 语法&lt;/h2&gt;&lt;h3 id=&quot;引用&quot;&gt;&lt;a href=&quot;#引用&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="博客" scheme="https://weizwz.com/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="markdown" scheme="https://weizwz.com/tags/markdown/"/>
+    
+  </entry>
   
   <entry>
     <title>vue3+ts打开echarts的正确方式</title>
@@ -606,36 +633,6 @@
     <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
     
     <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Cygwin，在windows中使用linux命令</title>
-    <link href="https://weizwz.com/posts/8748c6b7.html"/>
-    <id>https://weizwz.com/posts/8748c6b7.html</id>
-    <published>2023-09-22T12:13:00.000Z</published>
-    <updated>2023-12-07T03:21:49.434Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;习惯了 &lt;code&gt;linux&lt;/code&gt; 命令的快捷操作，使用 &lt;code&gt;winodws&lt;/code&gt; 的 &lt;code&gt;shell&lt;/code&gt; 感觉效率非常低下，于是开始搜寻工具支持。&lt;br&gt;刚开始搜到的是</summary>
-        
-      
-    
-    
-    
-    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="tools" scheme="https://weizwz.com/tags/tools/"/>
-    
-    <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
-    
-    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
     
   </entry>
   
