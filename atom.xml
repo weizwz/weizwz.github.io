@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2024-01-02T06:02:10.741Z</updated>
+  <updated>2024-01-08T03:13:26.101Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>uni-app+vue3+ts项目搭建</title>
+    <link href="https://weizwz.com/posts/f1579949.html"/>
+    <id>https://weizwz.com/posts/f1579949.html</id>
+    <published>2024-01-05T09:45:01.000Z</published>
+    <updated>2024-01-08T03:13:26.101Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;项目代码同步更新至码云 &lt;a href=&quot;https://gitee.com/weizwz/uni-vue3-ts-template&quot;&gt;uni-vue3-ts-template&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
+    
+    <category term="uni-app" scheme="https://weizwz.com/tags/uni-app/"/>
+    
+    <category term="wechat" scheme="https://weizwz.com/tags/wechat/"/>
+    
+  </entry>
   
   <entry>
     <title>博客常用标签/语法</title>
@@ -196,9 +234,9 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
-    
     <category term="github" scheme="https://weizwz.com/tags/github/"/>
+    
+    <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
     
     <category term="markdown" scheme="https://weizwz.com/tags/markdown/"/>
     
@@ -590,36 +628,6 @@
         
     <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;OPPO桌面有 &lt;code&gt;3*5、3*6、4*5、4*6、5*5、5*6&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
-    
-    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
-    
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OPPO主题组件开发 - 调试与预览</title>
-    <link href="https://weizwz.com/posts/ad78f250.html"/>
-    <id>https://weizwz.com/posts/ad78f250.html</id>
-    <published>2023-09-25T06:14:00.000Z</published>
-    <updated>2023-12-14T05:18:16.298Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本篇作为 &lt;a href=&quot;https://open.oppomobile.com/new/developmentDoc/info?id=12221&quot;&gt;OPPO主题组件调试与预览&lt;/a&gt;</summary>
         
       
     
