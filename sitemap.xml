@@ -588,13 +588,6 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/axios/</loc>
-    <lastmod>2024-03-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://weizwz.com/tags/pina/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -609,14 +602,14 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/mac/</loc>
+    <loc>https://weizwz.com/tags/axios/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/nginx/</loc>
+    <loc>https://weizwz.com/tags/mac/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -631,6 +624,13 @@
   
   <url>
     <loc>https://weizwz.com/tags/uni-app/</loc>
+    <lastmod>2024-03-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://weizwz.com/tags/nginx/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -679,14 +679,14 @@
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/%E8%AE%BE%E8%AE%A1/</loc>
+    <loc>https://weizwz.com/tags/efi/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://weizwz.com/tags/efi/</loc>
+    <loc>https://weizwz.com/tags/%E8%AE%BE%E8%AE%A1/</loc>
     <lastmod>2024-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

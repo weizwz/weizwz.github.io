@@ -540,6 +540,7 @@ blockquote {
 }
 #aside-content .card-tag-cloud a {
   transition: .3s;
+  font-size: 14px !important;
 }
 #aside-content .card-tag-cloud a:hover {
   transform: scale(1.2);
