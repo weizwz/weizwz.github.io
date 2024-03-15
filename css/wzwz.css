@@ -59,6 +59,7 @@ h1#site-title {
 }
 #nav .menus_items .menus_item .menus_item_child {
   background: var(--global-bg);
+  left: var(--weizwz-margin);
 }
 
 /* 搜索 */
@@ -707,6 +708,9 @@ li.card-archive-list-item:hover > a {
 }
 
 /* Valine评论 */
+.v[data-class=v] a {
+  color: var(--weizwz-main) !important;
+}
 .v[data-class=v] .vedit+.vrow {
   border-top: var(--style-border-dashed);
 }
@@ -737,6 +741,9 @@ li.card-archive-list-item:hover > a {
 .vwrap,
 .vcard {
   background: var(--weizwz-card-bg);
+}
+.v[data-class=v] .vwrap .vheader .vinput:focus {
+  border-bottom-color: var(--weizwz-main) !important;
 }
 
 /* 圆角 */
@@ -829,6 +836,18 @@ li.card-archive-list-item:hover > a {
   }
 }
 @media screen and (max-width: 1024px) {
+  #nav .menus_items .menus_item {
+    padding-left: calc(var(--weizwz-margin) / 2);
+  }
+  #nav #search-button {
+    padding-left: 0;
+  }
+  #nav #blog-info .site-icon {
+    height: 24px;
+    width: 32px;
+    object-fit: cover;
+    object-position: 0;
+  }
   #aside-content {
     width: 100%;
   }
@@ -843,11 +862,15 @@ li.card-archive-list-item:hover > a {
   }
 }
 @media screen and (min-width: 900px) {
-  #aside-content {
+  /* #aside-content {
     padding-left: var(--weizwz-margin);
-  }
+  } */
 }
 @media screen and (max-width: 768px) {
+  #nav #blog-info .site-icon {
+    height: 24px;
+    width: inherit;
+  }
   .site-data > a .headline,
   .site-data > a .length-num {
     color: var(--weizwz-fontcolor) !important;

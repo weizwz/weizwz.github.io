@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2024-01-08T03:13:26.101Z</updated>
+  <updated>2024-02-06T02:23:17.000Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -17,11 +17,193 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>常用TS总结</title>
+    <link href="https://weizwz.com/posts/f6350145.html"/>
+    <id>https://weizwz.com/posts/f6350145.html</id>
+    <published>2024-02-05T12:37:54.000Z</published>
+    <updated>2024-02-06T02:23:17.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;自己常用的 TS 写法总结，应该会一直更新。可使用 &lt;a href=&quot;https://www.typescriptlang.org/zh/play&quot;&gt;TS在线编译&lt;/a&gt; 校验 TS 语法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定制你的清爽Mac版Edge浏览器</title>
+    <link href="https://weizwz.com/posts/701129a9.html"/>
+    <id>https://weizwz.com/posts/701129a9.html</id>
+    <published>2024-02-03T13:03:47.000Z</published>
+    <updated>2024-02-05T03:12:32.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;浏览器每次打开都有个烦人的提示&lt;code&gt;要获取将来的 microsoft edge 更新，需要 macos 10.15 或更高版本&lt;/code&gt;，找了很久也没有解决办法，有 windows 端的解决方案，有禁止更新的解决方案，就是没有 Mac</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="mac" scheme="https://weizwz.com/tags/mac/"/>
+    
+    <category term="edge" scheme="https://weizwz.com/tags/edge/"/>
+    
+    <category term="chrome" scheme="https://weizwz.com/tags/chrome/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>uni-app+vue3有哪些问题</title>
+    <link href="https://weizwz.com/posts/cc35a037.html"/>
+    <id>https://weizwz.com/posts/cc35a037.html</id>
+    <published>2024-02-01T11:34:18.000Z</published>
+    <updated>2024-02-06T14:14:03.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;已经用 uni-app+vue3+ts 开发了一段时间，记录一下日常遇见的问题和解决办法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;uni-app-中的单端代码&quot;&gt;&lt;a href=&quot;#uni-app-中的单端代码&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="uni-app" scheme="https://weizwz.com/tags/uni-app/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你想要的龙年特效来了</title>
+    <link href="https://weizwz.com/posts/48e0de05.html"/>
+    <id>https://weizwz.com/posts/48e0de05.html</id>
+    <published>2024-02-01T06:19:05.000Z</published>
+    <updated>2024-02-01T06:19:05.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;废话不多说，龙年腾云特效送给大家&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;预览&quot;&gt;&lt;a href=&quot;#预览&quot; class=&quot;headerlink&quot; title=&quot;预览&quot;&gt;&lt;/a&gt;预览&lt;/h2&gt;&lt;p&gt;在线预览 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="css" scheme="https://weizwz.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自用黑苹果问题记录</title>
+    <link href="https://weizwz.com/posts/7cd83567.html"/>
+    <id>https://weizwz.com/posts/7cd83567.html</id>
+    <published>2024-01-29T07:50:30.000Z</published>
+    <updated>2024-01-29T08:16:29.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;2024 年了还在用黑苹果吗？新的 &lt;code&gt;mac mini2&lt;/code&gt; 确实很香，不过暂时还不太想换电脑。目前的台式配置是 &lt;code&gt;i5-7500 + GTX1066&lt;/code&gt;，日常使用其实足够，不玩 3A</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="mac" scheme="https://weizwz.com/tags/mac/"/>
+    
+    <category term="efi" scheme="https://weizwz.com/tags/efi/"/>
+    
+    <category term="clover" scheme="https://weizwz.com/tags/clover/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mac原生终端美化记录</title>
+    <link href="https://weizwz.com/posts/b93c4a61.html"/>
+    <id>https://weizwz.com/posts/b93c4a61.html</id>
+    <published>2024-01-24T09:05:48.000Z</published>
+    <updated>2024-01-29T13:10:23.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;网络准备&quot;&gt;&lt;a href=&quot;#网络准备&quot; class=&quot;headerlink&quot; title=&quot;网络准备&quot;&gt;&lt;/a&gt;网络准备&lt;/h2&gt;&lt;p&gt;安装 &lt;code&gt;clash&lt;/code&gt;，然后复制终端命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight</summary>
+        
+      
+    
+    
+    
+    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
+    
+    
+    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
+    
+    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
+    
+    <category term="mac" scheme="https://weizwz.com/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>uni-app+vue3+ts项目搭建</title>
     <link href="https://weizwz.com/posts/f1579949.html"/>
     <id>https://weizwz.com/posts/f1579949.html</id>
     <published>2024-01-05T09:45:01.000Z</published>
-    <updated>2024-01-08T03:13:26.101Z</updated>
+    <updated>2024-01-05T09:45:01.000Z</updated>
     
     
       
@@ -59,7 +241,7 @@
     <link href="https://weizwz.com/posts/48f788c6.html"/>
     <id>https://weizwz.com/posts/48f788c6.html</id>
     <published>2024-01-02T02:50:15.000Z</published>
-    <updated>2024-01-02T06:02:10.741Z</updated>
+    <updated>2024-01-02T08:15:56.000Z</updated>
     
     
       
@@ -86,7 +268,7 @@
     <link href="https://weizwz.com/posts/a31b36c6.html"/>
     <id>https://weizwz.com/posts/a31b36c6.html</id>
     <published>2023-12-28T12:35:25.000Z</published>
-    <updated>2023-12-28T13:19:59.530Z</updated>
+    <updated>2023-12-28T12:35:25.000Z</updated>
     
     
       
@@ -120,7 +302,7 @@
     <link href="https://weizwz.com/posts/73655837.html"/>
     <id>https://weizwz.com/posts/73655837.html</id>
     <published>2023-12-19T09:37:23.000Z</published>
-    <updated>2023-12-21T02:41:27.469Z</updated>
+    <updated>2023-12-19T09:37:23.000Z</updated>
     
     
       
@@ -151,7 +333,7 @@
     <link href="https://weizwz.com/posts/d50f45ae.html"/>
     <id>https://weizwz.com/posts/d50f45ae.html</id>
     <published>2023-12-18T06:21:31.000Z</published>
-    <updated>2023-12-20T02:12:05.450Z</updated>
+    <updated>2023-12-20T12:12:45.000Z</updated>
     
     
       
@@ -183,7 +365,7 @@
     <link href="https://weizwz.com/posts/c4be1e8f.html"/>
     <id>https://weizwz.com/posts/c4be1e8f.html</id>
     <published>2023-12-15T08:42:25.000Z</published>
-    <updated>2023-12-19T09:07:05.377Z</updated>
+    <updated>2023-12-19T09:23:54.000Z</updated>
     
     
       
@@ -215,7 +397,7 @@
     <link href="https://weizwz.com/posts/72bf1e92.html"/>
     <id>https://weizwz.com/posts/72bf1e92.html</id>
     <published>2023-12-06T11:49:11.000Z</published>
-    <updated>2023-12-14T05:07:17.292Z</updated>
+    <updated>2023-12-14T09:23:10.000Z</updated>
     
     
       
@@ -234,9 +416,9 @@
     <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
     
     
-    <category term="github" scheme="https://weizwz.com/tags/github/"/>
-    
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
+    
+    <category term="github" scheme="https://weizwz.com/tags/github/"/>
     
     <category term="markdown" scheme="https://weizwz.com/tags/markdown/"/>
     
@@ -249,7 +431,7 @@
     <link href="https://weizwz.com/posts/6e87ac02.html"/>
     <id>https://weizwz.com/posts/6e87ac02.html</id>
     <published>2023-12-05T03:00:56.000Z</published>
-    <updated>2023-12-20T02:07:03.521Z</updated>
+    <updated>2023-12-05T03:00:56.000Z</updated>
     
     
       
@@ -282,7 +464,7 @@
     <link href="https://weizwz.com/posts/de51c0b5.html"/>
     <id>https://weizwz.com/posts/de51c0b5.html</id>
     <published>2023-11-29T13:33:04.000Z</published>
-    <updated>2023-12-20T02:07:10.378Z</updated>
+    <updated>2023-11-29T13:33:04.000Z</updated>
     
     
       
@@ -313,7 +495,7 @@
     <link href="https://weizwz.com/posts/c57fdcba.html"/>
     <id>https://weizwz.com/posts/c57fdcba.html</id>
     <published>2023-11-29T08:13:08.000Z</published>
-    <updated>2023-12-07T03:14:11.705Z</updated>
+    <updated>2023-11-29T08:13:08.000Z</updated>
     
     
       
@@ -341,7 +523,7 @@
     <link href="https://weizwz.com/posts/f72e0ad.html"/>
     <id>https://weizwz.com/posts/f72e0ad.html</id>
     <published>2023-11-28T09:14:03.000Z</published>
-    <updated>2023-12-20T02:07:18.174Z</updated>
+    <updated>2023-11-28T09:14:03.000Z</updated>
     
     
       
@@ -372,7 +554,7 @@
     <link href="https://weizwz.com/posts/da790ccb.html"/>
     <id>https://weizwz.com/posts/da790ccb.html</id>
     <published>2023-11-25T02:05:41.000Z</published>
-    <updated>2023-11-30T07:39:08.382Z</updated>
+    <updated>2023-11-25T02:05:41.000Z</updated>
     
     
       
@@ -402,7 +584,7 @@
     <link href="https://weizwz.com/posts/7db60965.html"/>
     <id>https://weizwz.com/posts/7db60965.html</id>
     <published>2023-11-22T08:34:55.000Z</published>
-    <updated>2023-12-18T08:12:01.627Z</updated>
+    <updated>2024-02-01T11:12:14.000Z</updated>
     
     
       
@@ -434,7 +616,7 @@
     <link href="https://weizwz.com/posts/6c03382b.html"/>
     <id>https://weizwz.com/posts/6c03382b.html</id>
     <published>2023-11-15T13:57:37.000Z</published>
-    <updated>2023-12-07T03:14:39.087Z</updated>
+    <updated>2023-11-23T08:10:03.000Z</updated>
     
     
       
@@ -454,193 +636,6 @@
     <category term="js" scheme="https://weizwz.com/tags/js/"/>
     
     <category term="function" scheme="https://weizwz.com/tags/function/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置</title>
-    <link href="https://weizwz.com/posts/3c6c8900.html"/>
-    <id>https://weizwz.com/posts/3c6c8900.html</id>
-    <published>2023-11-13T16:18:12.000Z</published>
-    <updated>2023-12-20T02:07:24.913Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;details class=&quot;toggle&quot; &gt;&lt;summary class=&quot;toggle-button&quot; style=&quot;&quot;&gt;合集 - Vite4+Typescript+Vue3+Pinia 从零搭建&lt;/summary&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
-    
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置</title>
-    <link href="https://weizwz.com/posts/422566e3.html"/>
-    <id>https://weizwz.com/posts/422566e3.html</id>
-    <published>2023-11-09T11:08:02.000Z</published>
-    <updated>2023-12-20T02:07:28.977Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;details class=&quot;toggle&quot; &gt;&lt;summary class=&quot;toggle-button&quot; style=&quot;&quot;&gt;合集 - Vite4+Typescript+Vue3+Pinia 从零搭建&lt;/summary&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
-    
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</title>
-    <link href="https://weizwz.com/posts/5bc77c26.html"/>
-    <id>https://weizwz.com/posts/5bc77c26.html</id>
-    <published>2023-11-09T09:03:24.000Z</published>
-    <updated>2023-12-20T02:07:33.637Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;details class=&quot;toggle&quot; &gt;&lt;summary class=&quot;toggle-button&quot; style=&quot;&quot;&gt;合集 - Vite4+Typescript+Vue3+Pinia 从零搭建&lt;/summary&gt;&lt;div</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
-    
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
-    
-    <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>windows开发环境备份，再也不怕重装系统了</title>
-    <link href="https://weizwz.com/posts/7657b7c7.html"/>
-    <id>https://weizwz.com/posts/7657b7c7.html</id>
-    <published>2023-10-25T14:19:32.000Z</published>
-    <updated>2023-12-14T03:39:30.871Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;每次重装系统后，都要重新安装软件，配置环境变量，极为繁琐。故作环境环境变量备份，常用软件恢复记录，前提是你的软件要安装在非系统盘，D/E盘等&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;软件安装在非系统盘&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="资源" scheme="https://weizwz.com/categories/%E8%B5%84%E6%BA%90/"/>
-    
-    
-    <category term="win11" scheme="https://weizwz.com/tags/win11/"/>
-    
-    <category term="cmd" scheme="https://weizwz.com/tags/cmd/"/>
-    
-    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nginx配置解决跨域访问</title>
-    <link href="https://weizwz.com/posts/e9a127c6.html"/>
-    <id>https://weizwz.com/posts/e9a127c6.html</id>
-    <published>2023-10-21T07:35:35.000Z</published>
-    <updated>2023-12-14T05:15:19.554Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;场景：前后的分离项目，前端vue框架，打包后放在Tomcat里访问，端口是8080，后端服务端口8058。访问前端项目时，调用后端接口报跨域。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;后端环境&quot;&gt;&lt;a href=&quot;#后端环境&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="proxy" scheme="https://weizwz.com/tags/proxy/"/>
-    
-    <category term="nodejs" scheme="https://weizwz.com/tags/nodejs/"/>
-    
-    <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
-    
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="nginx" scheme="https://weizwz.com/tags/nginx/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>OPPO主题组件开发 - 组件内容自适应</title>
-    <link href="https://weizwz.com/posts/e37151d.html"/>
-    <id>https://weizwz.com/posts/e37151d.html</id>
-    <published>2023-10-08T06:03:00.000Z</published>
-    <updated>2023-12-07T03:14:19.531Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;OPPO桌面有 &lt;code&gt;3*5、3*6、4*5、4*6、5*5、5*6&lt;/code&gt;</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="oppo" scheme="https://weizwz.com/tags/oppo/"/>
-    
-    <category term="theme" scheme="https://weizwz.com/tags/theme/"/>
-    
-    <category term="plugin" scheme="https://weizwz.com/tags/plugin/"/>
     
   </entry>
   

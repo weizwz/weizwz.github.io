@@ -64,7 +64,7 @@
 }
 ::view-transition-new(*) {
   animation: hexoDark .8s ease-in;
-  /* mix-blend-mode: darken; */
+  mix-blend-mode: normal;
 }
 
 @keyframes hexoDark {
