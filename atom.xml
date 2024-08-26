@@ -6,7 +6,7 @@
   <link href="https://weizwz.com/atom.xml" rel="self"/>
   
   <link href="https://weizwz.com/"/>
-  <updated>2024-02-06T02:23:17.000Z</updated>
+  <updated>2024-08-26T12:52:41.000Z</updated>
   <id>https://weizwz.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS脚本批量处理TS数据类型</title>
+    <link href="https://weizwz.com/posts/72334782.html"/>
+    <id>https://weizwz.com/posts/72334782.html</id>
+    <published>2024-08-26T12:52:41.000Z</published>
+    <updated>2024-08-26T12:52:41.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;在TS开发中，经常会遇到后台数据字段比较多的情况，这时候需要一个个复制字段然后给他手动配置数据类型来完成我们的TS类型定义，相当麻烦。有什么快速的方法呢，我就目前遇到的两种情况分别写了JS脚本来处理后台数据，直接生成我们需要的数据格式。&lt;/p&gt;
+&lt;</summary>
+        
+      
+    
+    
+    
+    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="js" scheme="https://weizwz.com/tags/js/"/>
+    
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+  </entry>
   
   <entry>
     <title>常用TS总结</title>
@@ -40,9 +69,9 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
     <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
     
   </entry>
   
@@ -98,9 +127,9 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
     <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
+    <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
     
     <category term="uni-app" scheme="https://weizwz.com/tags/uni-app/"/>
     
@@ -214,11 +243,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
     
@@ -277,11 +306,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="echarts" scheme="https://weizwz.com/tags/echarts/"/>
     
@@ -310,11 +339,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="axios" scheme="https://weizwz.com/tags/axios/"/>
     
@@ -433,11 +462,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="pina" scheme="https://weizwz.com/tags/pina/"/>
     
@@ -466,11 +495,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="router" scheme="https://weizwz.com/tags/router/"/>
     
@@ -525,11 +554,11 @@
     <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
+    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
+    
     <category term="vite" scheme="https://weizwz.com/tags/vite/"/>
     
     <category term="vue3" scheme="https://weizwz.com/tags/vue3/"/>
-    
-    <category term="typescript" scheme="https://weizwz.com/tags/typescript/"/>
     
     <category term="vscode" scheme="https://weizwz.com/tags/vscode/"/>
     
@@ -588,34 +617,6 @@
     <category term="npm" scheme="https://weizwz.com/tags/npm/"/>
     
     <category term="hexo" scheme="https://weizwz.com/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS判断点是否在线段上</title>
-    <link href="https://weizwz.com/posts/6c03382b.html"/>
-    <id>https://weizwz.com/posts/6c03382b.html</id>
-    <published>2023-11-15T13:57:37.000Z</published>
-    <updated>2023-11-23T08:10:03.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;本文利用向量的点积和叉积来判断点是否在线段上。&lt;br&gt;基础知识补充 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/350622845&quot;&gt;从零开始的高中数学——向量&lt;/a&gt;、&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="技术" scheme="https://weizwz.com/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="js" scheme="https://weizwz.com/tags/js/"/>
-    
-    <category term="算法" scheme="https://weizwz.com/tags/%E7%AE%97%E6%B3%95/"/>
     
   </entry>
   
