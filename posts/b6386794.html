@@ -1,0 +1,490 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>JS比较数值大小 | 唯之为之</title><meta name="author" content="唯之为之,weizwz@foxmail.com"><meta name="copyright" content="唯之为之"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、 简单循环算法代码如下：123456const numbers &#x3D; [5, 6, 2, 3, 7];let max &#x3D; -Infinity;for (let i &#x3D; 0; i &lt; numbers.length; i++) &#123;        if (numbers[i] &gt; max) max &#x3D; numbers[i];&#125;  Infinity  概述全局属性 Inf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS比较数值大小">
+<meta property="og:url" content="https://weizwz.com/posts/b6386794.html">
+<meta property="og:site_name" content="唯之为之">
+<meta property="og:description" content="一、 简单循环算法代码如下：123456const numbers &#x3D; [5, 6, 2, 3, 7];let max &#x3D; -Infinity;for (let i &#x3D; 0; i &lt; numbers.length; i++) &#123;        if (numbers[i] &gt; max) max &#x3D; numbers[i];&#125;  Infinity  概述全局属性 Inf">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://weizwz.com/img/blog/20221024_cover-js-compare.jpg">
+<meta property="article:published_time" content="2022-10-24T05:34:17.000Z">
+<meta property="article:modified_time" content="2023-12-05T03:11:33.000Z">
+<meta property="article:author" content="唯之为之">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="算法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizwz.com/img/blog/20221024_cover-js-compare.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://weizwz.com/posts/b6386794.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="h5ZDnqWDDdodHi5p5KY3IzNtALfigZTMXUZv1TRcSf0"/><meta name="baidu-site-verification" content="code-V9zqqeAUQI"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"4N68NE97S5","apiKey":"ee8fc79dc8f5c5c84d3569b38bf23472","indexName":"blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"距离上次更新已有","messageNext":"天，文章内容或许已经过时"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#409eff","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'JS比较数值大小',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-05 11:11:33'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_jerhaqma52.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/css/recommend.css?v=1.1.2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.4.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/pace-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="唯之为之"><img class="site-icon" src= "/img/loading.gif" data-lazy-src="/img/logo.png"/></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">JS比较数值大小</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-24T05:34:17.000Z" title="发表于 2022-10-24 13:34:17">2022-10-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-05T03:11:33.000Z" title="更新于 2023-12-05 11:11:33">2023-12-05</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="JS比较数值大小"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h2 id="一、-简单循环算法"><a href="#一、-简单循环算法" class="headerlink" title="一、 简单循环算法"></a>一、 简单循环算法</h2><p>代码如下：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numbers = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">7</span>];</span><br><span class="line"><span class="keyword">let</span> max = -<span class="title class_">Infinity</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; numbers.<span class="property">length</span>; i++) &#123;      </span><br><span class="line">  <span class="keyword">if</span> (numbers[i] &gt; max) max = numbers[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><code>Infinity</code></p>
+<ol>
+<li>概述<br>全局属性 <code>Infinity</code> 是一个数值，表示无穷大。</li>
+<li>说明<ul>
+<li><code>Infinity</code> 的初始值是 <code>Number.POSITIVE_INFINITY</code>。</li>
+<li><code>Infinity</code>（正无穷大）大于任何值。</li>
+<li>在 ECMAScript 5 的规范中， <code>Infinity</code> 是只读的。</li>
+</ul>
+</li>
+<li>示例<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Infinity</span>          ); <span class="comment">/* Infinity */</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Infinity</span> + <span class="number">1</span>      ); <span class="comment">/* Infinity */</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Math</span>.<span class="title function_">pow</span>(<span class="number">10</span>, <span class="number">1000</span>)); <span class="comment">/* Infinity */</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Math</span>.<span class="title function_">log</span>(<span class="number">0</span>)       ); <span class="comment">/* -Infinity */</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="number">1</span> / <span class="title class_">Infinity</span>      ); <span class="comment">/* 0 */</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</blockquote>
+<h2 id="二、-Math-max"><a href="#二、-Math-max" class="headerlink" title="二、 Math.max()"></a>二、 <code>Math.max()</code></h2><h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h3><p><code>Math.max()</code> 函数返回作为输入参数的最大数字。</p>
+<h3 id="2-参数"><a href="#2-参数" class="headerlink" title="2. 参数"></a>2. 参数</h3><p><code>value1, value2, … , valueN</code><br>0 个或多个数字，将在其中选择，并返回最大的值。</p>
+<h3 id="3-返回值"><a href="#3-返回值" class="headerlink" title="3. 返回值"></a>3. 返回值</h3><p>给定数值中最大的数。如果任一参数不能转换为数值，则返回 <code>NaN</code>。如果没有提供参数，返回 <code>-Infinity</code>。</p>
+<h3 id="4-说明"><a href="#4-说明" class="headerlink" title="4. 说明"></a>4. 说明</h3><p><code>Math.max.length</code> 是 2，这从某种程度上表明了它旨在处理至少两个参数。</p>
+<p>示例：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Math</span>.<span class="title function_">max</span>(<span class="number">10</span>, <span class="number">20</span>); <span class="comment">//  20</span></span><br><span class="line"><span class="title class_">Math</span>.<span class="title function_">max</span>(-<span class="number">10</span>, -<span class="number">20</span>); <span class="comment">// -10</span></span><br><span class="line"><span class="title class_">Math</span>.<span class="title function_">max</span>(-<span class="number">10</span>, <span class="number">20</span>); <span class="comment">//  20</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="5-比较数组中值的大小"><a href="#5-比较数组中值的大小" class="headerlink" title="5. 比较数组中值的大小"></a>5. 比较数组中值的大小</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numbers = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">7</span>];</span><br><span class="line"><span class="keyword">let</span> maxNum = <span class="title class_">Math</span>.<span class="title function_">max</span>(...numbers)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>展开语法/扩展运算符 <code>...</code></p>
+<ol>
+<li>概述<br>展开语法 (Spread syntax), 可以在函数调用/数组构造时，将数组表达式或者 string 在语法层面展开；还可以在构造字面量对象时，将对象表达式按 key-value 的方式展开。(字面量一般指 <code>[1, 2, 3]</code> 或者 <code>&#123;name: &quot;mdn&quot;&#125;</code> 这种简洁的构造方式)。</li>
+<li>语法<ul>
+<li>函数调用：<code>myFunction(...iterableObj)</code>;</li>
+<li>字面量数组构造或字符串：<code>[...iterableObj, &#39;4&#39;, ...&#39;hello&#39;, 6]</code>;</li>
+<li>构造字面量对象时，进行克隆或者属性拷贝：<code>let objClone = &#123; ...obj &#125;</code>;<br>展开语法和 <code>Object.assign()</code> 行为一致，执行的都是浅拷贝 (只遍历一层)。</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h2 id="三、Function-prototype-apply"><a href="#三、Function-prototype-apply" class="headerlink" title="三、Function.prototype.apply()"></a>三、<code>Function.prototype.apply()</code></h2><h3 id="1-概述-1"><a href="#1-概述-1" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>apply() 方法调用一个具有给定 this 值的函数，以及以一个数组（或一个类数组对象）的形式提供的参数。</p>
+<h3 id="2-参数-apply-thisArg-argsArray"><a href="#2-参数-apply-thisArg-argsArray" class="headerlink" title="2. 参数 apply(thisArg, argsArray)"></a>2. 参数 <code>apply(thisArg, argsArray)</code></h3><p><code>thisArg</code>，在 func 函数运行时使用的 this 值。如果这个函数处于非严格模式下，则指定为 null 或 undefined 时会自动替换为指向全局对象。<br><code>argsArray</code>，可选，一个数组或者类数组对象，其中的数组元素将作为单独的参数传给 func 函数。如果该参数的值为 null 或 undefined，则表示不需要传入任何参数。</p>
+<h3 id="3-返回值-1"><a href="#3-返回值-1" class="headerlink" title="3. 返回值"></a>3. 返回值</h3><p>调用有指定 this 值和参数的函数的结果。</p>
+<h3 id="4-使用"><a href="#4-使用" class="headerlink" title="4. 使用"></a>4. 使用</h3><ul>
+<li>用 apply 将数组各项添加到另一个数组<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array.<span class="property">push</span>.<span class="title function_">apply</span>(array1, array2);</span><br></pre></td></tr></table></figure></li>
+<li>对于一些需要写循环以遍历数组各项的需求，我们可以用 apply 完成以避免循环。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> numbers = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">7</span>];</span><br><span class="line"><span class="comment">// 使用 Math.min/Math.max 以及 apply 函数时的代码</span></span><br><span class="line"><span class="keyword">let</span> max = <span class="title class_">Math</span>.<span class="property">max</span>.<span class="title function_">apply</span>(<span class="literal">null</span>, numbers);</span><br><span class="line"><span class="comment">// 基本等同于 Math.max(...numbers)</span></span><br></pre></td></tr></table></figure></li>
+<li>使用 apply 来链接构造器<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建一个全局 Global_Objects/Function 对象的 construct 方法，来使我们能够在构造器中使用一个类数组对象而非参数列表。</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">MyConstructor</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> nProp = <span class="number">0</span>; nProp &lt; <span class="variable language_">arguments</span>.<span class="property">length</span>; nProp++) &#123;</span><br><span class="line">      <span class="variable language_">this</span>[<span class="string">&#x27;property&#x27;</span> + nProp] = <span class="variable language_">arguments</span>[nProp];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> myArray = [<span class="number">4</span>, <span class="string">&#x27;Hello world!&#x27;</span>, <span class="literal">false</span>];</span><br><span class="line"><span class="keyword">let</span> myInstance = <span class="title class_">MyConstructor</span>.<span class="title function_">construct</span>(myArray);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(myInstance.<span class="property">property1</span>);     <span class="comment">// logs &#x27;Hello world!&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(myInstance <span class="keyword">instanceof</span> <span class="title class_">MyConstructor</span>); <span class="comment">// logs &#x27;true&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(myInstance.<span class="property">constructor</span>);    <span class="comment">// logs &#x27;MyConstructor&#x27;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p><code>Object.prototype.constructor</code></p>
+<ol>
+<li>概述<br>constructor 属性返回 Object 的构造函数（用于创建实例对象）。此属性的值是对函数本身的引用，而不是一个包含函数名称的字符串。</li>
+<li>说明<br>所有对象（使用 Object.create(null) 创建的对象除外）都具有 constructor 属性。<br>在没有显式使用构造函数的情况下，创建的对象（例如对象和数组文本）将具有 constructor 属性，这个属性指向该对象的基本对象构造函数类型。<br>示例：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> o = &#123;&#125;</span><br><span class="line">o.<span class="property">constructor</span> === <span class="title class_">Object</span> <span class="comment">// true</span></span><br><span class="line"><span class="keyword">const</span> a = <span class="keyword">new</span> <span class="title class_">Array</span></span><br><span class="line">a.<span class="property">constructor</span> === <span class="title class_">Array</span> <span class="comment">// true</span></span><br><span class="line"><span class="keyword">const</span> n = <span class="keyword">new</span> <span class="title class_">Number</span>(<span class="number">3</span>)</span><br><span class="line">n.<span class="property">constructor</span> === <span class="title class_">Number</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure></li>
+<li>使用<ul>
+<li>打印对象的构造函数<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Tree</span>(<span class="params">name</span>) &#123;</span><br><span class="line">  <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> theTree = <span class="keyword">new</span> <span class="title class_">Tree</span>(<span class="string">&#x27;Redwood&#x27;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;theTree.constructor is &#x27;</span> + theTree.<span class="property">constructor</span>)</span><br></pre></td></tr></table></figure></li>
+<li>改变对象的 constructor：<br>可以为除了 null 和 undefined（因为这两者没有相应的构造函数）之外的任何类型指定 constructor 属性（如 String、Number、Boolean 等），但基本类型不会保留这些更改（也不会抛出异常）。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> val = <span class="literal">null</span>;</span><br><span class="line">val.<span class="property">constructor</span> = <span class="number">1</span>; <span class="comment">// TypeError: val is null</span></span><br><span class="line"></span><br><span class="line">val = <span class="string">&#x27;abc&#x27;</span>;</span><br><span class="line">val.<span class="property">constructor</span> = <span class="title class_">Number</span>; <span class="comment">// 不报错，但没有改变val.constructor === String</span></span><br><span class="line">val.<span class="property">foo</span> = <span class="string">&#x27;bar&#x27;</span>; <span class="comment">// 创建了一个String（&#x27;abc&#x27;）的隐式实例，并为其分配了prop foo</span></span><br><span class="line">val.<span class="property">foo</span> === <span class="literal">undefined</span>; <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = [];</span><br><span class="line">a.<span class="property">constructor</span> = <span class="title class_">String</span></span><br><span class="line">a.<span class="property">constructor</span> === <span class="title class_">String</span> <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+</blockquote>
+<h3 id="5-与call的区别"><a href="#5-与call的区别" class="headerlink" title="5. 与call的区别"></a>5. 与call的区别</h3><p>call() 接受一个参数列表，而 apply() 接受一个参数的单数组。</p>
+<h2 id="四、-Array-prototype-reduce"><a href="#四、-Array-prototype-reduce" class="headerlink" title="四、 Array.prototype.reduce()"></a>四、 <code>Array.prototype.reduce()</code></h2><h3 id="1-概述-2"><a href="#1-概述-2" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>reduce() 方法对数组中的每个元素按序执行一个由您提供的 reducer 函数，每一次运行 reducer 会将先前元素的计算结果作为参数传入，最后将其结果汇总为单个返回值。</p>
+<h3 id="2-参数-reduce-callbackFn-initialValue"><a href="#2-参数-reduce-callbackFn-initialValue" class="headerlink" title="2. 参数 reduce(callbackFn, initialValue)"></a>2. 参数 <code>reduce(callbackFn, initialValue)</code></h3><p><code>callbackFn</code>，一个“reducer”函数，包含四个参数：</p>
+<ul>
+<li><code>previousValue</code>：上一次调用 callbackFn 时的返回值。在第一次调用时，若指定了初始值 initialValue，其值则为 initialValue，否则为数组索引为 0 的元素 array[0]。</li>
+<li><code>currentValue</code>：数组中正在处理的元素。在第一次调用时，若指定了初始值 initialValue，其值则为数组索引为 0 的元素 array[0]，否则为 array[1]。</li>
+<li><code>currentIndex</code>：数组中正在处理的元素的索引。若指定了初始值 initialValue，则起始索引号为 0，否则从索引 1 起始。</li>
+<li><code>array</code>：用于遍历的数组。</li>
+</ul>
+<p><code>initialValue</code> 可选<br>作为第一次调用 callback 函数时参数 previousValue 的值。若指定了初始值 initialValue，则 currentValue 则将使用数组第一个元素；否则 previousValue 将使用数组第一个元素，而 currentValue 将使用数组第二个元素。</p>
+<h3 id="3-返回值-2"><a href="#3-返回值-2" class="headerlink" title="3. 返回值"></a>3. 返回值</h3><p>使用“reducer”回调函数遍历整个数组后的结果。</p>
+<h3 id="4-示例"><a href="#4-示例" class="headerlink" title="4. 示例"></a>4. 示例</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> max = arr.<span class="title function_">reduce</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> <span class="title class_">Math</span>.<span class="title function_">max</span>(a, b), -<span class="title class_">Infinity</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="五、数组切块后循环传入目标"><a href="#五、数组切块后循环传入目标" class="headerlink" title="五、数组切块后循环传入目标"></a>五、数组切块后循环传入目标</h2><h3 id="1-概述-3"><a href="#1-概述-3" class="headerlink" title="1. 概述"></a>1. 概述</h3><p>以上四种方法有超出 JavaScript 引擎参数长度上限的风险。一个方法传入过多参数（比如一万个）时的后果在不同 JavaScript 引擎中表现不同。如果你的参数组非常大，则可以选取这种方法。<br><strong>JavaScriptCore 引擎中有被硬编码的参数个数上限：65536。</strong></p>
+<h3 id="2-示例"><a href="#2-示例" class="headerlink" title="2. 示例"></a>2. 示例</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">minOfArray</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> min = <span class="title class_">Infinity</span>;</span><br><span class="line">  <span class="keyword">const</span> <span class="variable constant_">QUANTUM</span> = <span class="number">32768</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>, len = arr.<span class="property">length</span>; i &lt; len; i += <span class="variable constant_">QUANTUM</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> submin = <span class="title class_">Math</span>.<span class="property">min</span>.<span class="title function_">apply</span>(<span class="literal">null</span>, arr.<span class="title function_">slice</span>(i, <span class="title class_">Math</span>.<span class="title function_">min</span>(i + <span class="variable constant_">QUANTUM</span>, len)));</span><br><span class="line">    min = <span class="title class_">Math</span>.<span class="title function_">min</span>(submin, min);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> min;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://weizwz.com">唯之为之</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://weizwz.com/posts/b6386794.html">https://weizwz.com/posts/b6386794.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://weizwz.com" target="_blank">唯之为之</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/js/">js</a><a class="post-meta__tags" href="/tags/%E7%AE%97%E6%B3%95/">算法</a></div><div class="post_share"><div class="social-share" data-image="/img/blog/20221024_cover-js-compare.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward/wechart-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/wechart-play.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward/ali-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/ali-play.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/dd73ee89.html" title="Vue双向绑定原理梳理"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/cover-vue-bind.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vue双向绑定原理梳理</div></div></a></div><div class="next-post pull-right"><a href="/posts/d80c51ca.html" title="Nodejs报错记录"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/npm-error.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Nodejs报错记录</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/6c03382b.html" title="JS判断点是否在线段上"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231115_223214.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-15</div><div class="title">JS判断点是否在线段上</div></div></a></div><div><a href="/posts/72334782.html" title="JS脚本批量处理TS数据类型"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-08-26</div><div class="title">JS脚本批量处理TS数据类型</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唯之为之</div><div class="author-info__description">个人博客 丨 时光笔墨</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/weizwz"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/weizwz" target="_blank" title="Gitee"><i class="fa-fw iconfont icon-gitee"></i></a><a class="social-icon" href="https://www.cnblogs.com/weizwz" target="_blank" title="博客园"><i class="fa-fw iconfont icon-blog"></i></a><a class="social-icon" href="https://weizwz.com/atom.xml" target="_blank" title="RSS订阅"><i class="fa-fw iconfont icon-rss"></i></a><a class="social-icon" href="mailto:weizwz@foxmail.com" target="_blank" title="邮箱"><i class="fa-fw iconfont icon-email-fill"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81-%E7%AE%80%E5%8D%95%E5%BE%AA%E7%8E%AF%E7%AE%97%E6%B3%95"><span class="toc-text">一、 简单循环算法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81-Math-max"><span class="toc-text">二、 Math.max()</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0"><span class="toc-text">1. 概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%82%E6%95%B0"><span class="toc-text">2. 参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-text">3. 返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%AF%B4%E6%98%8E"><span class="toc-text">4. 说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%AF%94%E8%BE%83%E6%95%B0%E7%BB%84%E4%B8%AD%E5%80%BC%E7%9A%84%E5%A4%A7%E5%B0%8F"><span class="toc-text">5. 比较数组中值的大小</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81Function-prototype-apply"><span class="toc-text">三、Function.prototype.apply()</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0-1"><span class="toc-text">1. 概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%82%E6%95%B0-apply-thisArg-argsArray"><span class="toc-text">2. 参数 apply(thisArg, argsArray)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%94%E5%9B%9E%E5%80%BC-1"><span class="toc-text">3. 返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BD%BF%E7%94%A8"><span class="toc-text">4. 使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%B8%8Ecall%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-text">5. 与call的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81-Array-prototype-reduce"><span class="toc-text">四、 Array.prototype.reduce()</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0-2"><span class="toc-text">1. 概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%8F%82%E6%95%B0-reduce-callbackFn-initialValue"><span class="toc-text">2. 参数 reduce(callbackFn, initialValue)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E8%BF%94%E5%9B%9E%E5%80%BC-2"><span class="toc-text">3. 返回值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%A4%BA%E4%BE%8B"><span class="toc-text">4. 示例</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E6%95%B0%E7%BB%84%E5%88%87%E5%9D%97%E5%90%8E%E5%BE%AA%E7%8E%AF%E4%BC%A0%E5%85%A5%E7%9B%AE%E6%A0%87"><span class="toc-text">五、数组切块后循环传入目标</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A6%82%E8%BF%B0-3"><span class="toc-text">1. 概述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%A4%BA%E4%BE%8B"><span class="toc-text">2. 示例</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/a440283c.html" title="vue3项目部署到Github"><img src= "/img/loading.gif" data-lazy-src="/img/cover/vue_github_page.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue3项目部署到Github"/></a><div class="content"><a class="title" href="/posts/a440283c.html" title="vue3项目部署到Github">vue3项目部署到Github</a><time datetime="2024-09-12T15:39:12.000Z" title="发表于 2024-09-12 23:39:12">2024-09-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS脚本批量处理TS数据类型"/></a><div class="content"><a class="title" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</a><time datetime="2024-08-26T12:52:41.000Z" title="发表于 2024-08-26 20:52:41">2024-08-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f6350145.html" title="常用TS总结"><img src= "/img/loading.gif" data-lazy-src="/img/cover/ts.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用TS总结"/></a><div class="content"><a class="title" href="/posts/f6350145.html" title="常用TS总结">常用TS总结</a><time datetime="2024-02-05T12:37:54.000Z" title="发表于 2024-02-05 20:37:54">2024-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240204_163445.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="定制你的清爽Mac版Edge浏览器"/></a><div class="content"><a class="title" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器">定制你的清爽Mac版Edge浏览器</a><time datetime="2024-02-03T13:03:47.000Z" title="发表于 2024-02-03 21:03:47">2024-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题"><img src= "/img/loading.gif" data-lazy-src="/img/cover/uni-app_vue3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uni-app+vue3有哪些问题"/></a><div class="content"><a class="title" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题">uni-app+vue3有哪些问题</a><time datetime="2024-02-01T11:34:18.000Z" title="发表于 2024-02-01 19:34:18">2024-02-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 唯之为之</div><div class="footer_custom_text"><a target="_blank" href="https://hexo.io/" title="博客框架为Hexo_v7.0.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0E83CD?logo=hexo&logoColor=fff" alt="Hexo"></a><a target="_blank" href="https://butterfly.js.org/" title="博客主题为Butterfly_v4.12.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-00c4b6?logo=bluesky&logoColor=fff" alt="Butterfly"></a><a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Website-Github-d021d6?logo=GitHub" alt="Github"></a><a target="_blank" href="https://www.algolia.com/" title="本站搜索使用Algolia搜索服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Search-Algolia-003DFF?logo=Algolia" alt="Algolia"></a><a target="_blank" href="https://cloud.tencent.com/" title="本站域名管理使用腾讯云域名服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Domain-Tencent-0099F7?logo=googlecloud&logoColor=fff" alt="Tencent"></a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用CC BY-NC-SA 4.0国际许可协议进行许可"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?logo=coursera&logoColor=fff" alt="Copyright"></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2QzGRyH6AfaTut0wREwvn7fY-gzGzoHsz',
+      appKey: 'qYfCPzb8aECRoFXHi9IbMAxD',
+      avatar: 'monsterid',
+      serverURLs: 'https://2qzgryh6.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"留下你的足迹吧","enableQQ":false}))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
+      <script data-pjax>
+        if (typeof window.recommend === 'undefined') {
+          window.recommend = {
+            hexo_butterfly_recommend_init: function() {
+              const $recommend = document.querySelector('#recommend');
+              if($recommend) return;
+              document.documentElement.style.setProperty('--recommend-main', '#409eff');
+              document.documentElement.style.setProperty('--recommend-deep', '#0075ffdd');
+              const hexo_butterfly_recommend_elist = 'null'.split(',');
+              var hexo_butterfly_recommend_cpage = location.pathname;
+              const hexo_butterfly_recommend_epage = '/';
+              var hexo_butterfly_recommend_flag = 0;
+        
+              for (var i = 0; i < hexo_butterfly_recommend_elist.length; i++) {
+                if (hexo_butterfly_recommend_cpage.includes(hexo_butterfly_recommend_elist[i])) {
+                  hexo_butterfly_recommend_flag++;
+                }
+              }
+              if ((hexo_butterfly_recommend_epage === 'all') && (hexo_butterfly_recommend_flag === 0)) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              } else if (hexo_butterfly_recommend_epage === hexo_butterfly_recommend_cpage) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              }
+            },
+            hexo_butterfly_recommend_injector_config: function() {
+              var parent_div_git = document.getElementById('content-inner');
+              var item_html = '<div class="recommend-left" id="recommend"><div id="recommend-content" onmousewheel="recommend.postScroll(this)"><div class="recommend-wrapper" id="recommend-banner"><div id="recommend-banner-wrapper"><div class="recommend-banner-title-wrapper"><div class="recommend-banner-title">无限热爱</div><div class="recommend-banner-title">生活与技术</div><div class="recommend-banner-title">WEIZWZ.COM</div></div><div class="recommend-tags-all"><div class="recommend-tags-wrapper"><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #C63636"><i class="fa-brands fa-npm" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #02B67C"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #1aad19"><i class="iconfont icon-xiaochengxu" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0065A9"><i class="iconfont icon-vscode" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div></div><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div></div></div></div><a id="recommend-banner-hover" onclick="recommend.toRandomPost()"><span class="recommend-banner-text">随便逛逛</span><i class="fas fa-arrow-right recommend-banner-righticon"></i></a></div><div id="recommend-category"><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/技术&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #358bff, #15c6ff)"></div><span class="recommend-categoryItem-text">技术浅谈</span><i class="fa-solid fa-laptop-code"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/资源&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #18e7ae, #1eebeb)"></div><span class="recommend-categoryItem-text">资源分享</span><i class="fa-solid fa-gem"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/博客&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #f65, #ffbf37)"></div><span class="recommend-categoryItem-text">博客教程</span><i class="fa-solid fa-blog"></i></a></div></div></div><div class="recommend-wrapper" id="recommend-post"><div class="recommend-post-list" onmouseleave="window.event.cancelBubble=true;recommend.showCover();"><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="JS脚本批量处理TS数据类型"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/dragon_recommend.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="hexo-butterfly-recommend使用说明"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)" title="hexo-butterfly-recommend使用说明">hexo-butterfly-recommend使用说明</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/clash_verge.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Clash Verge 使用记录"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)" title="Clash Verge 使用记录">Clash Verge 使用记录</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Git使用记录 - 持续更新"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)" title="Git使用记录 - 持续更新">Git使用记录 - 持续更新</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231025_215235.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="windows开发环境备份，再也不怕重装系统了"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)" title="windows开发环境备份，再也不怕重装系统了">windows开发环境备份，再也不怕重装系统了</div></div></div></div></div></div>';
+              parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.recommend.toPost(randomPost);
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            hideCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              $main.className = 'recommend-post-main recommend-hide';
+            },
+            showCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              if ($main) $main.className = 'recommend-post-main';
+            },
+            postScroll: function(dom) {
+              const e = window.event || arguments.callee.caller.arguments[0];
+              if (document.body.clientWidth <= 1200) {
+                let o = -e.wheelDelta / 2;
+                dom.scrollLeft += o;
+                e.preventDefault();
+              }
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_recommend ⭐ https://github.com/weizwz/hexo-butterfly-recommend ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.recommend.hexo_butterfly_recommend_init();
+      </script><script async src="/js/ali_font.js"></script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
+      </script><!-- hexo injector body_end end --></body></html>

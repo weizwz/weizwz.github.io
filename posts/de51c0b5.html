@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router | 唯之为之</title><meta name="author" content="唯之为之,weizwz@foxmail.com"><meta name="copyright" content="唯之为之"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="合集 - Vite4+Typescript+Vue3+Pinia 从零搭建Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置Vite4+Typescript+Vue3+Pinia 从零搭建(4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router">
+<meta property="og:url" content="https://weizwz.com/posts/de51c0b5.html">
+<meta property="og:site_name" content="唯之为之">
+<meta property="og:description" content="合集 - Vite4+Typescript+Vue3+Pinia 从零搭建Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置Vite4+Typescript+Vue3+Pinia 从零搭建(4">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://weizwz.com/img/cover/20231128_171922.png">
+<meta property="article:published_time" content="2023-11-29T13:33:04.000Z">
+<meta property="article:modified_time" content="2023-11-29T13:33:04.000Z">
+<meta property="article:author" content="唯之为之">
+<meta property="article:tag" content="typescript">
+<meta property="article:tag" content="vite">
+<meta property="article:tag" content="vue3">
+<meta property="article:tag" content="router">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizwz.com/img/cover/20231128_171922.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://weizwz.com/posts/de51c0b5.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="h5ZDnqWDDdodHi5p5KY3IzNtALfigZTMXUZv1TRcSf0"/><meta name="baidu-site-verification" content="code-V9zqqeAUQI"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"4N68NE97S5","apiKey":"ee8fc79dc8f5c5c84d3569b38bf23472","indexName":"blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"距离上次更新已有","messageNext":"天，文章内容或许已经过时"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#409eff","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-11-29 21:33:04'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_jerhaqma52.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/css/recommend.css?v=1.1.2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.4.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/pace-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="唯之为之"><img class="site-icon" src= "/img/loading.gif" data-lazy-src="/img/logo.png"/></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-11-29T13:33:04.000Z" title="发表于 2023-11-29 21:33:04">2023-11-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-29T13:33:04.000Z" title="更新于 2023-11-29 21:33:04">2023-11-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">712</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><details class="toggle" ><summary class="toggle-button" style="">合集 - Vite4+Typescript+Vue3+Pinia 从零搭建</summary><div class="toggle-content"><ol><li><a href="/posts/5bc77c26.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</a></li><li><a href="/posts/422566e3.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置">Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置</a></li><li><a href="/posts/3c6c8900.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置">Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置</a></li><li><a href="/posts/f72e0ad.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范">Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范</a></li><li><a href="/posts/de51c0b5.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router">Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router</a></li><li><a href="/posts/6e87ac02.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina">Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina</a></li><li><a href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装">Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装</a></li></ol>
+</div></details>
+<blockquote>
+<p>项目代码同步至码云 <a target="_blank" rel="noopener" href="https://gitee.com/weizwz/weiz-vue3-template">weiz-vue3-template</a><br><a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/">Vue Router</a> 是 Vue.js 的官方路由。它与 Vue.js 核心深度集成，让用 Vue.js 构建单页应用变得轻而易举。</p>
+</blockquote>
+<h2 id="1-安装"><a href="#1-安装" class="headerlink" title="1. 安装"></a>1. 安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i vue-router@4</span><br></pre></td></tr></table></figure>
+<h2 id="2-集成"><a href="#2-集成" class="headerlink" title="2. 集成"></a>2. 集成</h2><h3 id="1-新建两页面进行示例"><a href="#1-新建两页面进行示例" class="headerlink" title="1. 新建两页面进行示例"></a>1. 新建两页面进行示例</h3><p>在<code>src/view</code>下新建<code>home.vue</code>和<code>login.vue</code>，内容如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript"><span class="title function_">defineOptions</span>(&#123;</span></span><br><span class="line"><span class="language-javascript">  <span class="attr">name</span>: <span class="string">&#x27;V-home&#x27;</span></span></span><br><span class="line"><span class="language-javascript">&#125;)</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span>&gt;</span>home page<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p><code>login.vue</code>里修改下对应name即可</p>
+<h3 id="2-src下新建router文件夹"><a href="#2-src下新建router文件夹" class="headerlink" title="2. src下新建router文件夹"></a>2. <code>src</code>下新建<code>router</code>文件夹</h3><p><code>index.ts</code>作为路由入口，<code>static.ts</code>作为静态路由，<code>modules</code>内还可以放入其他类型路由，整体目录结构如下：<br><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">src</span><br><span class="line">|   </span><br><span class="line">+---router</span><br><span class="line">|   |   index.ts</span><br><span class="line">|   +---modules</span><br><span class="line">|       |   static.ts</span><br></pre></td></tr></table></figure></p>
+<p><code>static.ts</code>内容如下：<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&#x27;/&#x27;</span>,</span><br><span class="line">    <span class="attr">component</span>: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="string">&#x27;@/views/home.vue&#x27;</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">path</span>: <span class="string">&#x27;/login&#x27;</span>,</span><br><span class="line">    <span class="attr">component</span>: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="string">&#x27;@/views/login.vue&#x27;</span>) <span class="comment">//路由懒加载</span></span><br><span class="line">  &#125;</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> routes</span><br></pre></td></tr></table></figure></p>
+<p><code>index.ts</code>内容如下：<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Router</span>, createRouter, createWebHistory &#125; <span class="keyword">from</span> <span class="string">&#x27;vue-router&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** 自动导入 src/router/modules 下的静态路由</span></span><br><span class="line"><span class="comment"> * import.meta.glob使用说明：https://cn.vitejs.dev/guide/features#glob-import</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">modules</span>: <span class="title class_">Record</span>&lt;<span class="built_in">string</span>, <span class="built_in">any</span>&gt; = <span class="keyword">import</span>.<span class="property">meta</span>.<span class="title function_">glob</span>([<span class="string">&#x27;./modules/**/*.ts&#x27;</span>], &#123;</span><br><span class="line">  <span class="attr">eager</span>: <span class="literal">true</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">/** 初始路由 **/</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">routes</span>: <span class="built_in">any</span>[] = []</span><br><span class="line"></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">keys</span>(modules).<span class="title function_">forEach</span>(<span class="function">(<span class="params">key</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> <span class="variable language_">module</span> = modules[key].<span class="property">default</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="title class_">Array</span>.<span class="title function_">isArray</span>(<span class="variable language_">module</span>)) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">const</span> item <span class="keyword">of</span> <span class="variable language_">module</span>) &#123;</span><br><span class="line">      routes.<span class="title function_">push</span>(item)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    routes.<span class="title function_">push</span>(<span class="variable language_">module</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 创建路由实例</span></span><br><span class="line"><span class="comment"> * createRouter选项有：https://router.vuejs.org/zh/api/interfaces/RouterOptions.html</span></span><br><span class="line"><span class="comment"> * hash模式使用createWebHashHistory(): https://router.vuejs.org/zh/api/#Functions-createWebHashHistory</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">router</span>: <span class="title class_">Router</span> = <span class="title function_">createRouter</span>(&#123;</span><br><span class="line">  <span class="attr">history</span>: <span class="title function_">createWebHistory</span>(),</span><br><span class="line">  routes,</span><br><span class="line">  <span class="attr">strict</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="title function_">scrollBehavior</span>(<span class="params">_to, <span class="keyword">from</span>, savedPosition</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Promise</span>(<span class="function">(<span class="params">resolve</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (savedPosition) &#123;</span><br><span class="line">        <span class="keyword">return</span> savedPosition</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">from</span>.<span class="property">meta</span>.<span class="property">saveSrollTop</span>) &#123;</span><br><span class="line">          <span class="keyword">const</span> <span class="attr">top</span>: <span class="built_in">number</span> = <span class="variable language_">document</span>.<span class="property">documentElement</span>.<span class="property">scrollTop</span> || <span class="variable language_">document</span>.<span class="property">body</span>.<span class="property">scrollTop</span></span><br><span class="line">          <span class="title function_">resolve</span>(&#123; <span class="attr">left</span>: <span class="number">0</span>, top &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 路由守卫</span></span><br><span class="line"><span class="comment"> * https://router.vuejs.org/zh/guide/advanced/navigation-guards.html</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, _from, next</span>) =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// isAuthenticated 代表你的鉴权</span></span><br><span class="line">  <span class="keyword">const</span> isAuthenticated = <span class="literal">true</span></span><br><span class="line">  <span class="keyword">if</span> (to.<span class="property">name</span> !== <span class="string">&#x27;Login&#x27;</span> &amp;&amp; !isAuthenticated) <span class="title function_">next</span>(&#123; <span class="attr">name</span>: <span class="string">&#x27;Login&#x27;</span> &#125;)</span><br><span class="line">  <span class="keyword">else</span> <span class="title function_">next</span>()</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> router</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-修改App-vue"><a href="#3-修改App-vue" class="headerlink" title="3. 修改App.vue"></a>3. 修改<code>App.vue</code></h3><p>承载路由，并增加导航<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">setup</span> <span class="attr">lang</span>=<span class="string">&quot;ts&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/&quot;</span>&gt;</span> 去首页 <span class="tag">&lt;/<span class="name">router-link</span>&gt;</span> 丨 <span class="tag">&lt;<span class="name">router-link</span> <span class="attr">to</span>=<span class="string">&quot;/login&quot;</span>&gt;</span> 去登录 <span class="tag">&lt;/<span class="name">router-link</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">router-view</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="4-修改main-ts"><a href="#4-修改main-ts" class="headerlink" title="4. 修改main.ts"></a>4. 修改<code>main.ts</code></h3><p>使用路由<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">&#x27;./style.css&#x27;</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&#x27;@/router/index&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">use</span>(router).<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure></p>
+<h2 id="3-预览"><a href="#3-预览" class="headerlink" title="3. 预览"></a>3. 预览</h2><p><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231129_220720.gif" alt="images"><br>其他用法，包括传参、重定向、动态路由、过渡动效等，请参考<a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/">官方文档</a>。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://weizwz.com">唯之为之</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://weizwz.com/posts/de51c0b5.html">https://weizwz.com/posts/de51c0b5.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://weizwz.com" target="_blank">唯之为之</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/typescript/">typescript</a><a class="post-meta__tags" href="/tags/vite/">vite</a><a class="post-meta__tags" href="/tags/vue3/">vue3</a><a class="post-meta__tags" href="/tags/router/">router</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/20231128_171922.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward/wechart-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/wechart-play.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward/ali-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/ali-play.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/6e87ac02.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina</div></div></a></div><div class="next-post pull-right"><a href="/posts/c57fdcba.html" title="PixPin - 新截图工具"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231129_165936.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">PixPin - 新截图工具</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/5bc77c26.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-09</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div></a></div><div><a href="/posts/422566e3.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-09</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置</div></div></a></div><div><a href="/posts/3c6c8900.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-14</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置</div></div></a></div><div><a href="/posts/f72e0ad.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-28</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范</div></div></a></div><div><a href="/posts/6e87ac02.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-05</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina</div></div></a></div><div><a href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-19</div><div class="title">Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唯之为之</div><div class="author-info__description">个人博客 丨 时光笔墨</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/weizwz"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/weizwz" target="_blank" title="Gitee"><i class="fa-fw iconfont icon-gitee"></i></a><a class="social-icon" href="https://www.cnblogs.com/weizwz" target="_blank" title="博客园"><i class="fa-fw iconfont icon-blog"></i></a><a class="social-icon" href="https://weizwz.com/atom.xml" target="_blank" title="RSS订阅"><i class="fa-fw iconfont icon-rss"></i></a><a class="social-icon" href="mailto:weizwz@foxmail.com" target="_blank" title="邮箱"><i class="fa-fw iconfont icon-email-fill"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%AE%89%E8%A3%85"><span class="toc-text">1. 安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%9B%86%E6%88%90"><span class="toc-text">2. 集成</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BA%E4%B8%A4%E9%A1%B5%E9%9D%A2%E8%BF%9B%E8%A1%8C%E7%A4%BA%E4%BE%8B"><span class="toc-text">1. 新建两页面进行示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-src%E4%B8%8B%E6%96%B0%E5%BB%BArouter%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">2. src下新建router文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BF%AE%E6%94%B9App-vue"><span class="toc-text">3. 修改App.vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BF%AE%E6%94%B9main-ts"><span class="toc-text">4. 修改main.ts</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E9%A2%84%E8%A7%88"><span class="toc-text">3. 预览</span></a></li></ol></div></div><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>系列文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装"></a><div class="content"><a class="title" href="/posts/73655837.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装">Vite4+Typescript+Vue3+Pinia 从零搭建(7) - request封装</a><time datetime="2023-12-19T09:37:23.000Z" title="发表于 2023-12-19 17:37:23">2023-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6e87ac02.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina"></a><div class="content"><a class="title" href="/posts/6e87ac02.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina">Vite4+Typescript+Vue3+Pinia 从零搭建(6) - 状态管理pina</a><time datetime="2023-12-05T03:00:56.000Z" title="发表于 2023-12-05 11:00:56">2023-12-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/de51c0b5.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router"></a><div class="content"><a class="title" href="/posts/de51c0b5.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router">Vite4+Typescript+Vue3+Pinia 从零搭建(5) - 路由router</a><time datetime="2023-11-29T13:33:04.000Z" title="发表于 2023-11-29 21:33:04">2023-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f72e0ad.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范"></a><div class="content"><a class="title" href="/posts/f72e0ad.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范">Vite4+Typescript+Vue3+Pinia 从零搭建(4) - 代码规范</a><time datetime="2023-11-28T09:14:03.000Z" title="发表于 2023-11-28 17:14:03">2023-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3c6c8900.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置"></a><div class="content"><a class="title" href="/posts/3c6c8900.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置">Vite4+Typescript+Vue3+Pinia 从零搭建(3) - vite配置</a><time datetime="2023-11-13T16:18:12.000Z" title="发表于 2023-11-14 00:18:12">2023-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/422566e3.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置"></a><div class="content"><a class="title" href="/posts/422566e3.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置">Vite4+Typescript+Vue3+Pinia 从零搭建(2) - ts配置</a><time datetime="2023-11-09T11:08:02.000Z" title="发表于 2023-11-09 19:08:02">2023-11-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/5bc77c26.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"></a><div class="content"><a class="title" href="/posts/5bc77c26.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</a><time datetime="2023-11-09T09:03:24.000Z" title="发表于 2023-11-09 17:03:24">2023-11-09</time></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/a440283c.html" title="vue3项目部署到Github"><img src= "/img/loading.gif" data-lazy-src="/img/cover/vue_github_page.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue3项目部署到Github"/></a><div class="content"><a class="title" href="/posts/a440283c.html" title="vue3项目部署到Github">vue3项目部署到Github</a><time datetime="2024-09-12T15:39:12.000Z" title="发表于 2024-09-12 23:39:12">2024-09-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS脚本批量处理TS数据类型"/></a><div class="content"><a class="title" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</a><time datetime="2024-08-26T12:52:41.000Z" title="发表于 2024-08-26 20:52:41">2024-08-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f6350145.html" title="常用TS总结"><img src= "/img/loading.gif" data-lazy-src="/img/cover/ts.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用TS总结"/></a><div class="content"><a class="title" href="/posts/f6350145.html" title="常用TS总结">常用TS总结</a><time datetime="2024-02-05T12:37:54.000Z" title="发表于 2024-02-05 20:37:54">2024-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240204_163445.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="定制你的清爽Mac版Edge浏览器"/></a><div class="content"><a class="title" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器">定制你的清爽Mac版Edge浏览器</a><time datetime="2024-02-03T13:03:47.000Z" title="发表于 2024-02-03 21:03:47">2024-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题"><img src= "/img/loading.gif" data-lazy-src="/img/cover/uni-app_vue3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uni-app+vue3有哪些问题"/></a><div class="content"><a class="title" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题">uni-app+vue3有哪些问题</a><time datetime="2024-02-01T11:34:18.000Z" title="发表于 2024-02-01 19:34:18">2024-02-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 唯之为之</div><div class="footer_custom_text"><a target="_blank" href="https://hexo.io/" title="博客框架为Hexo_v7.0.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0E83CD?logo=hexo&logoColor=fff" alt="Hexo"></a><a target="_blank" href="https://butterfly.js.org/" title="博客主题为Butterfly_v4.12.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-00c4b6?logo=bluesky&logoColor=fff" alt="Butterfly"></a><a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Website-Github-d021d6?logo=GitHub" alt="Github"></a><a target="_blank" href="https://www.algolia.com/" title="本站搜索使用Algolia搜索服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Search-Algolia-003DFF?logo=Algolia" alt="Algolia"></a><a target="_blank" href="https://cloud.tencent.com/" title="本站域名管理使用腾讯云域名服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Domain-Tencent-0099F7?logo=googlecloud&logoColor=fff" alt="Tencent"></a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用CC BY-NC-SA 4.0国际许可协议进行许可"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?logo=coursera&logoColor=fff" alt="Copyright"></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2QzGRyH6AfaTut0wREwvn7fY-gzGzoHsz',
+      appKey: 'qYfCPzb8aECRoFXHi9IbMAxD',
+      avatar: 'monsterid',
+      serverURLs: 'https://2qzgryh6.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"留下你的足迹吧","enableQQ":false}))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
+      <script data-pjax>
+        if (typeof window.recommend === 'undefined') {
+          window.recommend = {
+            hexo_butterfly_recommend_init: function() {
+              const $recommend = document.querySelector('#recommend');
+              if($recommend) return;
+              document.documentElement.style.setProperty('--recommend-main', '#409eff');
+              document.documentElement.style.setProperty('--recommend-deep', '#0075ffdd');
+              const hexo_butterfly_recommend_elist = 'null'.split(',');
+              var hexo_butterfly_recommend_cpage = location.pathname;
+              const hexo_butterfly_recommend_epage = '/';
+              var hexo_butterfly_recommend_flag = 0;
+        
+              for (var i = 0; i < hexo_butterfly_recommend_elist.length; i++) {
+                if (hexo_butterfly_recommend_cpage.includes(hexo_butterfly_recommend_elist[i])) {
+                  hexo_butterfly_recommend_flag++;
+                }
+              }
+              if ((hexo_butterfly_recommend_epage === 'all') && (hexo_butterfly_recommend_flag === 0)) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              } else if (hexo_butterfly_recommend_epage === hexo_butterfly_recommend_cpage) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              }
+            },
+            hexo_butterfly_recommend_injector_config: function() {
+              var parent_div_git = document.getElementById('content-inner');
+              var item_html = '<div class="recommend-left" id="recommend"><div id="recommend-content" onmousewheel="recommend.postScroll(this)"><div class="recommend-wrapper" id="recommend-banner"><div id="recommend-banner-wrapper"><div class="recommend-banner-title-wrapper"><div class="recommend-banner-title">无限热爱</div><div class="recommend-banner-title">生活与技术</div><div class="recommend-banner-title">WEIZWZ.COM</div></div><div class="recommend-tags-all"><div class="recommend-tags-wrapper"><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #C63636"><i class="fa-brands fa-npm" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #02B67C"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #1aad19"><i class="iconfont icon-xiaochengxu" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0065A9"><i class="iconfont icon-vscode" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div></div><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div></div></div></div><a id="recommend-banner-hover" onclick="recommend.toRandomPost()"><span class="recommend-banner-text">随便逛逛</span><i class="fas fa-arrow-right recommend-banner-righticon"></i></a></div><div id="recommend-category"><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/技术&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #358bff, #15c6ff)"></div><span class="recommend-categoryItem-text">技术浅谈</span><i class="fa-solid fa-laptop-code"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/资源&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #18e7ae, #1eebeb)"></div><span class="recommend-categoryItem-text">资源分享</span><i class="fa-solid fa-gem"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/博客&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #f65, #ffbf37)"></div><span class="recommend-categoryItem-text">博客教程</span><i class="fa-solid fa-blog"></i></a></div></div></div><div class="recommend-wrapper" id="recommend-post"><div class="recommend-post-list" onmouseleave="window.event.cancelBubble=true;recommend.showCover();"><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="JS脚本批量处理TS数据类型"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/dragon_recommend.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="hexo-butterfly-recommend使用说明"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)" title="hexo-butterfly-recommend使用说明">hexo-butterfly-recommend使用说明</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/clash_verge.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Clash Verge 使用记录"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)" title="Clash Verge 使用记录">Clash Verge 使用记录</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Git使用记录 - 持续更新"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)" title="Git使用记录 - 持续更新">Git使用记录 - 持续更新</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231025_215235.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="windows开发环境备份，再也不怕重装系统了"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)" title="windows开发环境备份，再也不怕重装系统了">windows开发环境备份，再也不怕重装系统了</div></div></div></div></div></div>';
+              parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.recommend.toPost(randomPost);
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            hideCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              $main.className = 'recommend-post-main recommend-hide';
+            },
+            showCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              if ($main) $main.className = 'recommend-post-main';
+            },
+            postScroll: function(dom) {
+              const e = window.event || arguments.callee.caller.arguments[0];
+              if (document.body.clientWidth <= 1200) {
+                let o = -e.wheelDelta / 2;
+                dom.scrollLeft += o;
+                e.preventDefault();
+              }
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_recommend ⭐ https://github.com/weizwz/hexo-butterfly-recommend ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.recommend.hexo_butterfly_recommend_init();
+      </script><script async src="/js/ali_font.js"></script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
+      </script><!-- hexo injector body_end end --></body></html>

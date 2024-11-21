@@ -1,0 +1,484 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>windows开发环境备份，再也不怕重装系统了 | 唯之为之</title><meta name="author" content="唯之为之,weizwz@foxmail.com"><meta name="copyright" content="唯之为之"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="每次重装系统后，都要重新安装软件，配置环境变量，极为繁琐。故作环境环境变量备份，常用软件恢复记录，前提是你的软件要安装在非系统盘，D&#x2F;E盘等  软件安装在非系统盘开发软件安装在非系统盘，建好目录。重装系统后，只是重置系统盘，所以这些软件不需要重新安装。譬如 java 相关目录：12345678910PS D:\java&gt; ls    Directory: D:\javaMode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="windows开发环境备份，再也不怕重装系统了">
+<meta property="og:url" content="https://weizwz.com/posts/7657b7c7.html">
+<meta property="og:site_name" content="唯之为之">
+<meta property="og:description" content="每次重装系统后，都要重新安装软件，配置环境变量，极为繁琐。故作环境环境变量备份，常用软件恢复记录，前提是你的软件要安装在非系统盘，D&#x2F;E盘等  软件安装在非系统盘开发软件安装在非系统盘，建好目录。重装系统后，只是重置系统盘，所以这些软件不需要重新安装。譬如 java 相关目录：12345678910PS D:\java&gt; ls    Directory: D:\javaMode">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://weizwz.com/img/cover/20231025_215235.png">
+<meta property="article:published_time" content="2023-10-25T14:19:32.000Z">
+<meta property="article:modified_time" content="2024-06-06T15:47:24.000Z">
+<meta property="article:author" content="唯之为之">
+<meta property="article:tag" content="windows">
+<meta property="article:tag" content="cmd">
+<meta property="article:tag" content="nodejs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizwz.com/img/cover/20231025_215235.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://weizwz.com/posts/7657b7c7.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="h5ZDnqWDDdodHi5p5KY3IzNtALfigZTMXUZv1TRcSf0"/><meta name="baidu-site-verification" content="code-V9zqqeAUQI"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"4N68NE97S5","apiKey":"ee8fc79dc8f5c5c84d3569b38bf23472","indexName":"blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"距离上次更新已有","messageNext":"天，文章内容或许已经过时"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#409eff","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'windows开发环境备份，再也不怕重装系统了',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-06 23:47:24'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_jerhaqma52.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/css/recommend.css?v=1.1.2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.4.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/pace-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="唯之为之"><img class="site-icon" src= "/img/loading.gif" data-lazy-src="/img/logo.png"/></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">windows开发环境备份，再也不怕重装系统了</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-25T14:19:32.000Z" title="发表于 2023-10-25 22:19:32">2023-10-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-06T15:47:24.000Z" title="更新于 2024-06-06 23:47:24">2024-06-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B5%84%E6%BA%90/">资源</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.4k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="windows开发环境备份，再也不怕重装系统了"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><blockquote>
+<p>每次重装系统后，都要重新安装软件，配置环境变量，极为繁琐。故作环境环境变量备份，常用软件恢复记录，前提是你的软件要安装在非系统盘，D/E盘等</p>
+</blockquote>
+<h2 id="软件安装在非系统盘"><a href="#软件安装在非系统盘" class="headerlink" title="软件安装在非系统盘"></a>软件安装在非系统盘</h2><p>开发软件安装在非系统盘，建好目录。重装系统后，只是重置系统盘，所以这些软件不需要重新安装。<br>譬如 <code>java</code> 相关目录：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">PS D:\java&gt; ls</span><br><span class="line">    Directory: D:\java</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">d----           2023/9/27    15:28                jdk</span><br><span class="line">d----          2023/10/11    23:45                maven</span><br><span class="line">d----           2023/9/27    17:29                mysql</span><br><span class="line">d----           2023/4/11    23:31                nginx</span><br><span class="line">d----           2023/9/27    17:11                Tomcat</span><br><span class="line">d----          2023/10/11    22:55                UJCMS</span><br></pre></td></tr></table></figure><br>譬如 <code>node</code> 相关目录：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS D:\node&gt; ls</span><br><span class="line">    Directory: D:\node</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">l----           2023/5/29    19:52                nodejs -&gt; D:\node\nvm\v14.21.1</span><br><span class="line">d----           2023/5/29    19:51                nvm</span><br><span class="line">d----           2022/12/3    21:01                pnpm</span><br></pre></td></tr></table></figure><br>其他 <code>git</code>、<code>python</code> 等：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">PS D:\develop&gt; ls</span><br><span class="line">    Directory: D:\develop</span><br><span class="line">Mode                 LastWriteTime         Length Name</span><br><span class="line">----                 -------------         ------ ----</span><br><span class="line">d----           2022/12/6    21:03                Anaconda3</span><br><span class="line">da---          2023/10/18    22:38                DBeaver</span><br><span class="line">d----            2023/5/4    20:34                ffmpeg-master-latest-win64-gpl</span><br><span class="line">d----            2023/6/1    17:21                Git</span><br><span class="line">d----           2023/6/19    13:03                HeyTapThemeEditor</span><br><span class="line">d----          2023/10/15    11:20                HskDDNS</span><br><span class="line">d----           2019/4/13    17:24                MongoDB</span><br><span class="line">d----           2023/6/10    14:50                python</span><br><span class="line">d----          2023/10/11    18:20                WPS Office</span><br></pre></td></tr></table></figure></p>
+<h2 id="环境变量恢复"><a href="#环境变量恢复" class="headerlink" title="环境变量恢复"></a>环境变量恢复</h2><p>主要是恢复环境变量里的 <code>Path</code> 值，将相关CMD指令导向具体软件位置</p>
+<h3 id="1-先新建系统变量，将以下需要的公共变量填入"><a href="#1-先新建系统变量，将以下需要的公共变量填入" class="headerlink" title="1. 先新建系统变量，将以下需要的公共变量填入"></a>1. 先新建系统变量，将以下需要的公共变量填入</h3><p><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_1.png" alt="image"></p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>变量名(N)</th>
+<th>变量值(V)</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CATALINA_HOME</td>
+<td>D:\java\Tomcat\apache-tomcat-8.5.93</td>
+<td>Tomcat</td>
+</tr>
+<tr>
+<td>JAVA_HOME</td>
+<td>D:\java\jdk\</td>
+<td>JDK</td>
+</tr>
+<tr>
+<td>NVM_HOME</td>
+<td>D:\node\nvm</td>
+<td>nvm</td>
+</tr>
+<tr>
+<td>NVM_SYMLINK</td>
+<td>D:\node\nodejs</td>
+<td>nvm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="2-修改-Path-变量"><a href="#2-修改-Path-变量" class="headerlink" title="2. 修改 Path 变量"></a>2. 修改 <code>Path</code> 变量</h3><p>点击如下图所示的 <code>编辑文本</code> 按钮，可以整行输入所有 <code>path</code> 变量值<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_2.png" alt="image"><br>粘贴后，请将无用的变量值删除<br><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\java\jdk\bin\;D:\develop\python\Scripts\;D:\develop\python\;%NVM_HOME%;%NVM_SYMLINK%;D:\develop\Git\cmd;D:\Tools\微信web开发者工具\dll;D:\Tools\OpenSSH\bin;D:\Tools\cygwin64\bin;D:\Tools\cygwin64\sbin;D:\Tools\windows\platform-tools;%CATALINA_HOME%\lib;%CATALINA_HOME%\bin;</span><br></pre></td></tr></table></figure></p>
+<p>或者参考以下文本，按个人使用情况单行输入保存<br><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">D:\java\jdk\bin\;</span><br><span class="line">D:\develop\python\Scripts\;</span><br><span class="line">D:\develop\python\;</span><br><span class="line">%NVM_HOME%;</span><br><span class="line">%NVM_SYMLINK%;</span><br><span class="line">D:\develop\Git\cmd;</span><br><span class="line">D:\Tools\微信web开发者工具\dll;</span><br><span class="line">D:\Tools\OpenSSH\bin;</span><br><span class="line">D:\Tools\cygwin64\bin;</span><br><span class="line">D:\Tools\cygwin64\sbin;</span><br><span class="line">D:\Tools\windows\platform-tools;</span><br><span class="line">%CATALINA_HOME%\lib;</span><br><span class="line">%CATALINA_HOME%\bin;</span><br></pre></td></tr></table></figure></p>
+<p>恢复后，就可以验证相关CMD命令是否正常了，如<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS C:\Users\Administrator&gt; java -version</span><br><span class="line">openjdk version &quot;1.8.0_382&quot;</span><br><span class="line">OpenJDK Runtime Environment (Zulu 8.72.0.17-CA-win64) (build 1.8.0_382-b05)</span><br><span class="line">OpenJDK 64-Bit Server VM (Zulu 8.72.0.17-CA-win64) (build 25.382-b05, mixed mode)</span><br></pre></td></tr></table></figure></p>
+<h2 id="win11环境优化"><a href="#win11环境优化" class="headerlink" title="win11环境优化"></a>win11环境优化</h2><p><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_3.png" alt="image"></p>
+<h3 id="1-右键菜单恢复成win10样式"><a href="#1-右键菜单恢复成win10样式" class="headerlink" title="1. 右键菜单恢复成win10样式"></a>1. 右键菜单恢复成win10样式</h3><p>新建 <code>txt</code> 文件，复制以下内容，存入后保存，修改文件后缀为 <code>.cmd</code>，然后双击执行或右键打开<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;\InprocServer32&quot; /f /ve</span><br><span class="line">taskkill /f /im explorer.exe &amp; start explorer.exe</span><br></pre></td></tr></table></figure><br>恢复win11菜单，同理<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">reg delete &quot;HKCU\Software\Classes\CLSID\&#123;86ca1aa0-34aa-4e8b-a509-50c905bae2a2&#125;&quot; /f</span><br><span class="line">taskkill /f /im explorer.exe &amp; start explorer.exe</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-任务栏一键居左"><a href="#2-任务栏一键居左" class="headerlink" title="2. 任务栏一键居左"></a>2. 任务栏一键居左</h3><p>新建 <code>txt</code> 文件，复制以下内容，存入后保存，修改文件后缀为 <code>.reg</code>，然后双击执行或右键合并<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]</span><br><span class="line">&quot;TaskbarAl&quot;=dword:00000000</span><br></pre></td></tr></table></figure><br>任务栏一键居中，同理<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]</span><br><span class="line">&quot;TaskbarAl&quot;=dword:00000001</span><br></pre></td></tr></table></figure></p>
+<h3 id="3-win11文件管理器修改"><a href="#3-win11文件管理器修改" class="headerlink" title="3. win11文件管理器修改"></a>3. win11文件管理器修改</h3><p>删除win11资源管理器左侧图库，方法同2<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CURRENT_USER\Software\Classes\CLSID\&#123;e88865ea-0e1c-4e20-9aa6-edcd0212c87c&#125;]</span><br><span class="line">&quot;System.IsPinnedToNameSpaceTree&quot;=dword:00000000</span><br></pre></td></tr></table></figure><br>删除win11资源管理器左侧主文件夹菜单，方法同2<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]</span><br><span class="line">&quot;HubMode&quot;=dword:00000001</span><br><span class="line">[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace_36354489\&#123;f874310e-b6b7-47dc-bc84-b9e6b38f5903&#125;]</span><br></pre></td></tr></table></figure><br>如果你有使用 <code>adobe</code> 软件的话，资源管理器左侧一定有烦人的 <code>creative cloud</code> 文件夹，删除它，方法同2<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CLASSES_ROOT\CLSID\&#123;0E270DAA-1BE6-48F2-AC49-13368E230FC4&#125;]</span><br><span class="line">&quot;System.IsPinnedToNameSpaceTree&quot;=dword:00000000</span><br></pre></td></tr></table></figure></p>
+<h3 id="4-去除桌面快捷方式的箭头"><a href="#4-去除桌面快捷方式的箭头" class="headerlink" title="4. 去除桌面快捷方式的箭头"></a>4. 去除桌面快捷方式的箭头</h3><p>新建 <code>txt</code> 文件，复制以下内容，存入后保存，修改文件后缀为 <code>.bat</code>，然后右键打开<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br><span class="line">reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons&quot; /v 29 /d &quot;%systemroot%\system32\imageres.dll,197&quot; /t reg_sz /f</span><br><span class="line">taskkill /f /im explorer.exe</span><br><span class="line">attrib -s -r -h &quot;%userprofile%\AppData\Local\iconcache.db&quot;</span><br><span class="line">del &quot;%userprofile%\AppData\Local\iconcache.db&quot; /f /q</span><br><span class="line">start explorer</span><br><span class="line">pause</span><br></pre></td></tr></table></figure></p>
+<h2 id="常用软件恢复"><a href="#常用软件恢复" class="headerlink" title="常用软件恢复"></a>常用软件恢复</h2><h3 id="1-win11轻松设置"><a href="#1-win11轻松设置" class="headerlink" title="1. win11轻松设置"></a>1. win11轻松设置</h3><p>Windows11轻松设置 是一款第三方软件，旨在帮助用户更轻松地配置和优化Windows 11的各种设置。推荐去 <code>bilibili</code> 或 <code>远景论坛</code> 搜索下载。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_4.png" alt="image"></p>
+<h3 id="2-解压缩软件-WinRAR"><a href="#2-解压缩软件-WinRAR" class="headerlink" title="2. 解压缩软件 WinRAR"></a>2. 解压缩软件 <code>WinRAR</code></h3><p>请自行搜索安装报，或去 <a target="_blank" rel="noopener" href="https://www.rarlab.com/download.htm">官网</a> 下载<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_5.png" alt="image"></p>
+<h3 id="3-命令行工具-Windows-Terminal"><a href="#3-命令行工具-Windows-Terminal" class="headerlink" title="3. 命令行工具 Windows Terminal"></a>3. 命令行工具 <code>Windows Terminal</code></h3><p>打开应用商店 <code>Microsoft Store</code>，搜索 <code>Terminal</code> 后，点击安装<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_6.png" alt="image"></p>
+<h3 id="4-office-套件"><a href="#4-office-套件" class="headerlink" title="4. office 套件"></a>4. <code>office</code> 套件</h3><p>安装 <a target="_blank" rel="noopener" href="https://otp.landian.vip/zh-cn/">Office Tools PLus</a> 软件，一键部署<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_7.png" alt="image"><br>激活，关闭安全软件，使用 <code>HEU_KMS_Activator_v30</code> 激活，此软件下载请自行搜索</p>
+<h3 id="5-Adobe-系列软件，如-PS"><a href="#5-Adobe-系列软件，如-PS" class="headerlink" title="5. Adobe 系列软件，如 PS"></a>5. <code>Adobe</code> 系列软件，如 <code>PS</code></h3><p>请自行下载安装包，或去官网安装 <a target="_blank" rel="noopener" href="https://www.adobe.com/cn/lead/creativecloud/business.html">Adobe Creative Cloud</a> 后（点击 <code>试用</code>，下载安装），可打开此软件安装一系列设计软件<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_8.png" alt="image"><br>激活，关闭安全软件，使用 <code>Adobe GenP 3.0</code> 激活，，此软件下载请自行搜索</p>
+<h3 id="6-截图工具-Snipaste-或者-PixPin"><a href="#6-截图工具-Snipaste-或者-PixPin" class="headerlink" title="6. 截图工具 Snipaste 或者 PixPin"></a>6. 截图工具 <code>Snipaste</code> 或者 <code>PixPin</code></h3><p>打开应用商店 <code>Microsoft Store</code>，搜索 <code>Snipaste</code> 或者 <code>PixPin</code> 后，点击安装<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231025_9.png" alt="image"></p>
+<h3 id="7-其他软件"><a href="#7-其他软件" class="headerlink" title="7. 其他软件"></a>7. 其他软件</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.listary.com/">listary windows搜索软件</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitee.com/cxasm/notepad--/tags">Notepad— 国产跨平台、轻量级的文本编辑器</a></li>
+<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">vscode编辑器</a></li>
+<li><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/installer/">mysql数据库</a></li>
+<li><a target="_blank" rel="noopener" href="https://tomcat.apache.org/">tomcat</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.azul.com/downloads/#zulu">Azul Zulu 开源 OpenJDK 构建</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jetbrains.com/zh-cn/idea/">IDEA</a>，<a target="_blank" rel="noopener" href="https://www.exception.site/essay/idea-yongjiu-jihuoma">激活参考</a></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://weizwz.com">唯之为之</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://weizwz.com/posts/7657b7c7.html">https://weizwz.com/posts/7657b7c7.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://weizwz.com" target="_blank">唯之为之</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/windows/">windows</a><a class="post-meta__tags" href="/tags/cmd/">cmd</a><a class="post-meta__tags" href="/tags/nodejs/">nodejs</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/20231025_215235.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward/wechart-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/wechart-play.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward/ali-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/ali-play.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/5bc77c26.html" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div></a></div><div class="next-post pull-right"><a href="/posts/e9a127c6.html" title="nginx配置解决跨域访问"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231021_203758.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">nginx配置解决跨域访问</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/8748c6b7.html" title="Cygwin，在windows中使用linux命令"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20230922126579.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-22</div><div class="title">Cygwin，在windows中使用linux命令</div></div></a></div><div><a href="/posts/d50f45ae.html" title="windows cmd 终极美化"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231218_141148.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-18</div><div class="title">windows cmd 终极美化</div></div></a></div><div><a href="/posts/b93c4a61.html" title="mac原生终端美化记录"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/mac_ya.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-01-24</div><div class="title">mac原生终端美化记录</div></div></a></div><div><a href="/posts/d80c51ca.html" title="Nodejs报错记录"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/npm-error.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-21</div><div class="title">Nodejs报错记录</div></div></a></div><div><a href="/posts/e9a127c6.html" title="nginx配置解决跨域访问"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231021_203758.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-10-21</div><div class="title">nginx配置解决跨域访问</div></div></a></div><div><a href="/posts/5c85881c.html" title="pnpm配置"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/pnpm.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-03</div><div class="title">pnpm配置</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唯之为之</div><div class="author-info__description">个人博客 丨 时光笔墨</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/weizwz"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/weizwz" target="_blank" title="Gitee"><i class="fa-fw iconfont icon-gitee"></i></a><a class="social-icon" href="https://www.cnblogs.com/weizwz" target="_blank" title="博客园"><i class="fa-fw iconfont icon-blog"></i></a><a class="social-icon" href="https://weizwz.com/atom.xml" target="_blank" title="RSS订阅"><i class="fa-fw iconfont icon-rss"></i></a><a class="social-icon" href="mailto:weizwz@foxmail.com" target="_blank" title="邮箱"><i class="fa-fw iconfont icon-email-fill"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%9C%A8%E9%9D%9E%E7%B3%BB%E7%BB%9F%E7%9B%98"><span class="toc-text">软件安装在非系统盘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E6%81%A2%E5%A4%8D"><span class="toc-text">环境变量恢复</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%88%E6%96%B0%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%8F%98%E9%87%8F%EF%BC%8C%E5%B0%86%E4%BB%A5%E4%B8%8B%E9%9C%80%E8%A6%81%E7%9A%84%E5%85%AC%E5%85%B1%E5%8F%98%E9%87%8F%E5%A1%AB%E5%85%A5"><span class="toc-text">1. 先新建系统变量，将以下需要的公共变量填入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BF%AE%E6%94%B9-Path-%E5%8F%98%E9%87%8F"><span class="toc-text">2. 修改 Path 变量</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#win11%E7%8E%AF%E5%A2%83%E4%BC%98%E5%8C%96"><span class="toc-text">win11环境优化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95%E6%81%A2%E5%A4%8D%E6%88%90win10%E6%A0%B7%E5%BC%8F"><span class="toc-text">1. 右键菜单恢复成win10样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BB%BB%E5%8A%A1%E6%A0%8F%E4%B8%80%E9%94%AE%E5%B1%85%E5%B7%A6"><span class="toc-text">2. 任务栏一键居左</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-win11%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8%E4%BF%AE%E6%94%B9"><span class="toc-text">3. win11文件管理器修改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8E%BB%E9%99%A4%E6%A1%8C%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E7%9A%84%E7%AE%AD%E5%A4%B4"><span class="toc-text">4. 去除桌面快捷方式的箭头</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E6%81%A2%E5%A4%8D"><span class="toc-text">常用软件恢复</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-win11%E8%BD%BB%E6%9D%BE%E8%AE%BE%E7%BD%AE"><span class="toc-text">1. win11轻松设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E8%A7%A3%E5%8E%8B%E7%BC%A9%E8%BD%AF%E4%BB%B6-WinRAR"><span class="toc-text">2. 解压缩软件 WinRAR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7-Windows-Terminal"><span class="toc-text">3. 命令行工具 Windows Terminal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-office-%E5%A5%97%E4%BB%B6"><span class="toc-text">4. office 套件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Adobe-%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%EF%BC%8C%E5%A6%82-PS"><span class="toc-text">5. Adobe 系列软件，如 PS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7-Snipaste-%E6%88%96%E8%80%85-PixPin"><span class="toc-text">6. 截图工具 Snipaste 或者 PixPin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6"><span class="toc-text">7. 其他软件</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/a440283c.html" title="vue3项目部署到Github"><img src= "/img/loading.gif" data-lazy-src="/img/cover/vue_github_page.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue3项目部署到Github"/></a><div class="content"><a class="title" href="/posts/a440283c.html" title="vue3项目部署到Github">vue3项目部署到Github</a><time datetime="2024-09-12T15:39:12.000Z" title="发表于 2024-09-12 23:39:12">2024-09-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS脚本批量处理TS数据类型"/></a><div class="content"><a class="title" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</a><time datetime="2024-08-26T12:52:41.000Z" title="发表于 2024-08-26 20:52:41">2024-08-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f6350145.html" title="常用TS总结"><img src= "/img/loading.gif" data-lazy-src="/img/cover/ts.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用TS总结"/></a><div class="content"><a class="title" href="/posts/f6350145.html" title="常用TS总结">常用TS总结</a><time datetime="2024-02-05T12:37:54.000Z" title="发表于 2024-02-05 20:37:54">2024-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240204_163445.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="定制你的清爽Mac版Edge浏览器"/></a><div class="content"><a class="title" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器">定制你的清爽Mac版Edge浏览器</a><time datetime="2024-02-03T13:03:47.000Z" title="发表于 2024-02-03 21:03:47">2024-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题"><img src= "/img/loading.gif" data-lazy-src="/img/cover/uni-app_vue3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uni-app+vue3有哪些问题"/></a><div class="content"><a class="title" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题">uni-app+vue3有哪些问题</a><time datetime="2024-02-01T11:34:18.000Z" title="发表于 2024-02-01 19:34:18">2024-02-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 唯之为之</div><div class="footer_custom_text"><a target="_blank" href="https://hexo.io/" title="博客框架为Hexo_v7.0.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0E83CD?logo=hexo&logoColor=fff" alt="Hexo"></a><a target="_blank" href="https://butterfly.js.org/" title="博客主题为Butterfly_v4.12.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-00c4b6?logo=bluesky&logoColor=fff" alt="Butterfly"></a><a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Website-Github-d021d6?logo=GitHub" alt="Github"></a><a target="_blank" href="https://www.algolia.com/" title="本站搜索使用Algolia搜索服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Search-Algolia-003DFF?logo=Algolia" alt="Algolia"></a><a target="_blank" href="https://cloud.tencent.com/" title="本站域名管理使用腾讯云域名服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Domain-Tencent-0099F7?logo=googlecloud&logoColor=fff" alt="Tencent"></a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用CC BY-NC-SA 4.0国际许可协议进行许可"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?logo=coursera&logoColor=fff" alt="Copyright"></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2QzGRyH6AfaTut0wREwvn7fY-gzGzoHsz',
+      appKey: 'qYfCPzb8aECRoFXHi9IbMAxD',
+      avatar: 'monsterid',
+      serverURLs: 'https://2qzgryh6.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"留下你的足迹吧","enableQQ":false}))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
+      <script data-pjax>
+        if (typeof window.recommend === 'undefined') {
+          window.recommend = {
+            hexo_butterfly_recommend_init: function() {
+              const $recommend = document.querySelector('#recommend');
+              if($recommend) return;
+              document.documentElement.style.setProperty('--recommend-main', '#409eff');
+              document.documentElement.style.setProperty('--recommend-deep', '#0075ffdd');
+              const hexo_butterfly_recommend_elist = 'null'.split(',');
+              var hexo_butterfly_recommend_cpage = location.pathname;
+              const hexo_butterfly_recommend_epage = '/';
+              var hexo_butterfly_recommend_flag = 0;
+        
+              for (var i = 0; i < hexo_butterfly_recommend_elist.length; i++) {
+                if (hexo_butterfly_recommend_cpage.includes(hexo_butterfly_recommend_elist[i])) {
+                  hexo_butterfly_recommend_flag++;
+                }
+              }
+              if ((hexo_butterfly_recommend_epage === 'all') && (hexo_butterfly_recommend_flag === 0)) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              } else if (hexo_butterfly_recommend_epage === hexo_butterfly_recommend_cpage) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              }
+            },
+            hexo_butterfly_recommend_injector_config: function() {
+              var parent_div_git = document.getElementById('content-inner');
+              var item_html = '<div class="recommend-left" id="recommend"><div id="recommend-content" onmousewheel="recommend.postScroll(this)"><div class="recommend-wrapper" id="recommend-banner"><div id="recommend-banner-wrapper"><div class="recommend-banner-title-wrapper"><div class="recommend-banner-title">无限热爱</div><div class="recommend-banner-title">生活与技术</div><div class="recommend-banner-title">WEIZWZ.COM</div></div><div class="recommend-tags-all"><div class="recommend-tags-wrapper"><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #C63636"><i class="fa-brands fa-npm" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #02B67C"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #1aad19"><i class="iconfont icon-xiaochengxu" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0065A9"><i class="iconfont icon-vscode" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div></div><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div></div></div></div><a id="recommend-banner-hover" onclick="recommend.toRandomPost()"><span class="recommend-banner-text">随便逛逛</span><i class="fas fa-arrow-right recommend-banner-righticon"></i></a></div><div id="recommend-category"><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/技术&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #358bff, #15c6ff)"></div><span class="recommend-categoryItem-text">技术浅谈</span><i class="fa-solid fa-laptop-code"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/资源&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #18e7ae, #1eebeb)"></div><span class="recommend-categoryItem-text">资源分享</span><i class="fa-solid fa-gem"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/博客&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #f65, #ffbf37)"></div><span class="recommend-categoryItem-text">博客教程</span><i class="fa-solid fa-blog"></i></a></div></div></div><div class="recommend-wrapper" id="recommend-post"><div class="recommend-post-list" onmouseleave="window.event.cancelBubble=true;recommend.showCover();"><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="JS脚本批量处理TS数据类型"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/dragon_recommend.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="hexo-butterfly-recommend使用说明"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)" title="hexo-butterfly-recommend使用说明">hexo-butterfly-recommend使用说明</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/clash_verge.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Clash Verge 使用记录"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)" title="Clash Verge 使用记录">Clash Verge 使用记录</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Git使用记录 - 持续更新"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)" title="Git使用记录 - 持续更新">Git使用记录 - 持续更新</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231025_215235.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="windows开发环境备份，再也不怕重装系统了"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)" title="windows开发环境备份，再也不怕重装系统了">windows开发环境备份，再也不怕重装系统了</div></div></div></div></div></div>';
+              parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.recommend.toPost(randomPost);
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            hideCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              $main.className = 'recommend-post-main recommend-hide';
+            },
+            showCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              if ($main) $main.className = 'recommend-post-main';
+            },
+            postScroll: function(dom) {
+              const e = window.event || arguments.callee.caller.arguments[0];
+              if (document.body.clientWidth <= 1200) {
+                let o = -e.wheelDelta / 2;
+                dom.scrollLeft += o;
+                e.preventDefault();
+              }
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_recommend ⭐ https://github.com/weizwz/hexo-butterfly-recommend ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.recommend.hexo_butterfly_recommend_init();
+      </script><script async src="/js/ali_font.js"></script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
+      </script><!-- hexo injector body_end end --></body></html>

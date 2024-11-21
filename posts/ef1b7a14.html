@@ -1,0 +1,482 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>开源字体整理 | 唯之为之</title><meta name="author" content="唯之为之,weizwz@foxmail.com"><meta name="copyright" content="唯之为之"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖  开源字体1. 得意黑得意黑是一款在人文观感和几何特征中寻找平衡的中文黑体。整体字身窄而斜，细节融入了取法手绘美术字的特殊造型。字体支持简体中文常用字（覆盖 GB 2312 编码字符集）、拉丁字母、日文假名、阿拉伯数字和各类标点符号。  下载：https:&#x2F;&#x2F;github.com&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="开源字体整理">
+<meta property="og:url" content="https://weizwz.com/posts/ef1b7a14.html">
+<meta property="og:site_name" content="唯之为之">
+<meta property="og:description" content="开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖  开源字体1. 得意黑得意黑是一款在人文观感和几何特征中寻找平衡的中文黑体。整体字身窄而斜，细节融入了取法手绘美术字的特殊造型。字体支持简体中文常用字（覆盖 GB 2312 编码字符集）、拉丁字母、日文假名、阿拉伯数字和各类标点符号。  下载：https:&#x2F;&#x2F;github.com&#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://weizwz.com/img/cover/openSourceFonts.png">
+<meta property="article:published_time" content="2022-12-14T09:53:20.000Z">
+<meta property="article:modified_time" content="2024-03-15T03:36:24.000Z">
+<meta property="article:author" content="唯之为之">
+<meta property="article:tag" content="github">
+<meta property="article:tag" content="字体">
+<meta property="article:tag" content="设计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://weizwz.com/img/cover/openSourceFonts.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://weizwz.com/posts/ef1b7a14.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="h5ZDnqWDDdodHi5p5KY3IzNtALfigZTMXUZv1TRcSf0"/><meta name="baidu-site-verification" content="code-V9zqqeAUQI"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: {"appId":"4N68NE97S5","apiKey":"ee8fc79dc8f5c5c84d3569b38bf23472","indexName":"blog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"距离上次更新已有","messageNext":"天，文章内容或许已经过时"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":600},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#409eff","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '开源字体整理',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-15 11:36:24'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="https://at.alicdn.com/t/c/font_3786646_jerhaqma52.css"><link rel="stylesheet" href="/css/variable.css"><link rel="stylesheet" href="/css/wzwz.css"><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="/css/recommend.css?v=1.1.2.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-double-row-display@1.00/cardlistpost.min.css"/>
+<style>#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags:before {content:"\A";
+  white-space: pre;}#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator{display:none}</style>
+<link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script>
+<link rel="stylesheet" href="/css/navctrl.css?v=1.0.4.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/atom.xml" title="唯之为之" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="/css/pace-flash.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="唯之为之"><img class="site-icon" src= "/img/loading.gif" data-lazy-src="/img/logo.png"/></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-compass"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-bars-progress"></i><span> 项目</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="https://weizwz.com/fun-animation/"><span> 趣味动画</span></a></li><li><a class="site-page child" href="https://weizwz.com/vite-vue3-charts/#/"><span> 大屏展示</span></a></li><li><a class="site-page child" href="https://weizwz.com/note/"><span> 唯知笔记</span></a></li><li><a class="site-page child" href="https://weizwz.com/weiz-vue3-ts/"><span> vue3模版</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-solid fa-globe"></i><span> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.bing.com/images/create"><span> 微软AI绘图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.jyshare.com/"><span> 菜鸟工具大全</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ctool.dev/"><span> 开发常用ctool</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.remove.bg/zh"><span> 在线免费抠图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://loading.io/"><span> 在线动画设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://ps.xieniao.com/"><span> ps在线设计</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.pexels.com/zh-cn/"><span> 高清免费壁纸</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://www.macbl.com/"><span> mac软件下载</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://vue3js.cn/interview/"><span> 前端面试题库</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">开源字体整理</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-14T09:53:20.000Z" title="发表于 2022-12-14 17:53:20">2022-12-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-15T03:36:24.000Z" title="更新于 2024-03-15 11:36:24">2024-03-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%B5%84%E6%BA%90/">资源</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.6k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="开源字体整理"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><blockquote>
+<p>开源字体整理，主要是为了使用方便。一般来说，开源字体大多都是可以免费商用的，具体使用请查看对应的开源协议，禁止售卖</p>
+</blockquote>
+<h1 id="开源字体"><a href="#开源字体" class="headerlink" title="开源字体"></a>开源字体</h1><h2 id="1-得意黑"><a href="#1-得意黑" class="headerlink" title="1. 得意黑"></a>1. 得意黑</h2><p>得意黑是一款在人文观感和几何特征中寻找平衡的中文黑体。整体字身窄而斜，细节融入了取法手绘美术字的特殊造型。字体支持简体中文常用字（覆盖 GB 2312 编码字符集）、拉丁字母、日文假名、阿拉伯数字和各类标点符号。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231214_132327.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/atelier-anchor/smiley-sans">https://github.com/atelier-anchor/smiley-sans</a></p>
+</blockquote>
+<h2 id="2-思源黑体"><a href="#2-思源黑体" class="headerlink" title="2. 思源黑体"></a>2. 思源黑体</h2><p>思源黑体是一套 <code>OpenType/CFF</code> 泛中日韩字体。这个开源项目不仅提供了可用的 <code>OpenType</code> 字体，还提供了利用 <code>AFDKO</code> 工具创建这些 <code>OpenType</code> 字体时的所有源文件。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_001.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-sans">https://github.com/adobe-fonts/source-han-sans</a></p>
+</blockquote>
+<h2 id="3-思源宋体"><a href="#3-思源宋体" class="headerlink" title="3. 思源宋体"></a>3. 思源宋体</h2><p>思源宋体是一套 <code>OpenType/CFF</code> 泛中日韩字体。这个开源项目不仅提供了可用的 <code>OpenType</code> 字体，还提供了利用 <code>AFDKO</code> 工具创建这些 <code>OpenType</code> 字体时的所有源文件。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_002.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/adobe-fonts/source-han-serif">https://github.com/adobe-fonts/source-han-serif</a></p>
+</blockquote>
+<h2 id="4-LXGW-WenKai-霞鹜文楷"><a href="#4-LXGW-WenKai-霞鹜文楷" class="headerlink" title="4. LXGW WenKai / 霞鹜文楷"></a>4. LXGW WenKai / 霞鹜文楷</h2><p>An open-source Chinese font derived from Fontworks’ Klee One. 一款开源中文字体，基于 <code>FONTWORKS</code> 出品字体 <code>Klee One</code> 衍生。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231214_134722.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwWenKai">https://github.com/lxgw/LxgwWenKai</a><br>相关开源字体 <a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwMarkerGothic">LXGW Marker Gothic / 霞鹜漫黑</a><br>特别推荐 <a target="_blank" rel="noopener" href="https://github.com/lxgw/LxgwNeoXiHei">LXGW Neo XiHei / 霞鹜新晰黑</a>，改字体显示效果细腻，数字字母和汉字之间间距恰当，阅读较为舒适。</p>
+</blockquote>
+<h2 id="5-Sarasa-Gothic-更纱黑体"><a href="#5-Sarasa-Gothic-更纱黑体" class="headerlink" title="5. Sarasa Gothic / 更纱黑体"></a>5. Sarasa Gothic / 更纱黑体</h2><p>Sarasa Gothic（更纱黑体）是一款在 100% 缩放比例下有着优秀渲染效果的字体，更纱黑体由 <code>Noto Sans</code> / <code>Iosevka</code> 和思源黑体的汉字部分合并而来。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_006.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/be5invis/Sarasa-Gothic">https://github.com/be5invis/Sarasa-Gothic</a></p>
+</blockquote>
+<h2 id="6-文泉驿正黑体"><a href="#6-文泉驿正黑体" class="headerlink" title="6. 文泉驿正黑体"></a>6. 文泉驿正黑体</h2><p>文泉驿正黑体是一个”自由字体”。该字体包含了所有常用简体中文、繁体中文所需要的汉字(最新版本包含超过27842个汉字，完整覆盖GB2312/Big5/GBK以及GB18030标准字符集)。该字体同时还包含了日文、韩文和其他几十种语言符号。除此以外，该字体还嵌入了最新版本的文泉驿点阵宋体的中英文点阵，使得屏幕汉字显示清晰锐利，易于阅读。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_007.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="http://wenq.org/wqy2/index.cgi?ZenHei">http://wenq.org/wqy2/index.cgi?ZenHei</a><br>相关开源字体 <a target="_blank" rel="noopener" href="http://wenq.org/wqy2/index.cgi?BitmapSong">文泉驿点阵宋体</a>、<a target="_blank" rel="noopener" href="http://wenq.org/wqy2/index.cgi?MicroHei">文泉驿微米黑</a><br>如要商用请注意文泉驿的版权声明<br><code>本字体版权为FangQ和 “文泉驿信任委员会(Board of Trustees)” 所有，使用遵循 GNU General Public License 授权。企业用户如果希望在产品中包含文泉驿字体但不希望自己的软件开放源代码，请与FangQ联系,协商使用授权事宜。</code></p>
+</blockquote>
+<h2 id="7-Mona-Sans-和-Hubot-Sans"><a href="#7-Mona-Sans-和-Hubot-Sans" class="headerlink" title="7. Mona Sans 和 Hubot Sans"></a>7. Mona Sans 和 Hubot Sans</h2><p><code>GitHub</code> 开源了自家设计的两款字体，分别是 <code>Mona Sans</code> 以及 <code>Hubot Sans</code>，这两款字体都是可变式字体，能灵活支持各式内容呈现，具有可变倾斜度、粗细和宽度，现在 <code>GitHub</code> 以开源字体授权（OFL）对外发布。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20231214_135655.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://github.com/github/mona-sans">https://github.com/github/mona-sans</a>、<a target="_blank" rel="noopener" href="https://github.com/github/hubot-sans">https://github.com/github/hubot-sans</a></p>
+</blockquote>
+<h1 id="其他免费可商用字体"><a href="#其他免费可商用字体" class="headerlink" title="其他免费可商用字体"></a>其他免费可商用字体</h1><h2 id="1-阿里巴巴普惠体"><a href="#1-阿里巴巴普惠体" class="headerlink" title="1. 阿里巴巴普惠体"></a>1. 阿里巴巴普惠体</h2><p>阿里巴巴普惠体是一套全球永久免费正版商用的字体家族。阿里巴巴普惠体2.0为一套符合GB国家标准的简体中文字符集，2款 GB2312标题字 、7款 GB18030 内文字，9字重共206,257个全形汉字。全新的命名体系，数字+字重的描述，可以方便用户更快的选择到合适的粗细。包含拉丁字母、希腊字母、西里尔字母、标点符号。GB18030 是最新的汉字编码字符集国家标准，是全文强制性标准，市场上销售的产品必须符合。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_003.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://fonts.alibabagroup.com/#/font">https://fonts.alibabagroup.com/#/font</a></p>
+</blockquote>
+<h2 id="2-HarmonyOS-Sans-鸿蒙字体"><a href="#2-HarmonyOS-Sans-鸿蒙字体" class="headerlink" title="2. HarmonyOS Sans / 鸿蒙字体"></a>2. HarmonyOS Sans / 鸿蒙字体</h2><p>鸿蒙字体(HarmonyOS Sans)是和汉仪字库合作定制的 HarmonyOS Sans 。设计上聚焦于功能性、普适性，是一款多语言的无级可变字体，支持简体中文、繁体中文、拉丁、西里尔、希腊、阿拉伯等5大书写系统，105种语言全球化覆盖。现华为将其公开发布，免费可商用。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_004.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583">https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583</a></p>
+</blockquote>
+<h2 id="3-OPPO-Sans-OPPO-字体"><a href="#3-OPPO-Sans-OPPO-字体" class="headerlink" title="3. OPPO Sans / OPPO 字体"></a>3. OPPO Sans / OPPO 字体</h2><p>OPPO Sans，是继阿里巴巴普惠体后，又一款授权全社会免费使用的字体，包含226003个字符，5个家族Light / Regular / Medium / Bold / Heavy 。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_005.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://www.coloros.com/index/newsDetail?id=72">https://www.coloros.com/index/newsDetail?id=72</a></p>
+</blockquote>
+<h2 id="4-Honor-Sans-荣耀字体"><a href="#4-Honor-Sans-荣耀字体" class="headerlink" title="4. Honor Sans / 荣耀字体"></a>4. Honor Sans / 荣耀字体</h2><p>荣耀通过了解用户行为、用户感知与意见反馈，洞察用户未被满足的需求，分析用户在不同场景下对多终端设备的反馈，结合品牌整体风格，为此设计了全新系统默认字体，通过科技创新带来全人群、全场景的阅读体验提升，打造一款帮助信息高效传递的动态字体——Honor Sans。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20240315_113822.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://developer.hihonor.com/cn/doc/guides/100681">https://developer.hihonor.com/cn/doc/guides/100681</a></p>
+</blockquote>
+<h2 id="5-MiSans-小米字体"><a href="#5-MiSans-小米字体" class="headerlink" title="5. MiSans / 小米字体"></a>5. MiSans / 小米字体</h2><p>MiSans Global 是由小米主导，联合蒙纳字库、汉仪字库共同打造的全球语言字体定制项目。这是一个庞大的字体家族，涵盖 20 多种书写系统，支持 600 多种语言，字符数量超过 10 万个。作为 Xiaomi HyperOS 系统默认字体，我们以简约/清晰，人文/易读，统一的视觉风格为基本原则出发，构建多语言信息体验一致性，旨在帮助为 Xiaomi HyperOS 提供互联的通用体验。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20240315_114519.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://hyperos.mi.com/font/zh/">https://hyperos.mi.com/font/zh/</a></p>
+</blockquote>
+<h2 id="6-抖音美好体"><a href="#6-抖音美好体" class="headerlink" title="6. 抖音美好体"></a>6. 抖音美好体</h2><p>抖音体验设计中心与方正字库联合设计开发了一款简洁大方、清晰易读，同时兼具现代气质与人文属性的品牌定制字体——抖音美好体。抖音美好体包含6763个中文字符，682个西文及数字符号，执行国家GB2312-80简体中文编码字符标准。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20240315_115002.png" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://www.100font.com/thread-587.htm">https://www.100font.com/thread-587.htm</a></p>
+</blockquote>
+<h2 id="7-演示悠然小楷"><a href="#7-演示悠然小楷" class="headerlink" title="7. 演示悠然小楷"></a>7. 演示悠然小楷</h2><p>演示悠然小楷是 <code>秋叶 PPT</code> 联合<code>keynote研究所</code> 推出的一款书法字体，字稿的作者是孟祥媛，一位还在大学读书的书法专业学生。<br><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221214_008.jpg" alt="image"></p>
+<blockquote>
+<p>下载：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Q1lAIre4yJ-Zlf2CD82EPA">https://mp.weixin.qq.com/s/Q1lAIre4yJ-Zlf2CD82EPA</a></p>
+</blockquote>
+<h2 id="8-更多免费可商用"><a href="#8-更多免费可商用" class="headerlink" title="8. 更多免费可商用"></a>8. 更多免费可商用</h2><p>推荐网站 <a target="_blank" rel="noopener" href="https://www.100font.com/">https://www.100font.com/</a>，一个专门收集整理“免费商用字体”的网站。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://weizwz.com">唯之为之</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://weizwz.com/posts/ef1b7a14.html">https://weizwz.com/posts/ef1b7a14.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://weizwz.com" target="_blank">唯之为之</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/github/">github</a><a class="post-meta__tags" href="/tags/%E5%AD%97%E4%BD%93/">字体</a><a class="post-meta__tags" href="/tags/%E8%AE%BE%E8%AE%A1/">设计</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/openSourceFonts.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/reward/wechart-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/wechart-play.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/reward/ali-play.jpg" target="_blank"><img class="post-qr-code-img" src= "/img/loading.gif" data-lazy-src="/img/reward/ali-play.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/9b694c86.html" title="浏览器好用插件分享"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/edgePlus.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">浏览器好用插件分享</div></div></a></div><div class="next-post pull-right"><a href="/posts/5c85881c.html" title="pnpm配置"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/pnpm.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">pnpm配置</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/9462cbd1.html" title="GitHub + Hexo 搭建个人博客网站"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20221129_225842.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-29</div><div class="title">GitHub + Hexo 搭建个人博客网站</div></div></a></div><div><a href="/posts/64094821.html" title="Git使用记录 - 持续更新"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-25</div><div class="title">Git使用记录 - 持续更新</div></div></a></div><div><a href="/posts/72bf1e92.html" title="Github项目徽标"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231207_105659.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-06</div><div class="title">Github项目徽标</div></div></a></div><div><a href="/posts/779fda2d.html" title="AI作画本地搭建"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/aidraw.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-28</div><div class="title">AI作画本地搭建</div></div></a></div><div><a href="/posts/a440283c.html" title="vue3项目部署到Github"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/vue_github_page.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-09-12</div><div class="title">vue3项目部署到Github</div></div></a></div><div><a href="/posts/d50f45ae.html" title="windows cmd 终极美化"><img class="cover" src= "/img/loading.gif" data-lazy-src="/img/cover/20231218_141148.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-18</div><div class="title">windows cmd 终极美化</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "/img/loading.gif" data-lazy-src="/img/avatar/head2024.jpeg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">唯之为之</div><div class="author-info__description">个人博客 丨 时光笔墨</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/weizwz"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://gitee.com/weizwz" target="_blank" title="Gitee"><i class="fa-fw iconfont icon-gitee"></i></a><a class="social-icon" href="https://www.cnblogs.com/weizwz" target="_blank" title="博客园"><i class="fa-fw iconfont icon-blog"></i></a><a class="social-icon" href="https://weizwz.com/atom.xml" target="_blank" title="RSS订阅"><i class="fa-fw iconfont icon-rss"></i></a><a class="social-icon" href="mailto:weizwz@foxmail.com" target="_blank" title="邮箱"><i class="fa-fw iconfont icon-email-fill"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BC%80%E6%BA%90%E5%AD%97%E4%BD%93"><span class="toc-text">开源字体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BE%97%E6%84%8F%E9%BB%91"><span class="toc-text">1. 得意黑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%80%9D%E6%BA%90%E9%BB%91%E4%BD%93"><span class="toc-text">2. 思源黑体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93"><span class="toc-text">3. 思源宋体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-LXGW-WenKai-%E9%9C%9E%E9%B9%9C%E6%96%87%E6%A5%B7"><span class="toc-text">4. LXGW WenKai &#x2F; 霞鹜文楷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Sarasa-Gothic-%E6%9B%B4%E7%BA%B1%E9%BB%91%E4%BD%93"><span class="toc-text">5. Sarasa Gothic &#x2F; 更纱黑体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%96%87%E6%B3%89%E9%A9%BF%E6%AD%A3%E9%BB%91%E4%BD%93"><span class="toc-text">6. 文泉驿正黑体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-Mona-Sans-%E5%92%8C-Hubot-Sans"><span class="toc-text">7. Mona Sans 和 Hubot Sans</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B6%E4%BB%96%E5%85%8D%E8%B4%B9%E5%8F%AF%E5%95%86%E7%94%A8%E5%AD%97%E4%BD%93"><span class="toc-text">其他免费可商用字体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E6%99%AE%E6%83%A0%E4%BD%93"><span class="toc-text">1. 阿里巴巴普惠体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-HarmonyOS-Sans-%E9%B8%BF%E8%92%99%E5%AD%97%E4%BD%93"><span class="toc-text">2. HarmonyOS Sans &#x2F; 鸿蒙字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-OPPO-Sans-OPPO-%E5%AD%97%E4%BD%93"><span class="toc-text">3. OPPO Sans &#x2F; OPPO 字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Honor-Sans-%E8%8D%A3%E8%80%80%E5%AD%97%E4%BD%93"><span class="toc-text">4. Honor Sans &#x2F; 荣耀字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-MiSans-%E5%B0%8F%E7%B1%B3%E5%AD%97%E4%BD%93"><span class="toc-text">5. MiSans &#x2F; 小米字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%8A%96%E9%9F%B3%E7%BE%8E%E5%A5%BD%E4%BD%93"><span class="toc-text">6. 抖音美好体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E6%BC%94%E7%A4%BA%E6%82%A0%E7%84%B6%E5%B0%8F%E6%A5%B7"><span class="toc-text">7. 演示悠然小楷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%9B%B4%E5%A4%9A%E5%85%8D%E8%B4%B9%E5%8F%AF%E5%95%86%E7%94%A8"><span class="toc-text">8. 更多免费可商用</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/a440283c.html" title="vue3项目部署到Github"><img src= "/img/loading.gif" data-lazy-src="/img/cover/vue_github_page.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="vue3项目部署到Github"/></a><div class="content"><a class="title" href="/posts/a440283c.html" title="vue3项目部署到Github">vue3项目部署到Github</a><time datetime="2024-09-12T15:39:12.000Z" title="发表于 2024-09-12 23:39:12">2024-09-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JS脚本批量处理TS数据类型"/></a><div class="content"><a class="title" href="/posts/72334782.html" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</a><time datetime="2024-08-26T12:52:41.000Z" title="发表于 2024-08-26 20:52:41">2024-08-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f6350145.html" title="常用TS总结"><img src= "/img/loading.gif" data-lazy-src="/img/cover/ts.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常用TS总结"/></a><div class="content"><a class="title" href="/posts/f6350145.html" title="常用TS总结">常用TS总结</a><time datetime="2024-02-05T12:37:54.000Z" title="发表于 2024-02-05 20:37:54">2024-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240204_163445.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="定制你的清爽Mac版Edge浏览器"/></a><div class="content"><a class="title" href="/posts/701129a9.html" title="定制你的清爽Mac版Edge浏览器">定制你的清爽Mac版Edge浏览器</a><time datetime="2024-02-03T13:03:47.000Z" title="发表于 2024-02-03 21:03:47">2024-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题"><img src= "/img/loading.gif" data-lazy-src="/img/cover/uni-app_vue3.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="uni-app+vue3有哪些问题"/></a><div class="content"><a class="title" href="/posts/cc35a037.html" title="uni-app+vue3有哪些问题">uni-app+vue3有哪些问题</a><time datetime="2024-02-01T11:34:18.000Z" title="发表于 2024-02-01 19:34:18">2024-02-01</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By 唯之为之</div><div class="footer_custom_text"><a target="_blank" href="https://hexo.io/" title="博客框架为Hexo_v7.0.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0E83CD?logo=hexo&logoColor=fff" alt="Hexo"></a><a target="_blank" href="https://butterfly.js.org/" title="博客主题为Butterfly_v4.12.0"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-00c4b6?logo=bluesky&logoColor=fff" alt="Butterfly"></a><a target="_blank" href="https://github.com/" title="本站项目由Github托管"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Website-Github-d021d6?logo=GitHub" alt="Github"></a><a target="_blank" href="https://www.algolia.com/" title="本站搜索使用Algolia搜索服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Search-Algolia-003DFF?logo=Algolia" alt="Algolia"></a><a target="_blank" href="https://cloud.tencent.com/" title="本站域名管理使用腾讯云域名服务"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Domain-Tencent-0099F7?logo=googlecloud&logoColor=fff" alt="Tencent"></a><a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="本站采用CC BY-NC-SA 4.0国际许可协议进行许可"><img src= "/img/loading.gif" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?logo=coursera&logoColor=fff" alt="Copyright"></a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaid.length === 0) return
+  const runMermaid = () => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    Array.from($mermaid).forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+      const mermaidID = 'mermaid-' + index
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+
+      const renderV10 = () => {
+        renderFn.then(({svg}) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svg)
+        })
+      }
+
+      const renderV9 = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      typeof renderFn === 'string' ? renderV9(renderFn) : renderV10()
+    })
+  }
+
+  const loadMermaid = () => {
+    window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+  }
+
+  btf.addGlobalFn('themeChange', runMermaid, 'mermaid')
+
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const initValine = () => {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '2QzGRyH6AfaTut0wREwvn7fY-gzGzoHsz',
+      appKey: 'qYfCPzb8aECRoFXHi9IbMAxD',
+      avatar: 'monsterid',
+      serverURLs: 'https://2qzgryh6.lc-cn-n1-shared.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, {"placeholder":"留下你的足迹吧","enableQQ":false}))
+  }
+
+  const loadValine = async () => {
+    if (typeof Valine === 'function') initValine()
+    else {
+      await getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
+      initValine()
+    }
+  }
+
+  if ('Valine' === 'Valine' || !true) {
+    if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+    else setTimeout(loadValine, 0)
+  } else {
+    window.loadOtherComment = loadValine
+  }
+})()</script></div><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script></div></div><!-- hexo injector body_end start -->
+      <script data-pjax>
+        if (typeof window.recommend === 'undefined') {
+          window.recommend = {
+            hexo_butterfly_recommend_init: function() {
+              const $recommend = document.querySelector('#recommend');
+              if($recommend) return;
+              document.documentElement.style.setProperty('--recommend-main', '#409eff');
+              document.documentElement.style.setProperty('--recommend-deep', '#0075ffdd');
+              const hexo_butterfly_recommend_elist = 'null'.split(',');
+              var hexo_butterfly_recommend_cpage = location.pathname;
+              const hexo_butterfly_recommend_epage = '/';
+              var hexo_butterfly_recommend_flag = 0;
+        
+              for (var i = 0; i < hexo_butterfly_recommend_elist.length; i++) {
+                if (hexo_butterfly_recommend_cpage.includes(hexo_butterfly_recommend_elist[i])) {
+                  hexo_butterfly_recommend_flag++;
+                }
+              }
+              if ((hexo_butterfly_recommend_epage === 'all') && (hexo_butterfly_recommend_flag === 0)) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              } else if (hexo_butterfly_recommend_epage === hexo_butterfly_recommend_cpage) {
+                window.recommend.hexo_butterfly_recommend_injector_config();
+              }
+            },
+            hexo_butterfly_recommend_injector_config: function() {
+              var parent_div_git = document.getElementById('content-inner');
+              var item_html = '<div class="recommend-left" id="recommend"><div id="recommend-content" onmousewheel="recommend.postScroll(this)"><div class="recommend-wrapper" id="recommend-banner"><div id="recommend-banner-wrapper"><div class="recommend-banner-title-wrapper"><div class="recommend-banner-title">无限热爱</div><div class="recommend-banner-title">生活与技术</div><div class="recommend-banner-title">WEIZWZ.COM</div></div><div class="recommend-tags-all"><div class="recommend-tags-wrapper"><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #C63636"><i class="fa-brands fa-npm" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #02B67C"><i class="fa-brands fa-vuejs" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #1aad19"><i class="iconfont icon-xiaochengxu" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0065A9"><i class="iconfont icon-vscode" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #333333"><i class="iconfont icon-code" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2c51db"><i class="fa-brands fa-css3-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #563e7c"><i class="fa-brands fa-bootstrap" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #0288d1"><i class="iconfont icon-ts" style="color: #fff"></i></div></div></div><div class="recommend-tags-line"><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #e9572b"><i class="fa-brands fa-html5" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #ca6496"><i class="fa-brands fa-sass" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #f7cb4f"><i class="iconfont icon-logo-javascript" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #37322e"><i class="fa-brands fa-node" style="color: #7dbd05"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #8F74FE"><i class="iconfont icon-vite" style="color: #FFB60E"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #2D923A"><i class="iconfont icon-Uzhan" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #df5b40"><i class="fa-brands fa-git-alt" style="color: #fff"></i></div></div><div class="recommend-tags-column"><div class="recommend-tags-icon" style="background: #001e36"><i class="iconfont icon-ps" style="color: #31a8ff"></i></div></div></div></div></div><a id="recommend-banner-hover" onclick="recommend.toRandomPost()"><span class="recommend-banner-text">随便逛逛</span><i class="fas fa-arrow-right recommend-banner-righticon"></i></a></div><div id="recommend-category"><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/技术&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #358bff, #15c6ff)"></div><span class="recommend-categoryItem-text">技术浅谈</span><i class="fa-solid fa-laptop-code"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/资源&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #18e7ae, #1eebeb)"></div><span class="recommend-categoryItem-text">资源分享</span><i class="fa-solid fa-gem"></i></a></div><div class="recommend-categoryItem"><a class="recommend-categoryItem-button" onclick="recommend.toPost(&quot;categories/博客&quot;)"><div class="recommend-categoryItem-bg" style="background: linear-gradient(to right, #f65, #ffbf37)"></div><span class="recommend-categoryItem-text">博客教程</span><i class="fa-solid fa-blog"></i></a></div></div></div><div class="recommend-wrapper" id="recommend-post"><div class="recommend-post-list" onmouseleave="window.event.cancelBubble=true;recommend.showCover();"><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20240826_210817.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="JS脚本批量处理TS数据类型"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/72334782.html&quot;)" title="JS脚本批量处理TS数据类型">JS脚本批量处理TS数据类型</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/dragon_recommend.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="hexo-butterfly-recommend使用说明"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7db60965.html&quot;)" title="hexo-butterfly-recommend使用说明">hexo-butterfly-recommend使用说明</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/clash_verge.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Clash Verge 使用记录"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/18a50dc4.html&quot;)" title="Clash Verge 使用记录">Clash Verge 使用记录</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/blog/20221125_cover-git-note.jpg" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Git使用记录 - 持续更新"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/64094821.html&quot;)" title="Git使用记录 - 持续更新">Git使用记录 - 持续更新</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231128_171922.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/5bc77c26.html&quot;)" title="Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化">Vite4+Typescript+Vue3+Pinia 从零搭建(1) - 项目初始化</div></div><div class="recommend-post-item"><div class="recommend-post-item-cover" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)"><img src= "/img/loading.gif" data-lazy-src="/img/cover/20231025_215235.png" onerror="this.onerror=null,this.src=&quot;/img/404.png&quot;" title="windows开发环境备份，再也不怕重装系统了"/></div><div class="recommend-post-item-title" onclick="recommend.toPost(&quot;posts/7657b7c7.html&quot;)" title="windows开发环境备份，再也不怕重装系统了">windows开发环境备份，再也不怕重装系统了</div></div></div></div></div></div>';
+              parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.recommend.toPost(randomPost);
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            hideCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              $main.className = 'recommend-post-main recommend-hide';
+            },
+            showCover: function() {
+              const $main = document.querySelector("#recommend-post-main");
+              if ($main) $main.className = 'recommend-post-main';
+            },
+            postScroll: function(dom) {
+              const e = window.event || arguments.callee.caller.arguments[0];
+              if (document.body.clientWidth <= 1200) {
+                let o = -e.wheelDelta / 2;
+                dom.scrollLeft += o;
+                e.preventDefault();
+              }
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_recommend ⭐ https://github.com/weizwz/hexo-butterfly-recommend ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.recommend.hexo_butterfly_recommend_init();
+      </script><script async src="/js/ali_font.js"></script>
+      <script data-pjax>
+        if (typeof window.navctrl === 'undefined') {
+          window.navctrl = {
+            hexo_butterfly_navctrl_init: function() {
+              const $navctrl = document.querySelector('#navctrl');
+              if($navctrl) return;
+              var parent_div_git = document.getElementById('nav');
+              var item_html = '<div id="navctrl"><div class="navctrl-warpper"><div class="navctrl-separate navctrl-item"></div><button class="navctrl-item " id="navctrl-dark" title="显示模式" onclick="navctrl.changeDark()"><i class="fa-fw fas fa-adjust"></i><span>显示模式</span></button><button class="navctrl-item " id="navctrl-random" title="随便逛逛" onclick="navctrl.toRandomPost()"><i class="fa-fw fas fa-paper-plane"></i><span>随便逛逛</span></button></div></div>';
+              parent_div_git.insertAdjacentHTML("beforeend",item_html);
+            },
+            changeDark: function() {
+              const event = window.event || arguments.callee.caller.arguments[0];
+              document.documentElement.style.setProperty('--x', event.clientX + 'px');
+              document.documentElement.style.setProperty('--y', event.clientY + 'px');
+              if(document.startViewTransition) {
+                document.startViewTransition(() => {
+                  window.navctrl.setTheme();
+                })
+              } else {
+                window.navctrl.setTheme();
+              }
+            },
+            setTheme: function() {
+              const theme = document.documentElement.getAttribute('data-theme');
+              if (theme === 'light' || !theme) {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                document.documentElement.classList.add('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'dark',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              } else {
+                document.documentElement.setAttribute('data-theme', 'light')
+                document.documentElement.classList.remove('navctrl-dark')
+                window.localStorage.theme = JSON.stringify({
+                  value: 'light',
+                  expiry: Date.now() + 2*24*60*60*1000
+                })
+              }
+            },
+            toPost: function(href) {
+              if (typeof pjax !== 'undefined') pjax.loadUrl('/' + href);
+              else window.location.href = window.location.origin + (href.charAt(0) === '/' ? '' : '/') + href;
+            },
+            toRandomPost: function() {
+              var posts_path = "posts/18a50dc4.html,posts/8748c6b7.html,posts/9462cbd1.html,posts/6c03382b.html,posts/64094821.html,posts/72bf1e92.html,posts/72334782.html,posts/b6386794.html,posts/d80c51ca.html,posts/779fda2d.html,posts/e37151d.html,posts/ad78f250.html,posts/c57fdcba.html,posts/5bc77c26.html,posts/422566e3.html,posts/3c6c8900.html,posts/f72e0ad.html,posts/de51c0b5.html,posts/6e87ac02.html,posts/73655837.html,posts/dd73ee89.html,posts/3277e220.html,posts/c4be1e8f.html,posts/7db60965.html,posts/b93c4a61.html,posts/e9a127c6.html,posts/5c85881c.html,posts/f1579949.html,posts/cc35a037.html,posts/8c7d05c9.html,posts/a31b36c6.html,posts/a440283c.html,posts/453785dc.html,posts/d50f45ae.html,posts/7657b7c7.html,posts/48e0de05.html,posts/da790ccb.html,posts/48f788c6.html,posts/701129a9.html,posts/f6350145.html,posts/ef1b7a14.html,posts/9b694c86.html,posts/7cd83567.html,posts/3ab0bc77.html".split(',');
+              var randomPost = posts_path[Math.floor(Math.random() * posts_path.length)];
+              window.navctrl.toPost(randomPost);
+            }
+          }
+          console.log(
+            "%c plugin ⭐ hexo_butterfly_navctrl ⭐ https://github.com/weizwz/hexo-butterfly-navctrl ",
+            "color: #fff; padding:3px; font-size:12px; background: linear-gradient(90deg, #358bff, #1eebeb);"
+          )
+        }
+        window.navctrl.hexo_butterfly_navctrl_init();
+      </script><!-- hexo injector body_end end --></body></html>

@@ -1,0 +1,77 @@
+:root {
+  --navctrl-main: var(--font-color);
+  --navctrl-font: var(--font-color);
+  --navctrl-dark: #18171d;
+}
+/* 兼容性修改 */
+
+#navctrl {
+  position: relative;
+  margin-left: 1.2rem;
+}
+.navctrl-warpper {
+  display: inline;
+}
+.navctrl-item {
+  line-height: 1;
+  font-size: 0.78em;
+  margin-left: 1rem;
+  color: var(--navctrl-font);
+}
+.navctrl-item.icon:nth-child(n+3) {
+  margin-left: .5rem;
+}
+.navctrl-separate {
+  display: inline-block;
+  height: 1em;
+  width: 0;
+  vertical-align: middle;
+  margin-left: 0;
+  border-left: double 2px var(--navctrl-main);
+  border-radius: 2px;
+}
+.navctrl-item:first-child {
+  position: relative;
+}
+.navctrl-item > i {
+  color: var(--navctrl-font);
+  margin-right: 3px;
+}
+.navctrl-item.icon > i {
+  margin-right: 0;
+}
+#nav.hide-menu #navctrl {
+  margin-left: .2rem;
+}
+#nav.hide-menu .navctrl-item {
+  font-size: 1em;
+  margin-left: .4rem;
+}
+#nav.hide-menu .navctrl-item > span {
+  display: none;
+}
+#nav.hide-menu navctrl-item > i {
+  margin-right: 0;
+}
+#nav.hide-menu .navctrl-separate {
+  display: none;
+}
+.navctrl-dark { background: var(--navctrl-dark); }
+
+::view-transition-old(*) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(*) {
+  animation: hexoDark .8s ease-in;
+  mix-blend-mode: normal;
+}
+
+@keyframes hexoDark {
+  from {
+    clip-path: circle(0% at var(--x) var(--y));
+  }
+  to {
+    clip-path: circle(100% at var(--x) var(--y));
+  }
+}
